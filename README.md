@@ -84,7 +84,7 @@ The full Ream format specification is in [`spec/ream-rfc-draft-v9.md`](spec/ream
 
 ## Paper
 
-The benchmark paper is available at [`paper/scf-benchmark.pdf`](paper/scf-benchmark.pdf).
+The benchmark paper is available at [`paper/ream-benchmark.pdf`](paper/ream-benchmark.pdf).
 
 ## License
 

@@ -1,5 +1,5 @@
 """
-Answer scoring for SCF benchmark evaluations.
+Answer scoring for Ream benchmark evaluations.
 Handles numeric, string, boolean, and date comparisons with appropriate tolerances.
 """
 

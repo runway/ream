@@ -1,5 +1,5 @@
 """
-Main evaluation harness for SCF benchmarking.
+Main evaluation harness for Ream benchmarking.
 Runs LLM evaluations across multiple spreadsheet formats and collects results.
 """
 
@@ -112,9 +112,9 @@ def format_display_name(fmt: str) -> str:
     names = {
         "ream": "Ream",
         "ream_addressed": "Ream-Addressed",
-        "scf": "SCF",
-        "scf_addressed": "SCF-Addressed",
-        "scf_formulas": "SCF-Formulas",
+        "scf": "SCF (legacy v5)",
+        "scf_addressed": "SCF-Addressed (legacy)",
+        "scf_formulas": "SCF-Formulas (legacy)",
         "csv": "CSV",
         "markdown": "Markdown",
         "markdown_kv": "Markdown-KV",
@@ -293,7 +293,7 @@ def print_summary(output: dict):
     meta = output["metadata"]
 
     print(f"\n{'='*80}")
-    print(f"SCF BENCHMARK RESULTS")
+    print(f"REAM BENCHMARK RESULTS")
     print(f"{'='*80}")
     print(f"Questions: {meta['num_questions']} | Evaluations: {meta['total_evaluations']} | Errors: {meta['errors']}")
     print()
@@ -330,7 +330,7 @@ def print_summary(output: dict):
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="Run SCF benchmark evaluation")
+    parser = argparse.ArgumentParser(description="Run Ream benchmark evaluation")
     parser.add_argument("--questions", default="data/frtr_questions_clean.json")
     parser.add_argument("--models", nargs="+", default=MODELS)
     parser.add_argument("--formats", nargs="+", default=FORMAT_NAMES)

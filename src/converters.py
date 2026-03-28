@@ -1,6 +1,6 @@
 """
 Convert XLSX workbooks to various text representations for LLM consumption.
-Supports: SCF, CSV, Markdown, JSON
+Supports: Ream, SCF (legacy), CSV, Markdown, JSON and others
 """
 
 import json
