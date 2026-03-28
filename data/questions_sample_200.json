@@ -1,0 +1,1802 @@
+[
+  {
+    "question": "How many numeric values are in the 'BudgetUSD' column in sheet 'Project_Summary' (first 1000 data rows)?",
+    "answer_resolved": "60",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "What is the average of the 'BenefitsUSD' column in sheet 'Payroll'? Consider only the first 1000 data rows.",
+    "answer_resolved": "699.572459",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Payroll",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "How many rows have 'SchoolID' equal to 'SCH-034' in sheet 'School_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "School_Summary",
+    "workbook": "frtr_0013_education-outcomes.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0013_education-outcomes.xlsx"
+  },
+  {
+    "question": "What is the sum of 'BudgetUSD' where 'ProjectID' equals 'PRJ-00039' in sheet 'Project_Summary'?",
+    "answer_resolved": "9992501.72",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Category' column of row 56 in sheet 'Dimensions'?",
+    "answer_resolved": "C",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Dimensions",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "workbook": "sb_34180",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/34180/1_34180_input.xlsx",
+    "question": "Given this spreadsheet, How can I return 'True' in column D if there is a partial match between a cell in column B and the cell to its right in column C, ignoring case sensitivity, and return 'False' if either cell is blank? The match may involve text with spaces and a consistent prefix 'CHC.' in column C that needs to be ignored for the match to work properly. What value should appear at cell D3?",
+    "answer_resolved": "FALSE",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the sum of all values in the 'InvUSD' column in sheet 'CF_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "-336478.69",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "CF_Summary",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'GiftsUSD' column in sheet 'Campaign_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "397743.24",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Campaign_Summary",
+    "workbook": "frtr_0012_nonprofit-donations.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0012_nonprofit-donations.xlsx"
+  },
+  {
+    "question": "What is the value in the 'USD_Total' column of row 11 in sheet 'Consolidated_Summary'?",
+    "answer_resolved": "54438451.382763",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Consolidated_Summary",
+    "workbook": "frtr_0026_consolidation-multi-subsidiary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0026_consolidation-multi-subsidiary.xlsx"
+  },
+  {
+    "workbook": "sb_49859",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/49859/1_49859_input.xlsx",
+    "question": "Given this spreadsheet, How can I create a formula that will allocate a series of month numbers in column C across a range of period columns (D to Q), each marked by a period of months either using date ranges in rows 4 and 5 or month numbers in rows 8 and 9? Specifically, the formula needs to place a '1' in any column where the month number from column C falls within its corresponding period, as manually indicated by examples I've put in the spreadsheet. What value should appear at cell D12?",
+    "answer_resolved": "1",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "How many rows have 'Subsidiary' equal to 'SUB-04' in sheet 'CF_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "CF_Summary",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "What is the average of the 'RoomsAvail' column in sheet 'Hotel_Inventory'? Consider only the first 1000 data rows.",
+    "answer_resolved": "228.56",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Hotel_Inventory",
+    "workbook": "frtr_0018_hospitality-bookings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0018_hospitality-bookings.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'StdCost_EstUSD' column in sheet 'WC_Summary' (first 1000 data rows)?",
+    "answer_resolved": "40",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "WC_Summary",
+    "workbook": "frtr_0006_manufacturing-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0006_manufacturing-ops.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'AvgCost' column in sheet 'Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "0",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Summary",
+    "workbook": "frtr_00027_supply-chain-regional.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_00027_supply-chain-regional.xlsx"
+  },
+  {
+    "question": "What is the value in the 'AmountRequestedUSD' column of row 472 in sheet 'Applications'?",
+    "answer_resolved": "288224.62",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Applications",
+    "workbook": "frtr_0011_gov-grants-tracking.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0011_gov-grants-tracking.xlsx"
+  },
+  {
+    "question": "What is the average of the 'Shipments' column in sheet 'Carrier_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "166.8",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Carrier_Summary",
+    "workbook": "frtr_0022_logistics-routing.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0022_logistics-routing.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'TotalShipments' column in sheet 'Summary'? Answer based only on the data shown.",
+    "answer_resolved": "0",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_00027_supply-chain-regional.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_00027_supply-chain-regional.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'Margin_%' column in sheet 'Data_Main' (first 1000 data rows)?",
+    "answer_resolved": "600",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "What is the sum of 'AwardedUSD' where 'Grantee' equals 'GRANTEE-0178' in sheet 'Awards'?",
+    "answer_resolved": "431357.19",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Awards",
+    "workbook": "frtr_0011_gov-grants-tracking.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0011_gov-grants-tracking.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'Movement Net Qty (SUM)' column in sheet 'KPIs'? Answer based only on the data shown.",
+    "answer_resolved": "-1037",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "workbook": "sb_48357",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/48357/1_48357_input.xlsx",
+    "question": "Given this spreadsheet, How can I calculate the 'Remaining OH' quantities based on 'Total OH' and 'Future Usage' for parts that repeat in a column over future dates, ensuring the calculations are accurate even when a part number repeats more than twice? What value should appear at cell E2?",
+    "answer_resolved": "5",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the minimum value in the 'Revenue' column in sheet 'Cohort_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "0",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "What is the average of the 'PledgesUSD' column in sheet 'Campaign_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "5998.8395",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Campaign_Summary",
+    "workbook": "frtr_0012_nonprofit-donations.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0012_nonprofit-donations.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'BenefitsUSD' column in sheet 'Payroll'? Answer based only on the data shown.",
+    "answer_resolved": "156.03",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Payroll",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'RoomsAvail' column in sheet 'Hotel_Inventory'? Consider only the first 1000 data rows.",
+    "answer_resolved": "5714",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Hotel_Inventory",
+    "workbook": "frtr_0018_hospitality-bookings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0018_hospitality-bookings.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'InvoiceUSD' column in sheet 'Category_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "1215273.07",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Category_Summary",
+    "workbook": "frtr_0005_ap-vendor-spend.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0005_ap-vendor-spend.xlsx"
+  },
+  {
+    "question": "What are the column headers in sheet 'LOB_Summary'?",
+    "answer_resolved": "LOB, TotalPaidUSD, AvgPaidUSD, PaymentsUSD",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "workbook": "sb_53280",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/53280/1_53280_input.xlsx",
+    "question": "Given this spreadsheet, How can I create a formula in Excel that will extract the text in column A that appears after the second backslash and before the underscore? For instance, given a cell value in column A like 'C:\\Extract\\BR 995201_2021621.csv', I want to extract 'BR 995201' into column B. I have provided sample data where the desired result is shown in column B. What value should appear at cell B2?",
+    "answer_resolved": "BR 995201",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the average of the 'StdCost_EstUSD' column in sheet 'WC_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "261109.735057",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "WC_Summary",
+    "workbook": "frtr_0006_manufacturing-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0006_manufacturing-ops.xlsx"
+  },
+  {
+    "question": "What is the average of the 'NetTerms' column in sheet 'Vendor_Master'? Consider only the first 1000 data rows.",
+    "answer_resolved": "29.75",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Vendor_Master",
+    "workbook": "frtr_0005_ap-vendor-spend.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0005_ap-vendor-spend.xlsx"
+  },
+  {
+    "question": "How many rows have 'BusinessUnit' equal to 'Retail' in sheet 'Portfolio_Summary'?",
+    "answer_resolved": "24",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Portfolio_Summary",
+    "workbook": "frtr_0030_capex-project-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0030_capex-project-portfolio.xlsx"
+  },
+  {
+    "question": "What is the sum of 'ChurnRate' where 'Plan' equals 'Family' in sheet 'Plan_Summary'?",
+    "answer_resolved": "0.216216",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Plan_Summary",
+    "workbook": "frtr_0015_telecom-churn.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0015_telecom-churn.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'TotalPaidUSD' column in sheet 'LOB_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "22475014.86",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'Movement Net Qty (SUM)' column in sheet 'KPIs'? Consider only the first 1000 data rows.",
+    "answer_resolved": "-754",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'AvgArrDelayMin' column in sheet 'Route_Summary' (first 1000 data rows)?",
+    "answer_resolved": "60",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Route_Summary",
+    "workbook": "frtr_0016_airline-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0016_airline-ops.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'ScrapQty' column in sheet 'WC_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "21829",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "WC_Summary",
+    "workbook": "frtr_0006_manufacturing-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0006_manufacturing-ops.xlsx"
+  },
+  {
+    "question": "How many rows have 'Region' equal to 'East' in sheet 'Revenue'?",
+    "answer_resolved": "192",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Revenue",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "How many rows have 'Agency' equal to 'DOT' in sheet 'Agency_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Agency_Summary",
+    "workbook": "frtr_0011_gov-grants-tracking.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0011_gov-grants-tracking.xlsx"
+  },
+  {
+    "question": "How many rows have 'Store' equal to 'STORE-012' in sheet 'Store_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Store_Summary",
+    "workbook": "frtr_0014_retail-pos.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0014_retail-pos.xlsx"
+  },
+  {
+    "question": "How many rows have 'Region' equal to 'SE' in sheet 'Data_Main'?",
+    "answer_resolved": "111",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'NetUSD' column in sheet 'CF_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "-321370.69",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "CF_Summary",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'USD_Total' column in sheet 'Consolidated_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1366033647.969734",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Consolidated_Summary",
+    "workbook": "frtr_0026_consolidation-multi-subsidiary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0026_consolidation-multi-subsidiary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'CTR' column of row 112 in sheet 'Email_Campaigns'?",
+    "answer_resolved": "0.0216",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Email_Campaigns",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'ConvRate' column in sheet 'Channel_Summary' (first 1000 data rows)?",
+    "answer_resolved": "6",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'PO Qty (SUMIFS)' column in sheet 'KPIs'? Consider only the first 1000 data rows.",
+    "answer_resolved": "154328",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "question": "How many sheets does this workbook contain (excluding any Questions or Readme sheets)?",
+    "answer_resolved": "3",
+    "question_type": "schema_count",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'CTR' column in sheet 'Email_Campaigns'? Answer based only on the data shown.",
+    "answer_resolved": "0.0766",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Email_Campaigns",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'TotalAllowedUSD' column in sheet 'Payer_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "348173.13",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Payer_Summary",
+    "workbook": "frtr_0009_healthcare-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0009_healthcare-claims.xlsx"
+  },
+  {
+    "question": "What is the average of the 'TotalCostUSD' column in sheet 'Crop_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "48169.18",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'GiftsUSD' column in sheet 'Campaign_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "16773.27",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Campaign_Summary",
+    "workbook": "frtr_0012_nonprofit-donations.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0012_nonprofit-donations.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'Total Expenses (SUMIFS)' column in sheet 'Summary'? Answer based only on the data shown.",
+    "answer_resolved": "1185310.90093",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'AvgYield_t_per_acre' column of row 5 in sheet 'Crop_Summary'?",
+    "answer_resolved": "3.112639",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "How many rows have 'Cohort' equal to '2022-01-03' in sheet 'Cohort_Summary'?",
+    "answer_resolved": "24",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "How many rows have 'Channel' equal to 'Social' in sheet 'Channel_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the average of the 'TotalAllowedUSD' column in sheet 'Payer_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1478306.47",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Payer_Summary",
+    "workbook": "frtr_0009_healthcare-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0009_healthcare-claims.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'Avg Unit Cost (PO)' column in sheet 'KPIs'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1051.859835",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "workbook": "sb_31628",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/31628/1_31628_input.xlsx",
+    "question": "Given this spreadsheet, How can I determine and extract the number of the last day from a range of dates in cells A1:A11 in my Excel sheet, ensuring that the last date corresponds to the final entry if the dates are not sequential? What value should appear at cell B1?",
+    "answer_resolved": "10",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "sb_57612",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/57612/1_57612_input.xlsx",
+    "question": "Given this spreadsheet, In my Excel worksheet, I have a formula in cell D4 linked to cell C4 which needs to be modified. I want to display different results in D column based on the value in the C column. Specifically, if the value in C4 is between 5 to 6, then the result in D4 should be 5. If the value is between 3 to 4, the result should be 3.75, and if the value is between 1 to 2, the result should be 1. I have attached my file for reference. How can I correct my formula to achieve this? My current formula is: =IF(AND(C4>=5,C4<=6),5,0) What value should appear at cell D4?",
+    "answer_resolved": "5",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the minimum value in the 'Sent' column in sheet 'Email_Campaigns'? Answer based only on the data shown.",
+    "answer_resolved": "426",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Email_Campaigns",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "How many rows have 'Region' equal to 'South' in sheet 'Summary'?",
+    "answer_resolved": "24",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Summary",
+    "workbook": "frtr_00027_supply-chain-regional.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_00027_supply-chain-regional.xlsx"
+  },
+  {
+    "question": "How many rows have 'Channel' equal to 'Affiliates' in sheet 'Channel_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'OnTimeRate' column in sheet 'Carrier_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "0.849673",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Carrier_Summary",
+    "workbook": "frtr_0022_logistics-routing.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0022_logistics-routing.xlsx"
+  },
+  {
+    "question": "How many sheets does this workbook contain (excluding any Questions or Readme sheets)?",
+    "answer_resolved": "2",
+    "question_type": "schema_count",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0023_media-streaming.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0023_media-streaming.xlsx"
+  },
+  {
+    "workbook": "sb_56637",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/56637/1_56637_input.xlsx",
+    "question": "Given this spreadsheet, I'm working on automating a staffing worksheet to reduce manual input and I need to automate the population of shift numbers based on staffing adjustments. Specifically, I have a cell, B5, that contains the number of employees needed per shift, considering a 15% call-in factor. I want to automatically populate this number into a series of cells for both the 1st Shift (cells B12 through the first B60) and 2nd Shift (cells after B60). My initial attempt using an IF formula did not work as expected. The goal is to have these cells update automatically when the number in cell B5 changes to reflect the fluctuating needs for drivers per shift. What value should appear at cell B12?",
+    "answer_resolved": "1st Shift",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the minimum value in the 'AvgCostUSD' column in sheet 'Carrier_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "1185.066095",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Carrier_Summary",
+    "workbook": "frtr_0022_logistics-routing.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0022_logistics-routing.xlsx"
+  },
+  {
+    "question": "What is the average of the 'OpenUSD' column in sheet 'Category_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1287658.795714",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Category_Summary",
+    "workbook": "frtr_0005_ap-vendor-spend.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0005_ap-vendor-spend.xlsx"
+  },
+  {
+    "question": "What is the sum of 'AvgPaidUSD' where 'LOB' equals 'Home' in sheet 'LOB_Summary'?",
+    "answer_resolved": "3762.228529",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'TotalAllowedUSD' column in sheet 'Payer_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "7391532.35",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Payer_Summary",
+    "workbook": "frtr_0009_healthcare-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0009_healthcare-claims.xlsx"
+  },
+  {
+    "question": "What is the average of the 'Subs' column in sheet 'Plan_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "250",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Plan_Summary",
+    "workbook": "frtr_0015_telecom-churn.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0015_telecom-churn.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Flights' where 'Route' equals 'RT-0056' in sheet 'Route_Summary'?",
+    "answer_resolved": "25",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Route_Summary",
+    "workbook": "frtr_0016_airline-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0016_airline-ops.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'Views' column in sheet 'Title_Summary' (first 1000 data rows)?",
+    "answer_resolved": "50",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Title_Summary",
+    "workbook": "frtr_0023_media-streaming.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0023_media-streaming.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Category' column of row 344 in sheet 'Inventory'?",
+    "answer_resolved": "Electronics",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Inventory",
+    "workbook": "frtr_0014_retail-pos.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0014_retail-pos.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'GM %' column in sheet 'Summary' (first 1000 data rows)?",
+    "answer_resolved": "4",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'VarianceUSD' column of row 24 in sheet 'Project_Summary'?",
+    "answer_resolved": "4967205.15",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'PaymentsUSD' column in sheet 'LOB_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "10516561.91",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "question": "What is the sum of 'GiftsUSD' where 'Campaign' equals 'CMP-006' in sheet 'Campaign_Summary'?",
+    "answer_resolved": "18601.13",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Campaign_Summary",
+    "workbook": "frtr_0012_nonprofit-donations.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0012_nonprofit-donations.xlsx"
+  },
+  {
+    "question": "What is the sum of 'GiftsUSD' where 'Campaign' equals 'CMP-020' in sheet 'Campaign_Summary'?",
+    "answer_resolved": "22725.22",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Campaign_Summary",
+    "workbook": "frtr_0012_nonprofit-donations.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0012_nonprofit-donations.xlsx"
+  },
+  {
+    "question": "What is the value in the 'BudgetUSD' column of row 14 in sheet 'Portfolio_Summary'?",
+    "answer_resolved": "1240715395.679998",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Portfolio_Summary",
+    "workbook": "frtr_0030_capex-project-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0030_capex-project-portfolio.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Total Expenses (SUMIFS)' where 'Quarter' equals 'Q2 2024' in sheet 'Summary'?",
+    "answer_resolved": "1105714.174008",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Summary",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the sum of 'AvgYield_t_per_acre' where 'Crop' equals 'Cotton' in sheet 'Crop_Summary'?",
+    "answer_resolved": "3.069375",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'BufferRate' column in sheet 'Title_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "54.287698",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Title_Summary",
+    "workbook": "frtr_0023_media-streaming.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0023_media-streaming.xlsx"
+  },
+  {
+    "workbook": "sb_55468",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/55468/1_55468_input.xlsx",
+    "question": "Given this spreadsheet, How can I modify my existing INDEX/MATCH formula to incorporate four matching criteria (two vertical and two horizontal), as my attempt to adapt it from three criteria (one vertical and two horizontal) is resulting in either #ref or #value errors? My data is arranged in a table with two headings on the X axis and two on the Y axis, and the current formula I'm trying to work with is '=INDEX(C5:Z10,MATCH(AE4,A5:A10,0),MATCH(AD4,B5:B10,0),MATCH(1,INDEX(((AC4=C4:Z4)*(AB4=C3:Z3)),0),0))', which is giving me incorrect results, as shown in the sample data provided.\u00a0 \nMy current formula is:\nINDEX(C$5:Z10,MATCH(1,(AC4=C4:Z4)*(AB4=C3:Z3),0),MATCH(AE4,A5:A10,0),MATCH(AD4,B5:B10,0)) What value should appear at cell AE5?",
+    "answer_resolved": "228",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the sum of 'Sessions' where 'Channel' equals 'Paid Search' in sheet 'Channel_Summary'?",
+    "answer_resolved": "68396",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the sum of 'RevenueUSD' where 'Store' equals 'STORE-015' in sheet 'Store_Summary'?",
+    "answer_resolved": "22558.05",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Store_Summary",
+    "workbook": "frtr_0014_retail-pos.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0014_retail-pos.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'TotalUSD' column in sheet 'Dept_Summary' (first 1000 data rows)?",
+    "answer_resolved": "5",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Dept_Summary",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'TotalShipments' column in sheet 'Summary' (first 1000 data rows)?",
+    "answer_resolved": "96",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_00027_supply-chain-regional.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_00027_supply-chain-regional.xlsx"
+  },
+  {
+    "question": "What is the value in the 'AvgCostUSD' column of row 7 in sheet 'Carrier_Summary'?",
+    "answer_resolved": "1312.845333",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Carrier_Summary",
+    "workbook": "frtr_0022_logistics-routing.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0022_logistics-routing.xlsx"
+  },
+  {
+    "workbook": "sb_15380",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/15380/1_15380_input.xlsx",
+    "question": "Given this spreadsheet, How can I extract a specific part of a text string from cell A3, search for it in a separate range 'codes2', find the corresponding value in another range 'month', and then place that value in cell B3? For example, If any part of A3 contains the value in row \"codes2\", populate the corresponding value in row \"month\", and place that value in cell B3\nA3= \"2014_09_Drop2_Reminder\"\nSearch in \"codes2\" for value (in this case it would be \"09\")\nFind corresponding value in \"month\" (in this case it would be \"SEP\")\nPlace that value (\"SEP\") in cell B3 What value should appear at cell B3?",
+    "answer_resolved": "SEP",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "Which column headers are shared between sheets 'Payroll' and 'Benefits'?",
+    "answer_resolved": "EmployeeID",
+    "question_type": "cross_sheet_schema",
+    "difficulty": "Medium",
+    "sheet": "Payroll+Benefits",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'Total Local (SUMIFS)' column in sheet 'Consolidated'? Consider only the first 1000 data rows.",
+    "answer_resolved": "-81971144.05",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Consolidated",
+    "workbook": "frtr_0003_consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0003_consolidation.xlsx"
+  },
+  {
+    "workbook": "sb_54513",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/54513/1_54513_input.xlsx",
+    "question": "Given this spreadsheet, How can I calculate and display the price of an item after applying a 55% discount to its original price of $34.99 in Excel? I've attached my workbook for reference. What value should appear at cell F8?",
+    "answer_resolved": "15.75",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "How many rows have 'Type' equal to 'Retail' in sheet 'Type_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Type_Summary",
+    "workbook": "frtr_0017_realestate-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0017_realestate-portfolio.xlsx"
+  },
+  {
+    "question": "What are the column headers in sheet 'KPIs'?",
+    "answer_resolved": "SKU, VendorID, VendorName (XLOOKUP), PO Qty (SUMIFS), Movement Net Qty (SUM), Avg Unit Cost (PO), Stockout Risk %",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "question": "What is the sum of 'TotalPaidUSD' where 'LOB' equals 'Commercial' in sheet 'LOB_Summary'?",
+    "answer_resolved": "22643548.78",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'BudgetUSD' column in sheet 'Project_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "12161598.09",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "How many rows have 'Account' equal to '4000-Revenue' in sheet 'Consolidated'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Consolidated",
+    "workbook": "frtr_0003_consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0003_consolidation.xlsx"
+  },
+  {
+    "question": "What is the sum of 'TotalAllowedUSD' where 'Payer' equals 'Medicare' in sheet 'Payer_Summary'?",
+    "answer_resolved": "1873662.17",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Payer_Summary",
+    "workbook": "frtr_0009_healthcare-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0009_healthcare-claims.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'ActiveProjects' column in sheet 'Portfolio_Summary' (first 1000 data rows)?",
+    "answer_resolved": "120",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Portfolio_Summary",
+    "workbook": "frtr_0030_capex-project-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0030_capex-project-portfolio.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'AvgCost' column in sheet 'Summary'? Answer based only on the data shown.",
+    "answer_resolved": "0",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_00027_supply-chain-regional.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_00027_supply-chain-regional.xlsx"
+  },
+  {
+    "workbook": "sb_39190",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/39190/1_39190_input.xlsx",
+    "question": "Given this spreadsheet, How can I delete all the rows in Excel that contain a specific value, such as '108', which is found in column 'A'? I am looking for a solution that doesn't require VBA, or if VBA is the only option, I would appreciate a simple explanation to get started. Alternatively, if there is a way to use Power Query for this task, that would be helpful as well.I want to delete all lines with are find in line double \"F\", if there are any rows that need to be deleted, please fill in \"Delete\" in the C column of the changed rows. What value should appear at cell C2?",
+    "answer_resolved": "Delete",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What are the column headers in sheet 'Dimensions'?",
+    "answer_resolved": "SKU, Category",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "Dimensions",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'Price_USD' column in sheet 'Data_Main' (first 1000 data rows)?",
+    "answer_resolved": "600",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "What is the sum of 'ChurnRate' where 'Plan' equals 'Plus' in sheet 'Plan_Summary'?",
+    "answer_resolved": "0.189003",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Plan_Summary",
+    "workbook": "frtr_0015_telecom-churn.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0015_telecom-churn.xlsx"
+  },
+  {
+    "question": "What is the value in the 'EmployerContribUSD' column of row 138 in sheet 'Benefits'?",
+    "answer_resolved": "351.52",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Benefits",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'GoodQty' column of row 17 in sheet 'WC_Summary'?",
+    "answer_resolved": "7219",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "WC_Summary",
+    "workbook": "frtr_0006_manufacturing-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0006_manufacturing-ops.xlsx"
+  },
+  {
+    "question": "How many rows have 'BusinessUnit' equal to 'Energy' in sheet 'Portfolio_Summary'?",
+    "answer_resolved": "24",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Portfolio_Summary",
+    "workbook": "frtr_0030_capex-project-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0030_capex-project-portfolio.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Movement Net Qty (SUM)' where 'VendorName (XLOOKUP)' equals 'Vendor 062' in sheet 'KPIs'?",
+    "answer_resolved": "-520",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "question": "How many rows have 'BusinessUnit' equal to 'Manufacturing' in sheet 'Portfolio_Summary'?",
+    "answer_resolved": "24",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Portfolio_Summary",
+    "workbook": "frtr_0030_capex-project-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0030_capex-project-portfolio.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'InvoiceUSD' column in sheet 'Category_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "1387579.57",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Category_Summary",
+    "workbook": "frtr_0005_ap-vendor-spend.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0005_ap-vendor-spend.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'USD_Total' column in sheet 'Consolidated_Summary' (first 1000 data rows)?",
+    "answer_resolved": "24",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Consolidated_Summary",
+    "workbook": "frtr_0026_consolidation-multi-subsidiary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0026_consolidation-multi-subsidiary.xlsx"
+  },
+  {
+    "question": "What is the sum of 'GoodQty' where 'Workcenter' equals 'WC-021' in sheet 'WC_Summary'?",
+    "answer_resolved": "9250",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "WC_Summary",
+    "workbook": "frtr_0006_manufacturing-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0006_manufacturing-ops.xlsx"
+  },
+  {
+    "question": "What is the value in the 'EmployeeID' column of row 67 in sheet 'Benefits'?",
+    "answer_resolved": "EMP-0210",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Benefits",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What are the column headers in sheet 'Plan_Summary'?",
+    "answer_resolved": "Plan, Subs, ChurnRate, ARPUUSD",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "Plan_Summary",
+    "workbook": "frtr_0015_telecom-churn.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0015_telecom-churn.xlsx"
+  },
+  {
+    "workbook": "sb_300-35",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/300-35/1_300-35_input.xlsx",
+    "question": "Given this spreadsheet, I have a list that requires macro automation to insert rows. I have been doing it manually, as exemplified by the two rows I inserted in the attached Excel file. However, since the list is lengthy, inserting rows manually is not feasible. The macro should automatically insert a row at each instance where there is a set of anagrams. Could you help me create a macro that can automate this process? What value should appear at cell A1?",
+    "answer_resolved": "BOTANIES",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "How many rows have 'Account' equal to '6100-R&D' in sheet 'Consolidated'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Consolidated",
+    "workbook": "frtr_0003_consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0003_consolidation.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'Cost_USD' column in sheet 'Data_Main'? Consider only the first 1000 data rows.",
+    "answer_resolved": "26936086.10349",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "How many rows have 'SchoolID' equal to 'SCH-017' in sheet 'School_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "School_Summary",
+    "workbook": "frtr_0013_education-outcomes.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0013_education-outcomes.xlsx"
+  },
+  {
+    "question": "How many rows have 'Type' equal to 'Industrial' in sheet 'Type_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Type_Summary",
+    "workbook": "frtr_0017_realestate-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0017_realestate-portfolio.xlsx"
+  },
+  {
+    "question": "What are the names of the data sheets in this workbook (excluding Questions and Readme)?",
+    "answer_resolved": "Sessions, Title_Summary",
+    "question_type": "schema_names",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0023_media-streaming.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0023_media-streaming.xlsx"
+  },
+  {
+    "question": "What are the column headers in sheet 'Team_Summary'?",
+    "answer_resolved": "Team, Incidents, AvgMTTR_hours",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "Team_Summary",
+    "workbook": "frtr_0024_cybersecurity-incidents.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0024_cybersecurity-incidents.xlsx"
+  },
+  {
+    "workbook": "sb_32612",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/32612/1_32612_input.xlsx",
+    "question": "Given this spreadsheet, How can I create a workday column in an Excel file that identifies each date as the day of the week (e.g., Mon, Tue, Wed, etc.)? Additionally, when the date is a holiday, you do not need to fill in the day of the week, instead you need to marks the date as a public holiday, specifying if it's a working public holiday (PH(working)) or a non-working public holiday (PH(non-working)), using a provided list of public holidays. What value should appear at cell E2?",
+    "answer_resolved": "Mon",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the minimum value in the 'FinUSD' column in sheet 'CF_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "-190727.08",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "CF_Summary",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "How many rows have 'Agency' equal to 'DOD' in sheet 'Agency_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Agency_Summary",
+    "workbook": "frtr_0011_gov-grants-tracking.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0011_gov-grants-tracking.xlsx"
+  },
+  {
+    "question": "What are the names of the data sheets in this workbook (excluding Questions and Readme)?",
+    "answer_resolved": "Payroll, Benefits, Dept_Summary",
+    "question_type": "schema_names",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the average of the 'TaxUSD' column in sheet 'Payroll'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1650.134235",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Payroll",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the sum of 'BonusUSD' where 'EmployeeID' equals 'EMP-0150' in sheet 'Payroll'?",
+    "answer_resolved": "1341.13",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Payroll",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'SpendUSD' column in sheet 'Portfolio_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "11860981.98",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Portfolio_Summary",
+    "workbook": "frtr_0030_capex-project-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0030_capex-project-portfolio.xlsx"
+  },
+  {
+    "question": "What is the average of the 'RevenueUSD' column in sheet 'Channel_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "19121.535",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "How many rows have 'LOB' equal to 'Home' in sheet 'LOB_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "question": "What is the average of the 'OnTimeRate' column in sheet 'Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "0",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Summary",
+    "workbook": "frtr_00027_supply-chain-regional.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_00027_supply-chain-regional.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'InvoiceUSD' column in sheet 'Category_Summary' (first 1000 data rows)?",
+    "answer_resolved": "7",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Category_Summary",
+    "workbook": "frtr_0005_ap-vendor-spend.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0005_ap-vendor-spend.xlsx"
+  },
+  {
+    "question": "How many rows have 'HotelID' equal to 'HTL-024' in sheet 'Hotel_Inventory'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Hotel_Inventory",
+    "workbook": "frtr_0018_hospitality-bookings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0018_hospitality-bookings.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Category' column of row 21 in sheet 'Consolidated_Summary'?",
+    "answer_resolved": "Revenue",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Consolidated_Summary",
+    "workbook": "frtr_0026_consolidation-multi-subsidiary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0026_consolidation-multi-subsidiary.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'Total Expenses (SUMIFS)' column in sheet 'Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "3937857.394007",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Summary",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the average of the 'PaymentsUSD' column in sheet 'LOB_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "10516561.91",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "LOB_Summary",
+    "workbook": "frtr_0021_insurance-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0021_insurance-claims.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Revenue' where 'Cohort' equals '2022-01-01' in sheet 'Cohort_Summary'?",
+    "answer_resolved": "0",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'Passengers' column in sheet 'Route_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "4988",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Route_Summary",
+    "workbook": "frtr_0016_airline-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0016_airline-ops.xlsx"
+  },
+  {
+    "question": "How many rows have 'Store' equal to 'STORE-013' in sheet 'Store_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Store_Summary",
+    "workbook": "frtr_0014_retail-pos.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0014_retail-pos.xlsx"
+  },
+  {
+    "question": "What is the value in the 'StdCostUSD' column of row 55 in sheet 'Inventory'?",
+    "answer_resolved": "13.21",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Inventory",
+    "workbook": "frtr_0014_retail-pos.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0014_retail-pos.xlsx"
+  },
+  {
+    "question": "How many rows have 'ProjectID' equal to 'PRJ-00032' in sheet 'Project_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "How many rows have 'Currency' equal to 'BRL' in sheet 'FX_Rates'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "FX_Rates",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "workbook": "sb_504-10",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/504-10/1_504-10_input.xlsx",
+    "question": "Given this spreadsheet, As someone new to Regular Expressions, I need help creating a macro that uses RegExp to extract data from a sheet where column A contains raw string data. The goal is to capture the relevant data into columns B, C, D, and E. Please provide a code using RegExp that fulfills this requirement. I have provided several examples, please help me complete the remaining data in the following corresponding positions, pay attention to the position correspondence. What value should appear at cell B2?",
+    "answer_resolved": "2020-12-21",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What is the maximum value in the 'ActiveCustomers' column in sheet 'Cohort_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "4",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'Revenue' column in sheet 'Cohort_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "0",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Orders' where 'Channel' equals 'Affiliates' in sheet 'Channel_Summary'?",
+    "answer_resolved": "208",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the sum of 'EmployerContribUSD' where 'Plan' equals 'Dental' in sheet 'Benefits'?",
+    "answer_resolved": "10285.62",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Benefits",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'BenefitsUSD' column in sheet 'Dept_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "56747.81",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Dept_Summary",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What are the column headers in sheet 'Subsidiaries'?",
+    "answer_resolved": "Subsidiary, Currency",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "Subsidiaries",
+    "workbook": "frtr_0003_consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0003_consolidation.xlsx"
+  },
+  {
+    "workbook": "sb_57354",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/57354/1_57354_input.xlsx",
+    "question": "Given this spreadsheet, I am seeking a formula for cell B25 in my Excel sheet that would identify all columns in row 24 containing the word 'sales', retrieve the corresponding values from row 25, and calculate their sum. My current manual method of summing individual cells like G25 and K25 is inefficient as the number of columns grows, so I need an automated solution that sums these values without manual adjustment as I add more columns. What value should appear at cell B3?",
+    "answer_resolved": "90816.43",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "How many rows have 'Plant' equal to 'PLANT-004' in sheet 'Plant_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Plant_Summary",
+    "workbook": "frtr_0010_energy-production.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0010_energy-production.xlsx"
+  },
+  {
+    "question": "What is the value in the 'AmountUSD' column of row 9 in sheet 'Expenses'?",
+    "answer_resolved": "18872.392973",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Expenses",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Currency' column of row 9 in sheet 'FX_Rates'?",
+    "answer_resolved": "INR",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "FX_Rates",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "How many sheets does this workbook contain (excluding any Questions or Readme sheets)?",
+    "answer_resolved": "4",
+    "question_type": "schema_count",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0003_consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0003_consolidation.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'Revenue_USD' column in sheet 'Data_Main'? Answer based only on the data shown.",
+    "answer_resolved": "19191160.78",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "How many rows have 'Crop' equal to 'Corn' in sheet 'Crop_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'RevenueUSD' column in sheet 'Channel_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "1770336",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0018_hospitality-bookings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0018_hospitality-bookings.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Units' where 'Region' equals 'SE' in sheet 'Data_Main'?",
+    "answer_resolved": "30222",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Total Local (SUMIFS)' where 'Account' equals '4000-Revenue' in sheet 'Consolidated'?",
+    "answer_resolved": "20065286.65",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Consolidated",
+    "workbook": "frtr_0003_consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0003_consolidation.xlsx"
+  },
+  {
+    "question": "What are the names of the data sheets in this workbook (excluding Questions and Readme)?",
+    "answer_resolved": "Traffic, Orders, Email_Campaigns, Channel_Summary",
+    "question_type": "schema_names",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'StdCost_EstUSD' column in sheet 'WC_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "214969.712706",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "WC_Summary",
+    "workbook": "frtr_0006_manufacturing-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0006_manufacturing-ops.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Avg Unit Cost (PO)' column of row 47 in sheet 'KPIs'?",
+    "answer_resolved": "19.255385",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "KPIs",
+    "workbook": "frtr_0002_ops-inventory.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0002_ops-inventory.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'RevPAR' column in sheet 'Channel_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "309.824291",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0018_hospitality-bookings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0018_hospitality-bookings.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'BaseUSD' column in sheet 'Dept_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "1711021.16",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Dept_Summary",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Revenue' column of row 28 in sheet 'Revenue'?",
+    "answer_resolved": "5248.466526",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Revenue",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'AvgCapacityMW' column in sheet 'Plant_Summary' (first 1000 data rows)?",
+    "answer_resolved": "12",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Plant_Summary",
+    "workbook": "frtr_0010_energy-production.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0010_energy-production.xlsx"
+  },
+  {
+    "question": "What is the sum of 'BonusUSD' where 'EmployeeID' equals 'EMP-0114' in sheet 'Payroll'?",
+    "answer_resolved": "1383.92",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Payroll",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'Total Revenue (SUMIFS)' column in sheet 'Summary' (first 1000 data rows)?",
+    "answer_resolved": "4",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the average of the 'BufferRate' column in sheet 'Title_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1.085754",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Title_Summary",
+    "workbook": "frtr_0023_media-streaming.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0023_media-streaming.xlsx"
+  },
+  {
+    "question": "How many rows have 'Region' equal to 'Central' in sheet 'Revenue'?",
+    "answer_resolved": "192",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Revenue",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the average of the 'Flights' column in sheet 'Route_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "25.116667",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Route_Summary",
+    "workbook": "frtr_0016_airline-ops.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0016_airline-ops.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'Revenue_USD' column in sheet 'Data_Main'? Answer based only on the data shown.",
+    "answer_resolved": "106.8",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Data_Main",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'Subs' column in sheet 'Plan_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "1000",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Plan_Summary",
+    "workbook": "frtr_0015_telecom-churn.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0015_telecom-churn.xlsx"
+  },
+  {
+    "question": "What is the sum of 'BudgetUSD' where 'ProjectID' equals 'PRJ-00047' in sheet 'Project_Summary'?",
+    "answer_resolved": "9584244.19",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'ARPUUSD' column in sheet 'Plan_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "242.404358",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "Plan_Summary",
+    "workbook": "frtr_0015_telecom-churn.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0015_telecom-churn.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'VarianceUSD' column in sheet 'Project_Summary' (first 1000 data rows)?",
+    "answer_resolved": "60",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Project_Summary",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "How many rows have 'TitleID' equal to 'TIT-00042' in sheet 'Title_Summary'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Title_Summary",
+    "workbook": "frtr_0023_media-streaming.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0023_media-streaming.xlsx"
+  },
+  {
+    "question": "What is the sum of 'RoomsSold' where 'Channel' equals 'Direct' in sheet 'Channel_Summary'?",
+    "answer_resolved": "12243",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Channel_Summary",
+    "workbook": "frtr_0018_hospitality-bookings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0018_hospitality-bookings.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'AvgALT' column in sheet 'Site_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "127.2",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "Site_Summary",
+    "workbook": "frtr_0020_pharma-trials.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0020_pharma-trials.xlsx"
+  },
+  {
+    "question": "What is the sum of all values in the 'FinUSD' column in sheet 'CF_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "-232275.15",
+    "question_type": "aggregation_sum",
+    "difficulty": "Medium",
+    "sheet": "CF_Summary",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "What is the sum of 'AvgScore' where 'SchoolID' equals 'SCH-005' in sheet 'School_Summary'?",
+    "answer_resolved": "75.4156",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "School_Summary",
+    "workbook": "frtr_0013_education-outcomes.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0013_education-outcomes.xlsx"
+  },
+  {
+    "question": "How many numeric values are in the 'RetentionRate' column in sheet 'Cohort_Summary' (first 1000 data rows)?",
+    "answer_resolved": "288",
+    "question_type": "count",
+    "difficulty": "Easy",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "How many rows have 'ProjectID' equal to 'PRJ-00004' in sheet 'Budgets'?",
+    "answer_resolved": "1",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Budgets",
+    "workbook": "frtr_0025_construction-controls.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0025_construction-controls.xlsx"
+  },
+  {
+    "question": "Which column headers are shared between sheets 'FX_Rates' and 'Consolidated_Summary'?",
+    "answer_resolved": "Month",
+    "question_type": "cross_sheet_schema",
+    "difficulty": "Medium",
+    "sheet": "FX_Rates+Consolidated_Summary",
+    "workbook": "frtr_0026_consolidation-multi-subsidiary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0026_consolidation-multi-subsidiary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Crop' column of row 7 in sheet 'Crop_Summary'?",
+    "answer_resolved": "Barley",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "What is the sum of 'TotalAcqUSD' where 'Type' equals 'Industrial' in sheet 'Type_Summary'?",
+    "answer_resolved": "4781772817.449998",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Type_Summary",
+    "workbook": "frtr_0017_realestate-portfolio.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0017_realestate-portfolio.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Sent' column of row 251 in sheet 'Email_Campaigns'?",
+    "answer_resolved": "5910",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Email_Campaigns",
+    "workbook": "frtr_0007_ecommerce-metrics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0007_ecommerce-metrics.xlsx"
+  },
+  {
+    "question": "What is the sum of 'PaidUSD' where 'Category' equals 'Professional Services' in sheet 'Category_Summary'?",
+    "answer_resolved": "4130.06",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Category_Summary",
+    "workbook": "frtr_0005_ap-vendor-spend.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0005_ap-vendor-spend.xlsx"
+  },
+  {
+    "question": "What is the value in the 'AmountUSD' column of row 157 in sheet 'Expenses'?",
+    "answer_resolved": "23415.787184",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Expenses",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the value in the 'Cohort' column of row 224 in sheet 'Cohort_Summary'?",
+    "answer_resolved": "2022-01-06",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "question": "What is the sum of 'ActiveCustomers' where 'Cohort' equals '2022-01-12' in sheet 'Cohort_Summary'?",
+    "answer_resolved": "2",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Cohort_Summary",
+    "workbook": "frtr_0029_customer-analytics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0029_customer-analytics.xlsx"
+  },
+  {
+    "workbook": "sb_493-18",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/spreadsheetbench/data/sample_data_200/spreadsheet/493-18/1_493-18_input.xlsx",
+    "question": "Given this spreadsheet, How do I match the corresponding data in columns A and F, and then delete the data that does not appear in column F in the range of columns A, B, and C? What value should appear at cell A1?",
+    "answer_resolved": "Car",
+    "question_type": "spreadsheetbench_task",
+    "difficulty": "Hard",
+    "sheet": "Sheet1"
+  },
+  {
+    "question": "What are the column headers in sheet 'Summary'?",
+    "answer_resolved": "Quarter, Total Revenue (SUMIFS), Total Expenses (SUMIFS), Gross Margin, GM %",
+    "question_type": "schema_headers",
+    "difficulty": "Easy",
+    "sheet": "Summary",
+    "workbook": "frtr_0001_quarterly-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0001_quarterly-summary.xlsx"
+  },
+  {
+    "question": "What is the maximum value in the 'NetUSD' column in sheet 'CF_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "173130.92",
+    "question_type": "aggregation_max",
+    "difficulty": "Easy",
+    "sheet": "CF_Summary",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'AvgYield_t_per_acre' column in sheet 'Crop_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "3.069375",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "What is the average of the 'AvgYield_t_per_acre' column in sheet 'Crop_Summary'? Consider only the first 1000 data rows.",
+    "answer_resolved": "3.091876",
+    "question_type": "aggregation_avg",
+    "difficulty": "Medium",
+    "sheet": "Crop_Summary",
+    "workbook": "frtr_0019_agriculture-yield.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0019_agriculture-yield.xlsx"
+  },
+  {
+    "question": "What is the value in the 'SKU' column of row 86 in sheet 'Dimensions'?",
+    "answer_resolved": "PAY-00085",
+    "question_type": "cell_lookup",
+    "difficulty": "Easy",
+    "sheet": "Dimensions",
+    "workbook": "frtr_0028_payroll-analysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0028_payroll-analysis.xlsx"
+  },
+  {
+    "question": "What are the names of the data sheets in this workbook (excluding Questions and Readme)?",
+    "answer_resolved": "CF_Ledger, FX_Rates, CF_Summary",
+    "question_type": "schema_names",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "workbook": "frtr_0008_cashflow-consolidation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0008_cashflow-consolidation.xlsx"
+  },
+  {
+    "question": "What is the sum of 'Shipments' where 'CarrierID' equals 'CAR-015' in sheet 'Carrier_Summary'?",
+    "answer_resolved": "168",
+    "question_type": "filter_sum",
+    "difficulty": "Medium",
+    "sheet": "Carrier_Summary",
+    "workbook": "frtr_0022_logistics-routing.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0022_logistics-routing.xlsx"
+  },
+  {
+    "question": "What is the minimum value in the 'TotalChargesUSD' column in sheet 'Payer_Summary'? Answer based only on the data shown.",
+    "answer_resolved": "452540.07",
+    "question_type": "aggregation_min",
+    "difficulty": "Easy",
+    "sheet": "Payer_Summary",
+    "workbook": "frtr_0009_healthcare-claims.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0009_healthcare-claims.xlsx"
+  },
+  {
+    "question": "How many rows have 'Plan' equal to 'Health HMO' in sheet 'Benefits'?",
+    "answer_resolved": "53",
+    "question_type": "filter_count",
+    "difficulty": "Medium",
+    "sheet": "Benefits",
+    "workbook": "frtr_0004_payroll-summary.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/frtr/frtr_0004_payroll-summary.xlsx"
+  }
+]

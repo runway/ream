@@ -1,0 +1,12 @@
+.env
+*.env
+.venv/
+__pycache__/
+*.pyc
+data/cache/
+data/response_cache/
+corpus/
+*.aux
+*.log
+*.out
+*.synctex.gz

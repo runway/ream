@@ -1,0 +1,2679 @@
+[
+  {
+    "workbook": "MaterialsApplicationRegistrationForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialsApplicationRegistrationForm1.xlsx",
+    "question": "Which type of paper has the largest specification among the application materials?",
+    "answer_resolved": "A4 Paper",
+    "answer_verbose": "Based on the provided data and our analysis, the paper with the largest specification is \"A4 Paper,\" which has a specification number of 4. In the A series of paper sizes, the smaller the number, the larger the size, so \"A4\" represents the largest paper size in this dataset.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "MaterialsApplicationRegistrationForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialsApplicationRegistrationForm1.xlsx",
+    "question": "Who is the applicant for the application material named \"Material Name 1\"?",
+    "answer_resolved": "Xia Zhu",
+    "answer_verbose": "Upon review, we can see that \"Material Name 1\" is actually one of the column labels, and its applicant is marked as Xia Zhu. Therefore, the applicant for \"Material Name 1\" is \"Xia Zhu.\" The previous issue was due to a misunderstanding of the column labels, but we have now identified the correct information.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "MaterialsApplicationRegistrationForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialsApplicationRegistrationForm1.xlsx",
+    "question": "Who is the applicant for the application material named \"Material Name 3\"?",
+    "answer_resolved": "Chun Hua",
+    "answer_verbose": "For the uploaded Excel file, the applicant for the application material named \"Material Name 3\" is \"Chun Hua.\"",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "11UndergroundEngineeringMachinery.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/11UndergroundEngineeringMachinery.xlsx",
+    "question": "What is the machinery name for number 11-1? ",
+    "answer_resolved": "Dry Excavation Shield Tunneling Machine",
+    "answer_verbose": "Based on the data, the machinery name for number \"11-1\" is \"Dry Excavation Shield Tunneling Machine\".\n\nIf you have any other questions or need further assistance, please let me know!",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "StoreSalesDataStatisticsAnalysisTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/StoreSalesDataStatisticsAnalysisTable1.xlsx",
+    "question": "Did Shop A's actual sales on April 6 exceed the sales target?",
+    "answer_resolved": "Shop A's actual sales on April 6 exceeded the sales target",
+    "answer_verbose": "For the data in the uploaded Excel file, Shop A's actual sales on April 6 were 5035.3, while the sales target was 4000. Therefore, **Shop A's actual sales on April 6 exceeded the sales target.**",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "LoanDetailsRegistrationForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/LoanDetailsRegistrationForm1.xlsx",
+    "question": "What is the name of the contact person for Bell Original Ecology?",
+    "answer_resolved": "Contact Person 1",
+    "answer_verbose": "The contact persons for \"Bell Original Ecology\" are \"Contact Person 1\" and \"Contact Person 5\". If you have any other questions or need further information, please let me know. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(531).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(531).xlsx",
+    "question": "What is the product name for order number 1237?",
+    "answer_resolved": "Battery",
+    "answer_verbose": "The product name for order number 1237 is \"Battery\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(531).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(531).xlsx",
+    "question": "What is the order quantity for order number 1235?",
+    "answer_resolved": "1000",
+    "answer_verbose": "According to the uploaded file content, the order quantity for order number 1235 is 1000 pcs.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Teacher'sClassReschedulingRecordForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Teacher'sClassReschedulingRecordForm1.xlsx",
+    "question": "In this Teacher Rescheduling Record, what is the date of the first rescheduling?",
+    "answer_resolved": "2022.",
+    "answer_verbose": "The date of the first rescheduling is March 18, 2022. If you have any other questions or need more information, please let me know.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Teacher'sClassReschedulingRecordForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Teacher'sClassReschedulingRecordForm1.xlsx",
+    "question": "In the rescheduling that occurred on 2022-03-24, what is the name of the substitute teacher?",
+    "answer_resolved": "Li Si5",
+    "answer_verbose": "In the rescheduling that occurred on March 24, 2022, the name of the substitute teacher is \"Li Si5\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "PileSingleCalculation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/PileSingleCalculation.xlsx",
+    "question": "What is the building area of the 8th project? ",
+    "answer_resolved": "43997",
+    "answer_verbose": "The building area of the 8th project is 43,997 square meters.\n",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(648).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(648).xlsx",
+    "question": "What is the source of risk and opportunity for serial number 1? ",
+    "answer_resolved": "3.",
+    "answer_verbose": "According to the uploaded Excel file, the source of risk and opportunity for serial number 1 is COP01, with the specific content being \"Customer Development, Contract Review Process.\" The corresponding risk and opportunity source content includes:\n1. Misjudgment of the development trend of products needed by the market.\n2. Incomplete identification of customer requirements.\n3. Signing the contract without ensuring the ability to meet customer requirements.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(648).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(648).xlsx",
+    "question": "Which risk has a higher RPN value, the risk for serial number 1 or the risk for serial number 2? ",
+    "answer_resolved": "2",
+    "answer_verbose": "The RPN value for the risk of serial number 1 is 12, while the RPN value for the risk of serial number 2 is 24. Therefore, the risk for serial number 2 has a higher RPN value.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(9).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(9).xlsx",
+    "question": "Which product numbers have an inventory status of \"Replenish in time\" today?",
+    "answer_resolved": "23.",
+    "answer_verbose": "The product numbers with an inventory status of \"Replenish in time\" today are: 1, 6, 13, 14, 16, 23.\n\nIf you have any other questions or need more information, please feel free to let me know!",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1216(3).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1216(3).xlsx",
+    "question": "Did the expenditure on January 8, 2020, exceed the expenditure on January 4, 2020? ",
+    "answer_resolved": "558",
+    "answer_verbose": "The expenditure on January 8, 2020 (6128 yuan) did indeed exceed the expenditure on January 4, 2020 (558 yuan). Therefore, the answer is yes. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "MaterialProcurement(44).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialProcurement(44).xlsx",
+    "question": "What is the item name in the 3rd row? ",
+    "answer_resolved": "Data Cable",
+    "answer_verbose": "The item name in the 3rd row is \"Data Cable\". ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "MaterialProcurement(44).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialProcurement(44).xlsx",
+    "question": "What is the specification model of the Mouse? ",
+    "answer_resolved": "1051.",
+    "answer_verbose": "According to the uploaded Excel file, the specification model of the Mouse is 1051. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "MaterialProcurement(44).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialProcurement(44).xlsx",
+    "question": "Which item has the highest in-stock unit price? ",
+    "answer_resolved": "50.",
+    "answer_verbose": "According to the analysis results, the item with the highest in-stock unit price is the \"Keyboard\", with an in-stock unit price of 50. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "MaterialProcurement(44).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/MaterialProcurement(44).xlsx",
+    "question": "What is the in-stock unit price of the Mouse? ",
+    "answer_resolved": "20",
+    "answer_verbose": "The in-stock unit price of the Mouse is 20 yuan. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "8PumpMachinery.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/8PumpMachinery.xlsx",
+    "question": "Which has a higher shift basis price, the Electric Single-stage Centrifugal Clean Water Pump or the Internal Combustion Single-stage Centrifugal Clean Water Pump with an outlet diameter of \u03c6150mm?",
+    "answer_resolved": "152.124",
+    "answer_verbose": "The shift basis price for the Electric Single-stage Centrifugal Clean Water Pump with an outlet diameter of \u03c6150mm is 174.17 yuan, while the shift basis price for the Internal Combustion Single-stage Centrifugal Clean Water Pump with an outlet diameter of \u03c6150mm is 152.124 yuan. The Electric Single-stage Centrifugal Clean Water Pump has a higher shift basis price.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "8PumpMachinery.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/8PumpMachinery.xlsx",
+    "question": "What is the machinery name for the serial number 8-1?",
+    "answer_resolved": "Electric Single-stage Centrifugal Clean Water Pump",
+    "answer_verbose": "The machinery name for the serial number 8-1 is \"Electric Single-stage Centrifugal Clean Water Pump\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "8PumpMachinery.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/8PumpMachinery.xlsx",
+    "question": "What is the shift basis price for the Electric Single-stage Centrifugal Clean Water Pump with serial number 8-1?",
+    "answer_resolved": "95.05",
+    "answer_verbose": "The shift basis price for the Electric Single-stage Centrifugal Clean Water Pump with serial number 8-1 is 95.05 yuan. If you have any other questions or need more information, please let me know!",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProcurementFundsMonthlyBudgetTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProcurementFundsMonthlyBudgetTable1.xlsx",
+    "question": "What is the company name?",
+    "answer_resolved": "XX Limited Liability Company",
+    "answer_verbose": "The company name in the uploaded Excel file is \"XX Limited Liability Company\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProcurementFundsMonthlyBudgetTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProcurementFundsMonthlyBudgetTable1.xlsx",
+    "question": "What is the monthly planned funds for Name2?",
+    "answer_resolved": "106225.",
+    "answer_verbose": "From the \"Procurement Funds Monthly Budget Table\" worksheet, the monthly planned funds for the item named \"Name2\" is 106,225.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1241(3).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1241(3).xlsx",
+    "question": "What is the operating income on November 1, 2019? ",
+    "answer_resolved": "5300.",
+    "answer_verbose": "According to the financial statements - income and expenditure ledger in the Excel file, the operating income on November 1, 2019, is as follows:\n- Cash income: 300\n- WeChat income: 5000\n\nIn total, the operating income on November 1, 2019, is 5300. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "E-commerceMarketingData(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/E-commerceMarketingData(1).xlsx",
+    "question": "On which day did the actual completion performance exceed the performance target during this period? ",
+    "answer_resolved": "2020",
+    "answer_verbose": "During this period, October 6, 2020, is the only day when the actual completion performance exceeded the performance target. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "E-commerceMarketingData(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/E-commerceMarketingData(1).xlsx",
+    "question": "What was the actual completion performance on October 6, 2020? ",
+    "answer_resolved": "2301.",
+    "answer_verbose": "The actual completion performance on October 6, 2020, was 2301. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "E-commerceMarketingData(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/E-commerceMarketingData(1).xlsx",
+    "question": "What was the actual completion performance on 2020-10-06? ",
+    "answer_resolved": "2301.",
+    "answer_verbose": "On 2020-10-06, the actual completion performance was 2301. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "SalespersonMonthlySalesRevenueSummaryAnalysisTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/SalespersonMonthlySalesRevenueSummaryAnalysisTable1.xlsx",
+    "question": "What is Zhang Xiaoxiao 18's monthly income? ",
+    "answer_resolved": "4156.55",
+    "answer_verbose": "Zhang Xiaoxiao 18's monthly income is 4156.55 yuan. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "CashJournal-IncomeandExpenditureTable3.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/CashJournal-IncomeandExpenditureTable3.xlsx",
+    "question": "What is the name of the expenditure project in row 8? ",
+    "answer_resolved": "8.",
+    "answer_verbose": "The name of the expenditure project in row 8 is Expenditure Project 8.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1216(2).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1216(2).xlsx",
+    "question": "What is the main material cost for the \"TV Background\" on the second floor?",
+    "answer_resolved": "13800",
+    "answer_verbose": "The main material cost for the \"TV Background\" on the second floor is 13,800 CNY.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "PanzhihuaMaintenanceWorkArea.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/PanzhihuaMaintenanceWorkArea.xlsx",
+    "question": "In Building Decoration and Finishing, which sub-item engineering has more inspection batches, Plastering or Doors and Windows? ",
+    "answer_resolved": "4",
+    "answer_verbose": "In Building Decoration and Finishing, the \"Plastering\" sub-item engineering has 1 inspection batch, while the \"Doors and Windows\" sub-item engineering has 4 inspection batches. Therefore, the \"Doors and Windows\" sub-item engineering has more inspection batches. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "PanzhihuaMaintenanceWorkArea.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/PanzhihuaMaintenanceWorkArea.xlsx",
+    "question": "What is the name of the contractor? ",
+    "answer_resolved": "Panzhihua Highway Construction Co., Ltd",
+    "answer_verbose": "The name of the contractor in the uploaded Excel file is \"Panzhihua Highway Construction Co., Ltd.\" ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "GoodsLogisticsManagement(30).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/GoodsLogisticsManagement(30).xlsx",
+    "question": "On April 15, 2020, what is the product name stored in Warehouse A? ",
+    "answer_resolved": "Fax Machine",
+    "answer_verbose": "On April 15, 2020, the product name stored in Warehouse A is \"Fax Machine.\"",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet14.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet14.xlsx",
+    "question": "What is the birth date of Liang Xueying? ",
+    "answer_resolved": "1982.",
+    "answer_verbose": "Liang Xueying's birth date is January 1982. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet35.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet35.xlsx",
+    "question": "What is the first period on Monday for Grade 3 Class 1?",
+    "answer_resolved": "Chinese",
+    "answer_verbose": "According to the uploaded Excel file, the first period on Monday for Grade 3 Class 1 is Chinese.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1706967909341.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706967909341.xlsx",
+    "question": "What is the \"Direct Cost (Yuan)\" for the \"Excavation\" project in the table?",
+    "answer_resolved": "46705",
+    "answer_verbose": "The \"Direct Cost (Yuan)\" for the \"Excavation\" project is 46,705 Yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1706967909341.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706967909341.xlsx",
+    "question": "What is the name of the construction project?",
+    "answer_resolved": "Yongchuan District Chashan Zhuhai Sub-district Office Yongdiao Highway Reconstruction Project",
+    "answer_verbose": "In the uploaded Excel file, the name of the construction project is \"Yongchuan District Chashan Zhuhai Sub-district Office Yongdiao Highway Reconstruction Project\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ImagetoText-20240205221356_73.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ImagetoText-20240205221356_73.xlsx",
+    "question": "On which e-commerce platform were the jeans purchased in the Double Eleven purchase and return statistics table?",
+    "answer_resolved": "The jeans were purchased on the Suning e-commerce platform",
+    "answer_verbose": "The jeans were purchased on the Suning e-commerce platform.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ImagetoText-20240205221356_73.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ImagetoText-20240205221356_73.xlsx",
+    "question": "What is the unit price of Xiaomi brand headphones?",
+    "answer_resolved": "150",
+    "answer_verbose": "According to the content of the Excel file, the unit price of \"Xiaomi\" brand headphones is 150 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(3).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(3).xlsx",
+    "question": "What is the unit cost of Material 7 on July 1, 2022? ",
+    "answer_resolved": "2.95",
+    "answer_verbose": "The unit cost of Material 7 on July 1, 2022, is 2.95.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet12(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet12(1).xlsx",
+    "question": "What is the name of the employee with Employee ID 1010103?",
+    "answer_resolved": "Zhang Min",
+    "answer_verbose": "The name of the employee with Employee ID 1010103 is Zhang Min.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(39).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(39).xlsx",
+    "question": "What is the reimbursement amount for the reimbursement date 2020/1/3?",
+    "answer_resolved": "4500.00",
+    "answer_verbose": "The reimbursement amount for January 3, 2020, is 4,500.00 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(97).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(97).xlsx",
+    "question": "Which products have the payment method as online payment and the shipping status as signed?",
+    "answer_resolved": "Product Name 1",
+    "answer_verbose": "The product with the payment method as online and the shipping status as signed is \"Product Name 1\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(97).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(97).xlsx",
+    "question": "What is the color of the product with the product number 201603002?",
+    "answer_resolved": "Black",
+    "answer_verbose": "According to the uploaded Excel file, the color of the product with the product number 201603002 is \"Black\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(97).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(97).xlsx",
+    "question": "Which product has a specification model greater than 'L'?",
+    "answer_resolved": "5",
+    "answer_verbose": "Based on the revised filtering logic, the products with a specification model greater than \"L\" are as follows:\n\n- Product Number: 201603004, Product Name: Product Name 4, Specification Model: LL\n- Product Number: 201603005, Product Name: Product Name 5, Specification Model: LLL\n\nThese products have specification models greater than \"L\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(97).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(97).xlsx",
+    "question": "Which product number has been signed for?",
+    "answer_resolved": "201603001",
+    "answer_verbose": "The product with the number 201603001 has been signed for.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionandManufacturingForm(97).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionandManufacturingForm(97).xlsx",
+    "question": "What is the product name of the product with the product number 201603003?",
+    "answer_resolved": "3",
+    "answer_verbose": "The first few lines of the Excel file show that the product number `201603003` corresponds to the product name `Product Name 3`.\n\nTherefore, the product name of the product with the product number `201603003` is `Product Name 3`.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1706798903536.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706798903536.xlsx",
+    "question": "What are the names of the land parcels transacted on October 28, 2015? ",
+    "answer_resolved": "03",
+    "answer_verbose": "According to the uploaded Excel file content, the names of the land parcels transacted on October 28, 2015, are:\n- Baoshan District Gucun Large Residential Community BSP0-0104 Unit 0403-03 Land Parcel\n- Baoshan District Gucun Large Residential Community BSP0-0104 Unit 0402-03 Land Parcel",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1706798903536.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706798903536.xlsx",
+    "question": "On October 14, 2015, which land parcels had a transaction floor price exceeding 8,000 yuan? ",
+    "answer_resolved": "01",
+    "answer_verbose": "On October 14, 2015, the following land parcels had a transaction floor price exceeding 8,000 yuan:\n\n- Songjiang District Chedun Town SJC10022 Unit 17-02/17-03 Land Parcel\n- Fengxian District Nanqiao New City 12 Unit 10A-01A Area Land Parcel\n\nIf you need more detailed information, please let me know.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "1706798903536.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706798903536.xlsx",
+    "question": "Which land parcel has a higher starting price than the transaction price? ",
+    "answer_resolved": "According to the data in the uploaded Excel file, no land parcel has a higher starting price than th",
+    "answer_verbose": "According to the data in the uploaded Excel file, no land parcel has a higher starting price than the transaction price. All land parcels have a starting price that is lower than or equal to their transaction price.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ComputerizedAccountingMeeting.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ComputerizedAccountingMeeting.xlsx",
+    "question": "What is the subject name for the subject code 1601.0?",
+    "answer_resolved": "Fixed Assets",
+    "answer_verbose": "The subject name for the subject code 1601.0 is \"Fixed Assets\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "StockSituation4.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/StockSituation4.xlsx",
+    "question": "What was the purchase price of Stock D in the first transaction? ",
+    "answer_resolved": "20",
+    "answer_verbose": "The uploaded Excel file shows that the purchase price of Stock D in the first transaction (buy) was 20 (unit not specified, but usually a currency unit).",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "StockSituation4.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/StockSituation4.xlsx",
+    "question": "How many shares were sold in the third transaction? ",
+    "answer_resolved": "1000",
+    "answer_verbose": "According to the Excel file content shown above, the number of shares sold in the third transaction (Serial Number 03) is 1000 shares.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(45).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(45).xlsx",
+    "question": "What is the revenue amount of A_003 Project?",
+    "answer_resolved": "Excel file seems",
+    "answer_verbose": "The content of this Excel file seems to contain more than one sheet. Regarding your inquiry about A_003 Project, its revenue amount is clearly listed in the table. The revenue amount of A_003 Project is 20,288.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Workbook1(4).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook1(4).xlsx",
+    "question": "Which student is the oldest?",
+    "answer_resolved": "Jiang Bo",
+    "answer_verbose": "The oldest students are Jiang Bo and Jiang Tao, both aged 11.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Workbook1(4).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook1(4).xlsx",
+    "question": "What grade is the student with the student ID KJ25XXX5 in?",
+    "answer_resolved": "5",
+    "answer_verbose": "According to the uploaded Excel file, the student with the student ID KJ25XXX5 is in \"Second Grade\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Workbook1(4).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook1(4).xlsx",
+    "question": "Who is the student with the student ID KJ25XXX3 in this table?",
+    "answer_resolved": "Bai Yang",
+    "answer_verbose": "According to the uploaded Excel file, the student with the student ID KJ25XXX3 is \"Bai Yang\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Workbook1(4).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook1(4).xlsx",
+    "question": "Who is the youngest student currently enrolled?",
+    "answer_resolved": "Feng",
+    "answer_verbose": "The youngest students currently enrolled are Feng and Zou Lei.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(1).xlsx",
+    "question": "What is the supply order number for July 1, 2022?",
+    "answer_resolved": "10107.",
+    "answer_verbose": "The supply order number for July 1, 2022 is G10107.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet10(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet10(1).xlsx",
+    "question": "What is the basic salary of the employee with the Employee ID 1010101?",
+    "answer_resolved": "8000",
+    "answer_verbose": "The basic salary of the employee with the Employee ID 1010101 is 8000 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "BasementLevel2HeatExchangeRoom.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BasementLevel2HeatExchangeRoom.xlsx",
+    "question": "What is the equipment unit price for Heat Exchanger (Apartment) SFL-4.0-1.6 V=4.0m3?",
+    "answer_resolved": "54550.",
+    "answer_verbose": "According to the uploaded Excel file, the equipment unit price for Heat Exchanger (Apartment) SFL-4.0-1.6 V=4.0m3 is 54550.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "CostStatisticsofSuperHigh-RiseBuildings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/CostStatisticsofSuperHigh-RiseBuildings.xlsx",
+    "question": "Which buildings were completed in 2008 and are located in Beijing?",
+    "answer_resolved": "Water Cube",
+    "answer_verbose": "The buildings completed in 2008 and located in Beijing are \"Water Cube\" and \"Yintai Center\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "CostStatisticsofSuperHigh-RiseBuildings.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/CostStatisticsofSuperHigh-RiseBuildings.xlsx",
+    "question": "What is the height of the Beijing Television Center?",
+    "answer_resolved": "239.0",
+    "answer_verbose": "In the uploaded Excel file, the height of the Beijing Television Center is 239.0 meters.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "3333(87).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/3333(87).xlsx",
+    "question": "What is the contact number for Tmall? ",
+    "answer_resolved": "2088.",
+    "answer_verbose": "The contact number for Tmall is: (+86) 571-8502-2088. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "3333(87).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/3333(87).xlsx",
+    "question": "Which company's contact number includes the area code 021, Nanjing Pharmaceutical Co., Ltd. or Shanghai Pharmaceuticals? ",
+    "answer_resolved": "021",
+    "answer_verbose": "According to the data in the Excel file, the contact number for \"Nanjing Pharmaceutical Co., Ltd.\" is 025-84552650, while the contact number for \"Shanghai Pharmaceuticals\" is 021-63730908. Therefore, the contact number that includes the area code 021 is for \"Shanghai Pharmaceuticals.\" ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ImagetoText-20240205221356_28.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ImagetoText-20240205221356_28.xlsx",
+    "question": "What is the product name of product number 201603003?",
+    "answer_resolved": "Product Name 3",
+    "answer_verbose": "The product name of product number 201603003 is \"Product Name 3\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ImagetoText-20240205221356_28.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ImagetoText-20240205221356_28.xlsx",
+    "question": "What is the color of the product with product number 201603002?",
+    "answer_resolved": "201603002",
+    "answer_verbose": "The color of the product with product number 201603002 is black.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ImagetoText-20240205221356_28.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ImagetoText-20240205221356_28.xlsx",
+    "question": "Which products have a payment method of online or cash and a delivery status of signed or in transit?",
+    "answer_resolved": "2",
+    "answer_verbose": "The products that meet the criteria (payment method of online or cash and delivery status of signed or in transit) are:\n- Product number 201603001, product name \"Product Name 1\", payment method online, delivery status signed.\n- Product number 201603002, product name \"Product Name 2\", payment method cash, delivery status in transit.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ImagetoText-20240205221356_28.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ImagetoText-20240205221356_28.xlsx",
+    "question": "Which product has a specification model greater than L?",
+    "answer_resolved": "5",
+    "answer_verbose": "After correction, we found the products with a specification model greater than \"L\" as follows:\n\n- Product number 201603004, product name \"Product Name 4\", specification model \"LL\"\n- Product number 201603005, product name \"Product Name 5\", specification model \"LLL\"\n\nThese products have a specification model greater than \"L\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(41).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(41).xlsx",
+    "question": "On which day did the credit card expenditure exceed 1200 yuan and the housing expenditure exceed 2100 yuan?",
+    "answer_resolved": "2100",
+    "answer_verbose": "In all the records of the uploaded Excel file, there is no day on which the credit card expenditure exceeded 1200 yuan and the housing expenditure exceeded 2100 yuan.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(41).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(41).xlsx",
+    "question": "What was the transportation expenditure on January 3, 2018?",
+    "answer_resolved": "1500",
+    "answer_verbose": "According to the uploaded Excel file, the transportation expenditure on January 3, 2018, was 1500 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(41).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(41).xlsx",
+    "question": "What is the entertainment expenditure in row 18?",
+    "answer_resolved": "5700.",
+    "answer_verbose": "The entertainment expenditure in row 18 is -5700. This value is negative, which may represent some kind of refund or negative expenditure. If this result seems unreasonable, please confirm whether the file content is accurate or if we are looking at the correct row and column.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "canuse6.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/canuse6.xlsx",
+    "question": "Who has the highest math score among all the candidates?",
+    "answer_resolved": "Chen Zonghao",
+    "answer_verbose": "The students with the highest math score among all the candidates are Chen Zonghao and Dai Guoshuai.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "canuse6.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/canuse6.xlsx",
+    "question": "What is the name of the student with exam number 2017010037?",
+    "answer_resolved": "Chen Zonghao",
+    "answer_verbose": "The name of the student with exam number 2017010037 is Chen Zonghao.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(22).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(22).xlsx",
+    "question": "What is the income amount on January 1, 2023?",
+    "answer_resolved": "370",
+    "answer_verbose": "The Excel file contains information on income and expenses. According to the information, the income amount on January 1, 2023, is 370 (the unit is not specified, but it is usually the local currency, such as RMB). If you have any other questions or need further analysis, please let me know.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WeChatScreenshot_20240207205143.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WeChatScreenshot_20240207205143.xlsx",
+    "question": "Did the sales volume of Store 1 on April 26, 2022, exceed that of May 26, 2022?",
+    "answer_resolved": "2022.",
+    "answer_verbose": "The sales volume of Store 1 on April 26, 2022, was 954, while on May 26, 2022, it was 970. Therefore, the sales volume of Store 1 on April 26, 2022, did not exceed that of May 26, 2022.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "64.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/64.xlsx",
+    "question": "What are the item numbers with the model number X98351200? ",
+    "answer_resolved": "983512002137",
+    "answer_verbose": "The item numbers with the model number X98351200 are: 'X983512000073' and 'X983512002137'. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet13(3).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet13(3).xlsx",
+    "question": "What are the product names sold on October 10, 2023?",
+    "answer_resolved": "9",
+    "answer_verbose": "The product names sold on October 10, 2023, are:\n\n- Product 10\n- Product 1\n- Product 5\n- Product 9",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet59.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet59.xlsx",
+    "question": "What is Little Husk 7's English score and grade?",
+    "answer_resolved": "78",
+    "answer_verbose": "Little Husk 7's English score is 78, and the grade is C.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet59.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet59.xlsx",
+    "question": "Which student received an A grade in the English subject?",
+    "answer_resolved": "96",
+    "answer_verbose": "The students who received an A grade in the English subject are:\n\n- Little Husk 1\n- Little Husk 2\n- Little Husk 3\n\nThey received scores of 98, 97, and 96 in the English subject, respectively.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet59.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet59.xlsx",
+    "question": "Which student received an A grade in the Chemistry subject in this table?",
+    "answer_resolved": "7",
+    "answer_verbose": "In this table, Little Husk 6 and Little Husk 7 received an A grade in the Chemistry subject.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(33).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(33).xlsx",
+    "question": "What is the product name for order code D10110?",
+    "answer_resolved": "Product 10",
+    "answer_verbose": "The product name for order code D10110 is \"Product 10\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(33).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(33).xlsx",
+    "question": "What is the product name corresponding to order code D10107?",
+    "answer_resolved": "Product 7",
+    "answer_verbose": "The product name corresponding to order code \"D10107\" is \"Product 7\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "3333(62).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/3333(62).xlsx",
+    "question": "What is the market price of the product with item number M983512062071?",
+    "answer_resolved": "1299",
+    "answer_verbose": "The market price of the product with item number M983512062071 is 1299 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "3333(62).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/3333(62).xlsx",
+    "question": "Which product has a higher suggested price, the one with item number M983512062071 or X983512000073?",
+    "answer_resolved": "983512062071",
+    "answer_verbose": "According to the uploaded Excel file, the suggested price of the product with item number M983512062071 is 399 yuan, while the suggested price of the product with item number X983512000073 is 389 yuan. Therefore, the product with item number M983512062071 has a higher suggested price.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(155).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(155).xlsx",
+    "question": "Which product has the highest unit price?",
+    "answer_resolved": "Product 9",
+    "answer_verbose": "The product with the highest unit price is \"Product 9\", with a unit price of 407.0.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet57.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet57.xlsx",
+    "question": "In the Unit 1 exam, whose score is higher, Daoke1 or Daoke7?",
+    "answer_resolved": "1",
+    "answer_verbose": "In the Unit 1 exam, \"Daoke1\" scored 98 points, and \"Daoke7\" scored 94 points. Therefore, \"Daoke1\" has a higher score.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet57.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet57.xlsx",
+    "question": "In Unit 6, which student ranked 9th?",
+    "answer_resolved": "9",
+    "answer_verbose": "In Unit 6, no student ranked 9th.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet57.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet57.xlsx",
+    "question": "What is the score of the student who ranked first in Unit 1 in Unit 2?",
+    "answer_resolved": "2.",
+    "answer_verbose": "The student who ranked first in Unit 1 scored 97 points in Unit 2.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet57.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet57.xlsx",
+    "question": "What is the score of the student with Student ID 5123001 in the final exam?",
+    "answer_resolved": "95",
+    "answer_verbose": "According to the uploaded Excel file, the student with Student ID 5123001 scored 95 points in the final exam.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet57.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet57.xlsx",
+    "question": "What are the names of the top three students in the final exam?",
+    "answer_resolved": "3.",
+    "answer_verbose": "The top three students in the final exam are: Daoke1, Daoke6, and Daoke3.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(20).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(20).xlsx",
+    "question": "Which customer unit has a negative order amount and has been paid?",
+    "answer_resolved": "020",
+    "answer_verbose": "The customer units with a negative order amount and have been paid are:\n- HT Unit-012\n- HT Unit-014\n- HT Unit-016\n- HT Unit-018\n- HT Unit-020\n\nThese customer units' orders meet your query criteria.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(20).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(20).xlsx",
+    "question": "What is the product name for the order with the order number HTDW-10231?",
+    "answer_resolved": "AAAAD-15",
+    "answer_verbose": "According to the content in the Excel file, the product name for the order with the order number \"HTDW-10231\" is \"AAAAD-15\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(20).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(20).xlsx",
+    "question": "What is the customer unit for the order with the order number HTDW-10240?",
+    "answer_resolved": "HT Unit-010",
+    "answer_verbose": "The customer unit for the order with the order number \"HTDW-10240\" is \"HT Unit-010\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "BHComponent.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BHComponent.xlsx",
+    "question": "Between the components with serial numbers 1 and 2, which one has a heavier single piece weight?",
+    "answer_resolved": "2",
+    "answer_verbose": "According to the uploaded Excel file, the single piece weight of the component with serial number 1 is 461.323022, and the single piece weight of the component with serial number 2 is 600.36172. Therefore, the component with serial number 2 has a heavier single piece weight.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "BHComponent.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BHComponent.xlsx",
+    "question": "What is the flange width B of the component with serial number 5?",
+    "answer_resolved": "200.",
+    "answer_verbose": "The flange width B of the component with serial number 5 is 200.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "BasementLevel2WaterPumpRoom.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BasementLevel2WaterPumpRoom.xlsx",
+    "question": "What is the equipment unit price for High Zone Water Supply Equipment (Apartment)?",
+    "answer_resolved": "15075",
+    "answer_verbose": "According to the \"Basement Level 2 Water Supply Pump Room\" sheet in the Excel file, the equipment unit price for \"High Zone Water Supply Equipment (Apartment)\" is 15075 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "BasementLevel2WaterPumpRoom.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BasementLevel2WaterPumpRoom.xlsx",
+    "question": "Which has a higher equipment unit price, Middle Zone Reclaimed Water Supply Equipment (Apartment) or Low Zone Reclaimed Water Supply Equipment (Apartment)?",
+    "answer_resolved": "7958",
+    "answer_verbose": "From the uploaded Excel file, the equipment unit price for Middle Zone Reclaimed Water Supply Equipment (Apartment) is 10295 yuan, and for Low Zone Reclaimed Water Supply Equipment (Apartment) is 7958 yuan. Therefore, the equipment unit price for Middle Zone Reclaimed Water Supply Equipment (Apartment) is higher.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "BasementLevel2WaterPumpRoom.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BasementLevel2WaterPumpRoom.xlsx",
+    "question": "What is the base price unit price for Intermittent Water Tank 7000*2000*2000 (Apartment), and how does it compare to the base price unit price for Intermittent Reclaimed Water Tank 4000*4000*2000 (Apartment)?",
+    "answer_resolved": "2000",
+    "answer_verbose": "The base price unit price for Intermittent Water Tank 7000*2000*2000 (Apartment) is 1653.21 yuan, while the base price unit price for Intermittent Reclaimed Water Tank 4000*4000*2000 (Apartment) is 2374.96 yuan. Therefore, the base price unit price for Intermittent Water Tank 7000*2000*2000 (Apartment) is lower than that for Intermittent Reclaimed Water Tank 4000*4000*2000 (Apartment).",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "BasementLevel2WaterPumpRoom.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BasementLevel2WaterPumpRoom.xlsx",
+    "question": "What is the equipment unit price for Middle Zone Reclaimed Water Supply Equipment (Apartment)?",
+    "answer_resolved": "10295.",
+    "answer_verbose": "The equipment unit price for Middle Zone Reclaimed Water Supply Equipment (Apartment) is 10295.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet56.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet56.xlsx",
+    "question": "Who has a higher math score, Student1 or Student3?",
+    "answer_resolved": "1",
+    "answer_verbose": "From the Excel file, it is known that Student1's math score is 99 points, while Student3's math score is 96 points. Therefore, Student1 has a higher math score.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet56.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet56.xlsx",
+    "question": "Which student has a math score of 99 points?",
+    "answer_resolved": "Student1",
+    "answer_verbose": "Among all students, the student who has a math score of 99 points is \"Student1\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet56.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet56.xlsx",
+    "question": "What is the English score of the student with ID 10?",
+    "answer_resolved": "90",
+    "answer_verbose": "The English score of the student with ID 10 is 90 points.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(31).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(31).xlsx",
+    "question": "What is the invoice type for \"Contract B\"?",
+    "answer_resolved": "General Invoice",
+    "answer_verbose": "According to the uploaded Excel file, the invoice type for \"Contract B\" is \"General Invoice\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(48).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(48).xlsx",
+    "question": "Which asset has an original value of 4,000.00 yuan? ",
+    "answer_resolved": "AX10102",
+    "answer_verbose": "According to the uploaded Excel file, the asset with an original value of 4,000.00 yuan is \"AX10102\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "3333(78).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/3333(78).xlsx",
+    "question": "Which had a higher retail price index of fuel commodities in 2016, Beijing Municipality or Tianjin Municipality?",
+    "answer_resolved": "2016.",
+    "answer_verbose": "From the content of the file, it includes the retail price index of fuel commodities for various provinces and cities in China from 1995 to 2016. The retail price index of fuel commodities in 2016 for Beijing Municipality and Tianjin Municipality are 96.7 and 96.9, respectively. Therefore, the retail price index of fuel commodities in Tianjin Municipality was slightly higher than that in Beijing Municipality in 2016.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "2231.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2231.xlsx",
+    "question": "In Grade 3 Class 2, who has a math grade of 92? ",
+    "answer_resolved": "Wang Wu",
+    "answer_verbose": "In Grade 3 Class 2, the student with a math grade of 92 is Wang Wu. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "2231.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2231.xlsx",
+    "question": "In Grade 3 Class 2, which student has the highest math grade? ",
+    "answer_resolved": "Wang Wu",
+    "answer_verbose": "In Grade 3 Class 2, the student with the highest math grade is Wang Wu, with a math grade of 92. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "2231.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2231.xlsx",
+    "question": "What is the science grade of the student who participates in the Science Club? ",
+    "answer_resolved": "94.",
+    "answer_verbose": "Among the students participating in the Science Club, we found one student, Wang Wu, whose science grade is 94. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "2231.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2231.xlsx",
+    "question": "Which student is in the Basketball Club? ",
+    "answer_resolved": "Zhang San",
+    "answer_verbose": "The student participating in the Basketball Club is Zhang San, from Grade 3 Class 2. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "2231.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2231.xlsx",
+    "question": "Which students have a math grade higher than 90? ",
+    "answer_resolved": "Wang Wu",
+    "answer_verbose": "The student with a math grade higher than 90 is \"Wang Wu\", with a math grade of 92. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "2231.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2231.xlsx",
+    "question": "Which student has the highest English grade? ",
+    "answer_resolved": "Wang Wu",
+    "answer_verbose": "The student with the highest English grade is Wang Wu, with an English grade of 90. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "FactoryProductQuotation.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/FactoryProductQuotation.xlsx",
+    "question": "Which has a higher market price, the computer or the washing machine?",
+    "answer_resolved": "2005.",
+    "answer_verbose": "In the provided data, the market prices for the computer and the washing machine are as follows:\n\n- The market price of the computer is 1548.\n- The market price of the washing machine is 2005.\n\nTherefore, the washing machine has a higher market price.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(32).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(32).xlsx",
+    "question": "In the table, which has a higher income amount, the husband's salary or the wife's salary?",
+    "answer_resolved": "17262.93007",
+    "answer_verbose": "The total amount of the husband's salary is 20,809.07692 yuan, while the total amount of the wife's salary is 17,262.93007 yuan. Therefore, the husband's salary income is higher than the wife's.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(47).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(47).xlsx",
+    "question": "What is the expenditure amount on January 1, 2022?",
+    "answer_resolved": "1100.00",
+    "answer_verbose": "On January 1, 2022, the expenditure amount is 1,100.00.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(28).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(28).xlsx",
+    "question": "On April 19, 2020, how does the expenditure amount for the employee bonus compare to the expenditure amount for treating guests to dinner on April 20, 2020? Which day had higher expenditure?",
+    "answer_resolved": "2020",
+    "answer_verbose": "On April 19, 2020, the expenditure amount for the employee bonus was 2000 yuan. On April 20, 2020, the expenditure amount for treating guests to dinner was 1000 yuan. Therefore, the expenditure on April 19, 2020, was higher.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(28).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(28).xlsx",
+    "question": "What was the income amount on April 22, 2020?",
+    "answer_resolved": "13257.1429",
+    "answer_verbose": "The income amount on April 22, 2020, was 13257.1429 yuan.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(28).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(28).xlsx",
+    "question": "Which project had the lowest expenditure amount in the table?",
+    "answer_resolved": "Project Fund",
+    "answer_verbose": "The project with the lowest expenditure amount is \"Project Fund\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Beijing-LandTransferDetails.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Beijing-LandTransferDetails.xlsx",
+    "question": "What are the parcel names transacted in Fangshan District, Beijing on June 12, 2015? ",
+    "answer_resolved": "05",
+    "answer_verbose": "The parcel names transacted in Fangshan District, Beijing on June 12, 2015 are:\n\n1. Beijing Fangshan District Gongchen Street 16-01-07 and other Parcels\n2. Beijing Fangshan District Gongchen Street 16-03-04, 16-01-05 and other Parcels\n\nThese are the information filtered from the uploaded Excel file. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Beijing-LandTransferDetails.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Beijing-LandTransferDetails.xlsx",
+    "question": "Which land area is larger between Chaoyang District, Beijing on July 30, 2015 and Fengtai District, Beijing on July 28, 2015? ",
+    "answer_resolved": "84985",
+    "answer_verbose": "The land area in Chaoyang District, Beijing on July 30, 2015 is 121,096 square meters, while the land area in Fengtai District, Beijing on July 28, 2015 is 84,985 square meters. Therefore, the land area in Chaoyang District, Beijing is larger.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "7777(10).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/7777(10).xlsx",
+    "question": "What is the subject name for the subject code \"19102\"?",
+    "answer_resolved": "Pending Fixed Asset Losses",
+    "answer_verbose": "According to the uploaded Excel file data, the subject name for the subject code \"19102\" is \"Pending Fixed Asset Losses\". If you have any other questions or need further assistance, please let me know!",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet61.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet61.xlsx",
+    "question": "Whose Mathematics score is 94 points?",
+    "answer_resolved": "Yang Yinli",
+    "answer_verbose": "The student with a Mathematics score of 94 points is Yang Yinli.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet61.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet61.xlsx",
+    "question": "In the table, which student has a Mathematics score of 65 points?",
+    "answer_resolved": "Xu Bin",
+    "answer_verbose": "In the table, the student with a Mathematics score of 65 points is \"Xu Bin\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet61.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet61.xlsx",
+    "question": "Which students have a Mathematics score higher than 70 points?",
+    "answer_resolved": "82",
+    "answer_verbose": "According to the uploaded Excel file, the students with a Mathematics score higher than 70 points are:\n\n- Yang Yinli, with a Mathematics score of 94 points.\n- Zhang Xueyi, with a Mathematics score of 72 points.\n- Liu Ruxu, with a Mathematics score of 82 points.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet61.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet61.xlsx",
+    "question": "Which student has at least one subject score below 50 points?",
+    "answer_resolved": "50",
+    "answer_verbose": "The students with at least one subject score below 50 points include: Tang Wenyan, Wu Guo, Xuan Shua, Zhou Xinlong, Yang Yinli, Xu Bin, He Yueqi, Guo Yili, Wu Bin, Zhang Xueyi, Yang Xiong, Zhang Fan, Dong Bofeng, Tang Weiqiao, Shi Yunfang, Pan Xue, Zhang Yanan, Li Xuan, Liu Ruxu.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet0(2).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet0(2).xlsx",
+    "question": "Which project has the lowest completion progress?",
+    "answer_resolved": "Project 10",
+    "answer_verbose": "The project with the lowest completion progress is \"Project 10,\" with a completion progress of 50%.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Sheet0(2).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet0(2).xlsx",
+    "question": "What is the name of the project with serial number 4?",
+    "answer_resolved": "Project 4",
+    "answer_verbose": "In the Excel file, the name of the project with serial number 4 is \"Project 4.\"",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet0(2).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet0(2).xlsx",
+    "question": "Which projects have a confirmed payment amount lower than their settlement amount?",
+    "answer_resolved": "6.",
+    "answer_verbose": "The projects with a confirmed payment amount lower than their settlement amount include: Project 1, Project 2, Project 3, Project 4, Project 5, and Project 6.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(521).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(521).xlsx",
+    "question": "What is the Material Name in the 11th row?",
+    "answer_resolved": "Material 1",
+    "answer_verbose": "The Material Name in the 11th row is \"Material 1\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Workbook50.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook50.xlsx",
+    "question": "Which majors in the College of Agriculture at Xinjiang Agricultural University have an application-admission ratio greater than 0.35?",
+    "answer_resolved": "0.35",
+    "answer_verbose": "The majors in the College of Agriculture at Xinjiang Agricultural University with an application-admission ratio greater than 0.35 are:\n\n1. Biochemistry and Molecular Biology, with an application-admission ratio of 0.354838709677419\n2. Crop Cultivation and Tillage, with an application-admission ratio of 0.357142857142857\n3. Crop Genetics and Breeding, with an application-admission ratio of 0.529411764705882\n\nThese majors all have an application-admission ratio greater than 0.35.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "3ListofStandards.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/3ListofStandards.xlsx",
+    "question": "What is the project name for serial number (4)?",
+    "answer_resolved": "Lateral channel (1794m)",
+    "answer_verbose": "According to the uploaded Excel file, the project name for serial number (4) is \"Lateral channel (1794m)\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(35).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(35).xlsx",
+    "question": "What is the \"Others\" expense in row 18?",
+    "answer_resolved": "18",
+    "answer_verbose": "In the uploaded Excel file, the \"Others\" expense in row 18 is empty (NaN), indicating no input or data unavailable.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(56).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(56).xlsx",
+    "question": "What is the project name for the serial number 5?",
+    "answer_resolved": "Project_5",
+    "answer_verbose": "The project name for the serial number 5 is \"Project_5\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(628).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(628).xlsx",
+    "question": "What is the quantity of the cold plate with a unit price of \u00a5210.00 entered on December 14, 2012?",
+    "answer_resolved": "17",
+    "answer_verbose": "There are two entries of cold plates with a unit price of \u00a5210.00 entered on December 14, 2012: one with 9 sheets and another with 8 sheets. Therefore, the total quantity of this specification of cold plates is 9 + 8 = 17 sheets.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet1(4).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet1(4).xlsx",
+    "question": "What is the actual bottom elevation of the beam for Pier Number 50?",
+    "answer_resolved": "350.449",
+    "answer_verbose": "In the uploaded Excel file, the \"Actual bottom elevation of the beam (m)\" for \"Pier Number 50\" is 350.449 meters.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Workbook1(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook1(1).xlsx",
+    "question": "What is the score of the student with Student ID S-0008 in the Geography subject? ",
+    "answer_resolved": "50",
+    "answer_verbose": "The score of the student with Student ID S-0008 in the Geography subject is 50 points. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Workbook1(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Workbook1(1).xlsx",
+    "question": "Between the students with Student ID S-0001 and S-0002, who has a higher score in the Mathematics subject? ",
+    "answer_resolved": "0001",
+    "answer_verbose": "The student with Student ID S-0001 has a score of 80 points in the Mathematics subject, while the student with Student ID S-0002 has a score of 70 points in the Mathematics subject. Therefore, the student with Student ID S-0001 has a higher score in the Mathematics subject. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(17).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(17).xlsx",
+    "question": "In the table, which month has an \"Income Amount.1\" of 200.0?",
+    "answer_resolved": "January",
+    "answer_verbose": "According to the table data in the uploaded Excel file, the month with an \"Income Amount.1\" of 200.0 is January.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Canuse20.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Canuse20.xlsx",
+    "question": "What is Pan Chao's score in the English subject in Class 1301?",
+    "answer_resolved": "75",
+    "answer_verbose": "According to the data in the file, Pan Chao's score in the English subject in Class 1301 is 75 points.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Canuse20.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Canuse20.xlsx",
+    "question": "Which student has the lowest score in Math?",
+    "answer_resolved": "Hu Yangjie",
+    "answer_verbose": "The student with the lowest score in Math is Hu Yangjie, with a score of 82 points.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "Canuse20.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Canuse20.xlsx",
+    "question": "Who scored 100 points in Physics among all the students?",
+    "answer_resolved": "100",
+    "answer_verbose": "In the first worksheet of the provided Excel file, the following students scored 100 points in Physics:\n\n- Pan Chao\n- Liu Ping'an\n- Yang Yurun\n- Tang Bin\n- Yang Qirui\n- Shu Huafeng\n- Xiao Yao\n\nIf you need to check if there are other students with a score of 100 in Physics, please let me know to continue the analysis.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Canuse20.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Canuse20.xlsx",
+    "question": "What is Sun Fangling's score in the English subject in this table?",
+    "answer_resolved": "84",
+    "answer_verbose": "In this table, Sun Fangling's score in the English subject is \"84\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1706798909611.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706798909611.xlsx",
+    "question": "Which land parcels were transacted on 2015-10-28?",
+    "answer_resolved": "03",
+    "answer_verbose": "The land parcels transacted on 2015-10-28 are as follows:\n\n1. Land Parcel Name: Baoshan District Gucun Large Residential Community BSP0-0104 Unit 0403-03 Land Parcel, Transferee: Shanghai Zhubaobei Cheng Real Estate Co., Ltd.\n2. Land Parcel Name: Baoshan District Gucun Large Residential Community BSP0-0104 Unit 0402-03 Land Parcel, Transferee: Shanghai Zhubaobei Cheng Real Estate Co., Ltd.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1706798909611.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706798909611.xlsx",
+    "question": "Which land parcels had planned uses that included residential on 2015-10-14?",
+    "answer_resolved": "01",
+    "answer_verbose": "The land parcels with planned uses that included \"residential\" on 2015-10-14 are as follows:\n\n1. Land Parcel Name: Songjiang District Chedun Town SJC10022 Unit 17-02/17-03 Land Parcel, Planned Use: Comprehensive Land (Including Residential)\n2. Land Parcel Name: Fengxian District Nanqiao New City 12 Unit 10A-01A Area Land Parcel, Planned Use: Comprehensive Land (Including Residential)",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(627).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(627).xlsx",
+    "question": "What is the material code in the 9th row?",
+    "answer_resolved": "0012",
+    "answer_verbose": "In the uploaded Excel file, the material code in the 9th row is `YC0012`.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(30).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(30).xlsx",
+    "question": "Is the value of Rice Husk 2 in February higher than that of Rice Husk 3 in the same month?",
+    "answer_resolved": "3.",
+    "answer_verbose": "The value of Rice Husk 2 in February is 260.0, while the value of Rice Husk 3 in the same month is 91.0. Therefore, the value of Rice Husk 2 in February is higher than that of Rice Husk 3.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(30).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(30).xlsx",
+    "question": "What is the value of Rice Husk 1 in January?",
+    "answer_resolved": "500.",
+    "answer_verbose": "The value of Rice Husk 1 in January is 500.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProvincesLandAcquisitionArea(SquareKilometers).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProvincesLandAcquisitionArea(SquareKilometers).xlsx",
+    "question": "What is the data for Shandong in 2004?",
+    "answer_resolved": "208.5",
+    "answer_verbose": "The data for Shandong in 2004 is 208.5.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProvincesLandAcquisitionArea(SquareKilometers).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProvincesLandAcquisitionArea(SquareKilometers).xlsx",
+    "question": "What is the data for Hebei in 2004?",
+    "answer_resolved": "35.9",
+    "answer_verbose": "The data for Hebei in 2004 is 35.9.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "WorkplaceGeneral(19).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WorkplaceGeneral(19).xlsx",
+    "question": "What is the income amount on September 1, 2023?",
+    "answer_resolved": "2200",
+    "answer_verbose": "The income amount on September 1, 2023, is 2200 yuan. If you have any other questions or need further analysis, please let me know!",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "GoodsLogisticsManagement(60).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/GoodsLogisticsManagement(60).xlsx",
+    "question": "On May 1, 2020, and May 2, 2020, which day had more inbound quantity?",
+    "answer_resolved": "2020.",
+    "answer_verbose": "Based on the analysis, the total inbound quantity on May 1, 2020, was 13, while the total inbound quantity on May 2, 2020, was 16. Therefore, the inbound quantity on May 2, 2020, was higher than on May 1, 2020.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "GoodsLogisticsManagement(60).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/GoodsLogisticsManagement(60).xlsx",
+    "question": "Among all products, which product's inventory quantity is below the safety stock quantity?",
+    "answer_resolved": "20",
+    "answer_verbose": "Among all products, the following products have inventory quantities below the safety stock quantity:\n\n- Product 1: Inventory quantity is 16, safety stock quantity is 20\n- Product 3: Inventory quantity is 13, safety stock quantity is 20\n- Product 10: Inventory quantity is 18, safety stock quantity is 20\n\nThese products may need timely replenishment to ensure uninterrupted supply.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionMasterPlan.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionMasterPlan.xlsx",
+    "question": "In all worksheets, what is the product specification of \"Microvast PACK\"? What is the quantity of this specification? ",
+    "answer_resolved": "10Ah",
+    "answer_verbose": "Based on the cleaned data, we can conclude the following:\nThe product specification of \"Microvast PACK\" is \"MV06203127NTP-10Ah\", and the corresponding product quantity is 10000.\n\nThe product specification of the second record is \"10Ah\", and the corresponding product quantity is also 10000.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProductionMasterPlan.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionMasterPlan.xlsx",
+    "question": "In all worksheets, which has an earlier delivery date, the product of \"Microvast PACK\" or the product of \"X\"?",
+    "answer_resolved": "25.",
+    "answer_verbose": "According to the table, the delivery date information for the products of \"Microvast PACK\" and \"X\" is in the first sheet named \"Large Plan\". The delivery date for the product of \"Microvast PACK\" is December 22, and the delivery date for the product of \"X\" is December 25. Therefore, the product of \"Microvast PACK\" has an earlier delivery date.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "E-commerceOrderAnalysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/E-commerceOrderAnalysis.xlsx",
+    "question": "Please find all dates where the \"Total Number of Products\" exceeds 1000.",
+    "answer_resolved": "1000.",
+    "answer_verbose": "Based on the provided document content, the following dates have a \"Total Number of Products\" exceeding 1000:\n\n1. 2016/6/1: Total Number of Products is 1343\n2. 2016/6/20: Total Number of Products is 1653\n3. 2016/6/21: Total Number of Products is 1818\nThese dates all have a \"Total Number of Products\" exceeding 1000.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "1237(2).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1237(2).xlsx",
+    "question": "In all worksheets, which department has the highest budget?",
+    "answer_resolved": "36300",
+    "answer_verbose": "Excluding the \"Total Personnel\" summary data, the department with the highest actual budget is the \"Marketing\" department, with a budget subtotal of 36,300 yuan.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "2015-2019JiangsuCollegeEntranceExaminationScienceandLiberalArtsScoreDistributionStatistics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2015-2019JiangsuCollegeEntranceExaminationScienceandLiberalArtsScoreDistributionStatistics.xlsx",
+    "question": "In 2015 and 2016, in the science score segment of 400-396, which year had more people? ",
+    "answer_resolved": "2015.",
+    "answer_verbose": "In the science score segment of 400-396, the number of people in 2015 was 268, while in 2016, the number was 820. Therefore, the number of people in 2016 was more than in 2015.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "FinancialIncomeandExpenditureLedger-AutoCalculation1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/FinancialIncomeandExpenditureLedger-AutoCalculation1.xlsx",
+    "question": "In all worksheets, which bookkeepers used WeChat as the expense settlement method?",
+    "answer_resolved": "Name 1",
+    "answer_verbose": "In the \"Financial Income and Expenditure Ledger\" worksheet, the bookkeeper who used WeChat as the expense settlement method is \"Name 1\". This is the only bookkeeper identified as using WeChat for settlement in all the provided data.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "NationalCollegeEntranceExaminationComprehensiveSciencePhysics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/NationalCollegeEntranceExaminationComprehensiveSciencePhysics.xlsx",
+    "question": "In all worksheets, which questions' knowledge content involves \"motion of charged particles in a uniform magnetic field\"?",
+    "answer_resolved": "3",
+    "answer_verbose": "In all worksheets, the knowledge content of Elective 3-1 in Sheet2 and Sheet3 involves \"motion of charged particles in a uniform magnetic field\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "NationalCollegeEntranceExaminationComprehensiveSciencePhysics.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/NationalCollegeEntranceExaminationComprehensiveSciencePhysics.xlsx",
+    "question": "In all worksheets, which questions involve the knowledge points of \"Compulsory 1\" and \"Compulsory 2\"?",
+    "answer_resolved": "2",
+    "answer_verbose": "In Table 1, questions: 17, 19, 20, 22, 24; in Table 2, questions: 14, 15, 16, 17, 18, 23, 24; in Table 3, questions: 14, 19, 20, 21, 22, 24; in Table 4, questions: 6, 8, 18; in Table 5, questions: 14, 15, 16, 21, 24 involve the knowledge points of \"Compulsory 1\" and \"Compulsory 2\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "2017CollegeEntranceExaminationAdmissionScoreLine.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2017CollegeEntranceExaminationAdmissionScoreLine.xlsx",
+    "question": "In the 2017 Guangdong Province early first batch undergraduate arts first round admissions, what is the planned number for Peking University?",
+    "answer_resolved": "8.",
+    "answer_verbose": "According to the data in the \"Early First Batch Arts\" sheet, the planned number for Peking University in the 2017 Guangdong Province early first batch undergraduate arts first round admissions is 8.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "2017CollegeEntranceExaminationAdmissionScoreLine.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2017CollegeEntranceExaminationAdmissionScoreLine.xlsx",
+    "question": "In the 2017 Guangdong Province early first batch undergraduate arts and science first round admissions, which has more admissions for Peking University?",
+    "answer_resolved": "5.",
+    "answer_verbose": "In the 2017 Guangdong Province early first batch undergraduate arts first round admissions, the number of admissions for Peking University is 9; in the science first round admissions, the number of admissions for Peking University is 5. Therefore, the arts admissions are more.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "2017CollegeEntranceExaminationAdmissionScoreLine.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/2017CollegeEntranceExaminationAdmissionScoreLine.xlsx",
+    "question": "In the 2017 Guangdong Province early first batch undergraduate arts and science first round admissions, which school has the highest first choice admission minimum score?",
+    "answer_resolved": "Beihang University",
+    "answer_verbose": "In the 2017 Guangdong Province early first batch undergraduate arts first round admissions, the school with the highest first choice admission minimum score is Beihang University, with a score of 514. Similarly, in the science admissions, the school with the highest first choice admission minimum score is also Beihang University, with a score of 440.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "AnalysisoftheComprehensiveLiberalArtsExamPapersintheNationalCollegeEntranceExaminationinthePastFiveYears.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/AnalysisoftheComprehensiveLiberalArtsExamPapersintheNationalCollegeEntranceExaminationinthePastFiveYears.xlsx",
+    "question": "In the 2011 New Curriculum Standard I Paper and New Curriculum Standard II Paper, which content has a question volume of 5 questions (4 multiple choice, 1 subjective question)?",
+    "answer_resolved": "Economic Life",
+    "answer_verbose": "In the 2011 New Curriculum Standard I Paper and New Curriculum Standard II Paper, the content with a question volume of \"5 questions (4 multiple choice, 1 subjective question)\" is \"Economic Life\".",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "InventoryManagement(26).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/InventoryManagement(26).xlsx",
+    "question": "What is the inbound time for Product1? ",
+    "answer_resolved": "2020-11-15",
+    "answer_verbose": "According to the content of the data file, the inbound time for \"Product1\" is \"2020-11-15\". If you need more details or further actions, please let me know. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "InventoryManagement(26).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/InventoryManagement(26).xlsx",
+    "question": "Who is the manufacturer of Product2? ",
+    "answer_resolved": "2.",
+    "answer_verbose": "The manufacturer of Product2 is Manufacturer2. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "InventoryManagement(26).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/InventoryManagement(26).xlsx",
+    "question": "Who is the manufacturer of Product1? ",
+    "answer_resolved": "Manufacturer1",
+    "answer_verbose": "According to the uploaded Excel file, the manufacturer of Product1 is \"Manufacturer1\". ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "BankDepositInterestRates.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/BankDepositInterestRates.xlsx",
+    "question": "In all worksheets, which is higher, the three-year RMB deposit rate or the five-year RMB deposit rate?",
+    "answer_resolved": "In all worksheets, the five-year RMB deposit rate is higher",
+    "answer_verbose": "In all worksheets, the five-year RMB deposit rate is higher.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ChainSupermarketProductClassificationDetails.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ChainSupermarketProductClassificationDetails.xlsx",
+    "question": "What is the name of the product with code 10003?",
+    "answer_resolved": "Jindian Pure Milk",
+    "answer_verbose": "In \"Table 1\", the product name with code 10003 is \"Jindian Pure Milk\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ChainSupermarketProductClassificationDetails.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ChainSupermarketProductClassificationDetails.xlsx",
+    "question": "Which product has more last month inventory, the product with code 10001 or the product with code 10002?",
+    "answer_resolved": "10002",
+    "answer_verbose": "The product with code 10001 has a last month inventory of 50, while the product with code 10002 has a last month inventory of 51. Therefore, the product with code 10002 has more last month inventory.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ComparisonTableofPersonalDepositInterestRatesofVariousBanks(AdjustedonJuly6,2012).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ComparisonTableofPersonalDepositInterestRatesofVariousBanks(AdjustedonJuly6,2012).xlsx",
+    "question": "After July 6, 2012, which bank has a higher annual interest rate for demand deposits, Nanjing Bank or Hangzhou Bank?",
+    "answer_resolved": "0.385",
+    "answer_verbose": "According to the extracted data, the annual interest rate for demand deposits at Nanjing Bank after July 6, 2012, is 0.35%, while the rate at Hangzhou Bank is 0.385%. Therefore, Hangzhou Bank has a higher annual interest rate for demand deposits.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ComparisonTableofPersonalDepositInterestRatesofVariousBanks(AdjustedonJuly6,2012).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ComparisonTableofPersonalDepositInterestRatesofVariousBanks(AdjustedonJuly6,2012).xlsx",
+    "question": "After July 6, 2012, what is the annual interest rate for a one-year lump sum deposit at Nanjing Bank?",
+    "answer_resolved": "10000",
+    "answer_verbose": "After July 6, 2012, the annual interest rate for a one-year lump sum deposit at Nanjing Bank is 3% for amounts below 10,000 and 3.3% for amounts 10,000 (inclusive) and above.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "GoodsInventoryReport.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/GoodsInventoryReport.xlsx",
+    "question": "Which medicines have an inventory quantity of over 100?",
+    "answer_resolved": "100.",
+    "answer_verbose": "Xiangfu, Notoginseng Powder, Luo Han Guo, Sanqi, and Chinese Yam have an inventory quantity of over 100.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "StudentDormitoryArrangementTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/StudentDormitoryArrangementTable1.xlsx",
+    "question": "Which room number has the smallest bed number? ",
+    "answer_resolved": "Excel file or need further analysis",
+    "answer_verbose": "The smallest bed number corresponds to room numbers 1022 and 1023. If you have any other questions about this Excel file or need further analysis, please let me know. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "StudentDormitoryArrangementTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/StudentDormitoryArrangementTable1.xlsx",
+    "question": "What is Zhang Zhize's student ID? ",
+    "answer_resolved": "001",
+    "answer_verbose": "Zhang Zhize's student ID is `DOC**001`. ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "InventoryManagementSheetforInboundandOutbound.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/InventoryManagementSheetforInboundandOutbound.xlsx",
+    "question": "January 3, 2022, what are the inbound unit price and quantity of Product Name4?",
+    "answer_resolved": "2",
+    "answer_verbose": "January 3, 2022, the inbound unit price of the product named \"Product Name4\" is 1894 yuan, and the inbound quantity is 2 units.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ProjectStatisticsTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProjectStatisticsTable1.xlsx",
+    "question": "Which project has the latest estimated end date?",
+    "answer_resolved": "Reception Robot",
+    "answer_verbose": "In the uploaded Excel file, the project with the latest estimated end date is \"Reception Robot,\" with an estimated end date of December 29, 2021.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProjectStatisticsTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProjectStatisticsTable1.xlsx",
+    "question": "What is the client unit corresponding to contract number DH1029331?",
+    "answer_resolved": "ZhongHang",
+    "answer_verbose": "The client unit corresponding to contract number DH1029331 is \"ZhongHang.\" ",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "FinancialIncomeandExpenditureLedgerDetailsTable1(2).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/FinancialIncomeandExpenditureLedgerDetailsTable1(2).xlsx",
+    "question": "Was the income in June 2021 higher than the income in July 2021?",
+    "answer_resolved": "2021.",
+    "answer_verbose": "According to the data in the Excel file, the income in June 2021 was 5991, while the income in July 2021 was 7908. Therefore, the income in July 2021 was higher than in June 2021.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "AnnualSalespersonPerformanceCalculationTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/AnnualSalespersonPerformanceCalculationTable1.xlsx",
+    "question": "What are the sales quantity and sales unit price of XM10 in October 2020?",
+    "answer_resolved": "3200",
+    "answer_verbose": "In October 2020, the sales quantity of salesperson `XM10` is 5, and the sales unit price is 3200 yuan. If you have more questions or need further analysis, please let me know.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ElectronicInvoiceRegistrationDetailStatisticsTable.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ElectronicInvoiceRegistrationDetailStatisticsTable.xlsx",
+    "question": "Please tell me which invoices for Kingsoft Office Software Co., Ltd. 4 were not sent to customers in \"Sheet1\" and \"Sheet3\"?",
+    "answer_resolved": "Co",
+    "answer_verbose": "The filtered results in \"Sheet1\" and \"Sheet3\" show that the following invoices for Kingsoft Office Software Co., Ltd. 4 were not sent to customers:\n\n1. Invoice Date 2022-11-05, Invoice Number 152XXXX09\n2. Invoice Date 2022-11-07, Invoice Number 152XXXX11\n\nSummarizing the results from \"Sheet1\" and \"Sheet3\", we find that for Kingsoft Office Software Co., Ltd. 4, there are two invoices that were not sent to customers in both sheets. These two unsent electronic invoices are as described above.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "DifferentArchitecturalSpecialtiesAtlasTable.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/DifferentArchitecturalSpecialtiesAtlasTable.xlsx",
+    "question": "Which atlas has the highest price in the \"Urban Road\" worksheet?",
+    "answer_resolved": "Urban Road Pavement, Subgrade and Other Facilities (2008 Combined Volume)",
+    "answer_verbose": "The atlas with the highest price is \"Urban Road Pavement, Subgrade and Other Facilities (2008 Combined Volume),\" with a price of 207.0.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ColumnBInternalForceCombination2.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ColumnBInternalForceCombination2.xlsx",
+    "question": "In the table, what is the SGK value at the top of the column on the 4th floor?",
+    "answer_resolved": "53.85",
+    "answer_verbose": "The SGK value at the top of the column on the 4th floor for the Frame Column B Moment and Axial Force Combination is 45.88. The SGK value at the top of the column on the 4th floor for the Frame Column C Moment and Axial Force Combination is -53.85.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "StudentRegistrationForm1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/StudentRegistrationForm1.xlsx",
+    "question": "Which students need to take the school bus but do not need to board?",
+    "answer_resolved": "The students who need to take the school bus but do not need to board are:\n\n- Zhang Xiaomi\n- Yang Le",
+    "answer_verbose": "The students who need to take the school bus but do not need to board are:\n\n- Zhang Xiaomi\n- Yang Lele\n- Wang Haohai",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "InboundandOutboundInventory(4).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/InboundandOutboundInventory(4).xlsx",
+    "question": "What is the inbound quantity of Material001 in January 2022?",
+    "answer_resolved": "23.",
+    "answer_verbose": "The inbound quantity of Material001 in January 2022 is 23.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "TaobaoAffiliate-DataAnalysisToolTable-(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/TaobaoAffiliate-DataAnalysisToolTable-(1).xlsx",
+    "question": "Which was higher on March 14, 2013, the Taobao affiliate sales amount or the Taobao affiliate item sales amount?",
+    "answer_resolved": "68647.27",
+    "answer_verbose": "On March 14, 2013, the Taobao affiliate sales amount was 3743.61 yuan, while the total Taobao affiliate item sales amount was 68647.27 yuan. Therefore, the Taobao affiliate item sales amount was higher.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "TaobaoAffiliate-DataAnalysisToolTable-(1).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/TaobaoAffiliate-DataAnalysisToolTable-(1).xlsx",
+    "question": "Which items had a Taobao affiliate sales share exceeding 0.05 on March 14, 2013?",
+    "answer_resolved": "2013",
+    "answer_verbose": "The items with a Taobao affiliate sales share exceeding 0.05 on March 14, 2013, were: Item A, Item B, Item C, Item D, Item E, Item F, Item G, and Item H.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "E-commerceAnalysis(15).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/E-commerceAnalysis(15).xlsx",
+    "question": "On April 1, 2017, and April 2, 2017, which day had higher page views for Product 2?",
+    "answer_resolved": "2017.",
+    "answer_verbose": "On April 1, 2017, Product 2 had 234 page views, while on April 2, 2017, it had 652 page views. Therefore, Product 2 had higher page views on April 2, 2017.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "WarehouseInventoryManagementAutomaticSettlementInventoryTable.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/WarehouseInventoryManagementAutomaticSettlementInventoryTable.xlsx",
+    "question": "What is the status of the product with product number 2001 on September 1, 2021?",
+    "answer_resolved": "Beginning",
+    "answer_verbose": "According to the cleaned data, the status of the product with product number 2001 on September 1, 2021, is \"Beginning\".",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "EachCementPlantKeyProductionDataMonitoringandAnalysis.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/EachCementPlantKeyProductionDataMonitoringandAnalysis.xlsx",
+    "question": "Comparing the \"Our Plant Data\" in Sheet1 with the data for \"Hongshi Cement\" and \"Conch Cement\" in Sheet4, which plant has lower actual coal consumption?",
+    "answer_resolved": "197",
+    "answer_verbose": "We found the data:\n\n- Our Plant Data's actual coal consumption is 197kg/t.\n- Hongshi Cement's actual coal consumption is 150kg/t.\n- Conch Cement's actual coal consumption is 150kg/t.\n\nFrom these data, it can be seen that both Hongshi Cement and Conch Cement have lower actual coal consumption, each at 150kg/t, while Our Plant Data's actual coal consumption is higher at 197kg/t. Therefore, the actual coal consumption is lower for both Hongshi Cement and Conch Cement plants.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "1706800061649.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706800061649.xlsx",
+    "question": "Which company transacted a parcel on January 23, 2007?",
+    "answer_resolved": "2007",
+    "answer_verbose": "The companies that transacted a parcel on January 23, 2007, are:\n\n- Beijing Dongya Xinhong International Convention and Exhibition Center Co., Ltd.\n- Beijing Taiji Renju Real Estate Co., Ltd.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet50.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet50.xlsx",
+    "question": "Which student won the first place in the text reading competition?",
+    "answer_resolved": "Zhang Wei",
+    "answer_verbose": "The student who won the first place in the text reading competition is Zhang Wei.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "Sheet50.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/Sheet50.xlsx",
+    "question": "Among all the tables, which student scored the highest in the text reading competition, and on which day did he/she achieve this score?",
+    "answer_resolved": "97",
+    "answer_verbose": "After reviewing the content of each table, it is known that the highest score in Article 3 is 97 points, but there is no information about the student in the table.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "InventoryManagement(16).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/InventoryManagement(16).xlsx",
+    "question": "Which product has the highest real-time inventory?",
+    "answer_resolved": "27",
+    "answer_verbose": "Based on the analysis, the product \"Name6\" has the highest real-time inventory, with a quantity of 58. This information was found in the Excel file `Inventory Management (16).xlsx`. The product ID is `mg-027`, and the last inventory change was on January 15, 2020, supplied by `Supplier06`, with a stock-in quantity of 85 and a stock-out quantity of 27, handled by `Li Kaihua`.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "EngineeringCostAccountingTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/EngineeringCostAccountingTable1.xlsx",
+    "question": "What is the contract amount for Project 1?",
+    "answer_resolved": "2000.",
+    "answer_verbose": "Found the contract amount for \"Project 1\", the value is 2000. If you have any other questions or need further analysis, please let me know.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ReadingRecordTable1.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ReadingRecordTable1.xlsx",
+    "question": "Please tell me which book, between \u300aTo Live\u300b and \u300aWalden\u300b, has a longer reading duration?",
+    "answer_resolved": "1",
+    "answer_verbose": "The second Excel file's \"Sheet1\" worksheet contains content titled \"Student Dormitory Allocation Table,\" which is unrelated to reading duration, and therefore does not contain data on the reading duration of \u300aTo Live\u300b and \u300aWalden\u300b. Based on the analysis of these two Excel files, it is sufficient to answer your question: the reading durations of \u300aTo Live\u300b and \u300aWalden\u300b are the same. If you have any other questions or need further analysis, please let me know.",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "ProductionManufacturingForm(304).xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ProductionManufacturingForm(304).xlsx",
+    "question": "What is the status of the order with order number 1177595?",
+    "answer_resolved": "1177595",
+    "answer_verbose": "The order with order number 1177595 is in Completed status.",
+    "question_type": "Lookup",
+    "difficulty": "Easy",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup"
+    ]
+  },
+  {
+    "workbook": "ItemsIssuanceRegistrationForm.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/ItemsIssuanceRegistrationForm.xlsx",
+    "question": "Which has a higher unit price, Article1 or Article2? ",
+    "answer_resolved": "2",
+    "answer_verbose": "In \"Sheet1\", the unit prices for \"Article1\" and \"Article2\" were found. The unit price of \"Article1\" is 12, while the unit price of \"Article2\" is 15. Therefore, the unit price of \"Article2\" is higher. ",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  },
+  {
+    "workbook": "1706798903536.xlsx",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/mimotable/data/english/spreadsheet/1706798903536.xlsx",
+    "question": "Which land parcel has the largest construction land area (m\u00b2), and what is its planned building area (m\u00b2)?",
+    "answer_resolved": "Songjiang District Sijing Town SJSB0003 Unit 05-04 Land Parcel",
+    "answer_verbose": "The largest construction land area is 93,762 square meters, and its corresponding planned building area is 112,515 square meters. The land parcel name is \"Songjiang District Sijing Town SJSB0003 Unit 05-04 Land Parcel.\"",
+    "question_type": "Compare+Lookup",
+    "difficulty": "Medium",
+    "sheet": "_workbook",
+    "meta_operations": [
+      "Lookup",
+      "Compare"
+    ]
+  }
+]

@@ -1,0 +1,2002 @@
+[
+  {
+    "workbook": "nl2f_train_2-1204658-12",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1204658-12.xlsx",
+    "question": "Where does Essendon play their home games?",
+    "answer_resolved": "EMCG",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,A2:A6=\"essendon\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-15416002-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-15416002-1.xlsx",
+    "question": "What was the highest SaffirSimpson with an NHC advisory of 18?",
+    "answer_resolved": "4.0",
+    "formula": "MAX(FILTER(G2:G19,D2:D19=\"18\"))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-171222-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-171222-1.xlsx",
+    "question": "What is the area (in km2) for the community that has a status of village, a census ranking of 2,471 of 5,008, and a population of less than 748?",
+    "answer_resolved": "22.58",
+    "formula": "SUM(FILTER(C2:C19, (B2:B19=\"village\")*(E2:E19=\"2,471 of 5,008\")*(D2:D19<748)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1140110-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1140110-1.xlsx",
+    "question": "Who won the race on 24 August?",
+    "answer_resolved": "Stirling Moss",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:I12,C2:C12=\"24 august\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-19317584-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-19317584-2.xlsx",
+    "question": "Where did Grzegorz Walasek place 4th?",
+    "answer_resolved": "Terenzano , Italy Pista Olimpia",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:H11,G2:G11=\"Grzegorz Walasek\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17796039-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17796039-5.xlsx",
+    "question": "What is the total number of Israeli deaths in the attack with 0 total casulaties and 0 total deaths?",
+    "answer_resolved": "0.0",
+    "formula": "SUM(FILTER(A2:A17, (E2:E17=0)*(C2:C17=0)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1585656-13",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1585656-13.xlsx",
+    "question": "What venue has don bradman (nsw) as the player?",
+    "answer_resolved": "Sydney Cricket Ground, Sydney",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F7,C2:C7=\"don bradman (nsw)\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-10701914-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-10701914-1.xlsx",
+    "question": "Where did the away team score 7.15 (57)?",
+    "answer_resolved": "Princes Park",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,D2:D7=\"7.15 (57)\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1140110-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1140110-1.xlsx",
+    "question": "What was the Tyre for 19 January?",
+    "answer_resolved": "C",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:I12,C2:C12=\"19 january\"),8))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-29619494-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-29619494-2.xlsx",
+    "question": "What season did the Sake Tuyas come in 1st place?",
+    "answer_resolved": "2011",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,D2:D7=\"1st\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1233974-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1233974-3.xlsx",
+    "question": "How many laps were done in 2012?",
+    "answer_resolved": "17.0",
+    "formula": "SUM(FILTER(E2:E9, A2:A9=2012))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-16912145-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-16912145-1.xlsx",
+    "question": "What is the race in the 8th position?",
+    "answer_resolved": "1",
+    "formula": "FILTER(D2:D15,J2:J15=\"8th\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-14984019-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-14984019-1.xlsx",
+    "question": "In what Week were there more than 23,875 in Attendance at Memorial Stadium with Detroit Lions as the Opponent?",
+    "answer_resolved": "7.0",
+    "formula": "SUM(FILTER(A2:A13, (G2:G13>23875)*(F2:F13=\"memorial stadium\")*(C2:C13=\"detroit lions\")))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-181498-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-181498-2.xlsx",
+    "question": "Which Plautdietsch has Low German of doon?",
+    "answer_resolved": "doone(n)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E13,B2:B13=\"doon\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-13225042-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-13225042-2.xlsx",
+    "question": "Name the 18th september 2007-19:45 with preston north end of watford",
+    "answer_resolved": "6 October 2007 \u2013 15:00",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E20,B2:B20=\"watford\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-1341453-40",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-1341453-40.xlsx",
+    "question": "When was Chaka Fattah first elected in the Pennsylvania 2 district? ",
+    "answer_resolved": "1994",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F20,A2:A20=\"Pennsylvania 2\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-17239112-7",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-17239112-7.xlsx",
+    "question": "What is the Score of the game with a Record of 31\u201337\u20139?",
+    "answer_resolved": "2\u20137",
+    "formula": "FILTER(C2:C14,F2:F14=\"31\u201337\u20139\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1174877-16",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1174877-16.xlsx",
+    "question": "When was the livery of Kinneil Sandy Red?",
+    "answer_resolved": "1930",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,D2:D11=\"kinneil sandy red\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1174877-16",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1174877-16.xlsx",
+    "question": "What is the Current status of Callander Coal company grey?",
+    "answer_resolved": "Static display in the museum.",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,D2:D11=\"callander coal company grey\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-15187735-18",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-15187735-18.xlsx",
+    "question": "Name the number of sement d for solar water heaters ",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(F2:F13, D2:D13=\"Solar Water Heaters\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10290943-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10290943-2.xlsx",
+    "question": "Which Circuit did Johnny Wakefield win?",
+    "answer_resolved": "Brooklands",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F13,D2:D13=\"johnny wakefield\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-22607062-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-22607062-1.xlsx",
+    "question": "Name the comptroller for office of prohibition",
+    "answer_resolved": "C. B. Hitchcock",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F8,A2:A8=\"Prohibition\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14887635-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14887635-1.xlsx",
+    "question": "What is the Delivered as name of the H3 Locomotive?",
+    "answer_resolved": "T415",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,A2:A6=\"h3\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16880231-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16880231-4.xlsx",
+    "question": "Who won the Silver the Year Katie Curtis Unknown won the Bronze?",
+    "answer_resolved": "Alex Greenfield Unknown",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E9,E2:E9=\"katie curtis unknown\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-171222-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-171222-1.xlsx",
+    "question": "What is the area (in km2) for the village of Paquetville, with a population over 706?",
+    "answer_resolved": "9.4",
+    "formula": "SUM(FILTER(C2:C19, (B2:B19=\"village\")*(A2:A19=\"paquetville\")*(D2:D19>706)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18955077-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18955077-1.xlsx",
+    "question": "What is the average size (cents) with an interval of major third and size (steps) more than 5",
+    "answer_resolved": "400.0",
+    "formula": "AVERAGE(FILTER(C2:C19, (A2:A19=\"major third\")*(B2:B19>5)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_1-26903214-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_1-26903214-1.xlsx",
+    "question": " How much did Nina Carberry win? ",
+    "answer_resolved": "\u00a36,105",
+    "formula": "FILTER(H2:H14,C2:C14=\"Nina Carberry\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-13111652-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-13111652-1.xlsx",
+    "question": "What was the venue when Ben Barker finished third?",
+    "answer_resolved": "Wolverhampton",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,E2:E8=\"ben barker\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18715280-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18715280-4.xlsx",
+    "question": "How many bronze medals for West Germany having a total more than 2?",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(E2:E14, (F2:F14>2)*(B2:B14=\"west germany\")))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18568417-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18568417-3.xlsx",
+    "question": "What is the average election result for the province of Grosseto from 1766 and prior?",
+    "answer_resolved": "2009.0",
+    "formula": "AVERAGE(FILTER(F2:F11, (A2:A11=\"grosseto\")*(C2:C11<1766)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-11902366-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-11902366-5.xlsx",
+    "question": "What was the date of the game when the Devils had a record of 21\u201314\u20133?",
+    "answer_resolved": "December 29",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G14,G2:G14=\"21\u201314\u20133\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-26977890-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-26977890-1.xlsx",
+    "question": "In what conflicts was the Italian Navy Combatants B?",
+    "answer_resolved": "World War II",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F19,E2:E19=\"Italian Navy\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-16449896-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-16449896-1.xlsx",
+    "question": "Which season has Zach Jacobson in third?",
+    "answer_resolved": "2011\u201312",
+    "formula": "FILTER(A2:A11,C2:C11=\"zach jacobson\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-1015914-24",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-1015914-24.xlsx",
+    "question": "What is we two where you two is ngipen?",
+    "answer_resolved": "ngalben",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,D2:D6=\"ngipen\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16566850-13",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16566850-13.xlsx",
+    "question": "Can you tell me the total number of Played that has the Position larger than 5, and the Points of 11, and the Drawn smaller than 1?",
+    "answer_resolved": "14.0",
+    "formula": "SUM(FILTER(C2:C9, (A2:A9>5)*(F2:F9=11)*(D2:D9<1)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-19317584-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-19317584-2.xlsx",
+    "question": "How many placed 4th on April 25?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(G2:G11, B2:B11=\"April 25\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16077854-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16077854-1.xlsx",
+    "question": "What is the Born-Died date for the Representative of Italy?",
+    "answer_resolved": "1954\u2013",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E10,E2:E10=\"italy\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-12280777-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-12280777-2.xlsx",
+    "question": "What is on at 8:00 when etalk is on at 7:00?",
+    "answer_resolved": "Dancing with the Stars",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G10,A2:A10=\"etalk\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16209355-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16209355-1.xlsx",
+    "question": "What year had a 100m freestyle event?",
+    "answer_resolved": "2007",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,A2:A7=\"100m freestyle\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-27764201-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-27764201-2.xlsx",
+    "question": "How many times did the Centurions play the Rhein Fire?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(G2:G10, D2:D10=\"Rhein Fire\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10775038-18",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10775038-18.xlsx",
+    "question": "What date did the Geelong team play on as a home team?",
+    "answer_resolved": "29 August 1959",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,A2:A7=\"geelong\"),7))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1897000-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1897000-1.xlsx",
+    "question": "How many Spectators have a Date of 17 june 2006, and a Time (CET) larger than 15?",
+    "answer_resolved": "48000.0",
+    "formula": "SUM(FILTER(E2:E6, (A2:A6=\"17 june 2006\")*(B2:B6>15)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18568417-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18568417-3.xlsx",
+    "question": "What was the lowest election result for President Leonardo Marras with an area smaller than 227,063 people?",
+    "answer_resolved": "2009.0",
+    "formula": "MIN(FILTER(F2:F11, (D2:D11=\"leonardo marras\")*(B2:B11<227063)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-14860588-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-14860588-3.xlsx",
+    "question": "How many points are associated with over 1 top 5, 1 win, over 0 poles, and andrew ranger as the driver?",
+    "answer_resolved": "1896.0",
+    "formula": "SUM(FILTER(F2:F11, (E2:E11>1)*(C2:C11=1)*(D2:D11>0)*(B2:B11=\"andrew ranger\")))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-197638-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-197638-6.xlsx",
+    "question": "Who won the French Open in 1999?",
+    "answer_resolved": "Andre Agassi",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,E2:E7=1999),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17162214-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17162214-3.xlsx",
+    "question": "What was Phil Mickelson's score to par?",
+    "answer_resolved": "\u20132",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,B2:B11=\"phil mickelson\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-14904221-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-14904221-1.xlsx",
+    "question": "Who won women's singles in 2001?",
+    "answer_resolved": "Jelena Obri\u0107",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F9,A2:A9=2001),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10290943-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10290943-2.xlsx",
+    "question": "Which circuit did Raymond Mays win?",
+    "answer_resolved": "Brooklands",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F13,D2:D13=\"raymond mays\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-27764201-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-27764201-2.xlsx",
+    "question": "What time was the kickoff against the Frankfurt Galaxy?",
+    "answer_resolved": "6:00 p.m.",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:H10,D2:D10=\"Frankfurt Galaxy\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-12317436-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-12317436-1.xlsx",
+    "question": "for goals less than 48 and 8 games played what is the count of losses?",
+    "answer_resolved": "4.0",
+    "formula": "SUM(FILTER(D2:D6, (B2:B6=8)*(F2:F6<48)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1834138-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1834138-2.xlsx",
+    "question": "What is the pinyin when the simplified shows \u5357\u5c71\u533a?",
+    "answer_resolved": "N\u00e1nsh\u0101n Q\u016b",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G10,B2:B10=\"\u5357\u5c71\u533a\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17470560-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17470560-3.xlsx",
+    "question": "What is the Latin equivalent for the Phagspa of \ua859?",
+    "answer_resolved": "L",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F7,B2:B7=\"\ua859\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10766119-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10766119-6.xlsx",
+    "question": "What was the away team that played at Corio Oval?",
+    "answer_resolved": "Fitzroy",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,E2:E7=\"corio oval\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1590321-75",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1590321-75.xlsx",
+    "question": "What is the number of matches for the player in rank 8?",
+    "answer_resolved": "350.0",
+    "formula": "SUM(FILTER(D2:D11, A2:A11=8))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-12962773-10",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-12962773-10.xlsx",
+    "question": "How tall was Player #10?",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(C2:C12, A2:A12=10))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-28019988-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-28019988-5.xlsx",
+    "question": "What episode number of the season was written by Tom Garrigus and had 2.31 million u.s. viewers?",
+    "answer_resolved": "3.0",
+    "formula": "SUM(FILTER(B2:B13, (H2:H13=2.31)*(E2:E13=\"Tom Garrigus\")))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-197638-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-197638-6.xlsx",
+    "question": "How many times did Roy Emerson win the Australian Open?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(D2:D7, B2:B7=\"Roy Emerson\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-15859432-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-15859432-6.xlsx",
+    "question": "What is the smallest number of spikes for players with a weight of 83 and height over 190?",
+    "answer_resolved": "342.0",
+    "formula": "MIN(FILTER(E2:E13, (D2:D13=83)*(C2:C13>190)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1523673-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1523673-2.xlsx",
+    "question": "What is the date with the catalogue number ptcd-1015-6?",
+    "answer_resolved": "October 29, 2004",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,E2:E6=\"ptcd-1015-6\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16077854-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16077854-1.xlsx",
+    "question": "Who left office in June 2011?",
+    "answer_resolved": "Lamberto Zannier",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E10,D2:D10=\"june 2011\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-23453931-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-23453931-5.xlsx",
+    "question": "Name the opponents for december 3",
+    "answer_resolved": "@ Columbus Blue Jackets",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:H16,B2:B16=\"December 3\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16816376-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16816376-1.xlsx",
+    "question": "WHich Venue is in 1994?",
+    "answer_resolved": "Stade 5 Juillet , Algiers",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,A2:A8=1994),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1374854-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1374854-1.xlsx",
+    "question": "the sum of 2009 with rank of 5 and 2010 less than 76.5 is what?",
+    "answer_resolved": "66.3",
+    "formula": "SUM(FILTER(F2:F11, (A2:A11=5)*(E2:E11<76.5)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-10701133-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-10701133-1.xlsx",
+    "question": "What is the title when original air date is may15,2008?",
+    "answer_resolved": "\" There's No Place Like Home (Part 1) \"",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:H13,G2:G13=\"May15,2008\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-28980706-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-28980706-4.xlsx",
+    "question": "When there are  10.02 million viewers what is the rating (18-49)?",
+    "answer_resolved": "3.1",
+    "formula": "SUM(FILTER(C2:C12, E2:E12=10.02))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10766119-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10766119-6.xlsx",
+    "question": "What was Carlton's score when they were the away team?",
+    "answer_resolved": "12.13 (85)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,C2:C7=\"carlton\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-14715875-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-14715875-1.xlsx",
+    "question": "What is the average age as of February 1, 2014 for the supercentenarians born in the United States?",
+    "answer_resolved": "113years, 40days",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,D2:D8=\"united states\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1226513-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1226513-3.xlsx",
+    "question": "What is the most points when the entrant was Jaguar racing earlier than 2001?",
+    "answer_resolved": "3.0",
+    "formula": "MAX(FILTER(E2:E11, (B2:B11=\"jaguar racing\")*(A2:A11<2001)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-10979732-31",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-10979732-31.xlsx",
+    "question": "Name for me the tatsuhito takaiwa for Ryusuke Taguchi of taguchi (14:31)",
+    "answer_resolved": "Liger (14:49)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G14,E2:E14=\"taguchi (14:31)\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-22385461-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-22385461-6.xlsx",
+    "question": "What is the end (UTC) for spacecraft STS-114 Eva 3?",
+    "answer_resolved": "August 3, 2005, 10:15",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F7,B2:B7=\"STS-114 EVA 3\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18884038-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18884038-5.xlsx",
+    "question": "What is the highest championship that has 1 as the league cup, and 17 as the total?",
+    "answer_resolved": "15.0",
+    "formula": "MAX(FILTER(B2:B13, (C2:C13=1)*(E2:E13=17)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14323142-16",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14323142-16.xlsx",
+    "question": "Which College/Junior/Club Team (League) did the player in round 6 play for?",
+    "answer_resolved": "Calumet High School (Mich.)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E15,A2:A15=6),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17751827-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17751827-4.xlsx",
+    "question": "On which date was the Tie no 2?",
+    "answer_resolved": "31 January 1988",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E20,A2:A20=2),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18351792-10",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18351792-10.xlsx",
+    "question": "What Score points has a Rank points of defending champion?",
+    "answer_resolved": "Defending champion",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E13,C2:C13=\"defending champion\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-2668173-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-2668173-4.xlsx",
+    "question": "What was the district of the incumbent Mathias Morris?",
+    "answer_resolved": "Pennsylvania 6",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F8,B2:B8=\"Mathias Morris\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-23248967-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-23248967-5.xlsx",
+    "question": "How many locations was game 3 played at?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(H2:H14, A2:A14=3)))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_1-27713583-11",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_1-27713583-11.xlsx",
+    "question": "Name the location attendance april 5",
+    "answer_resolved": "Madison Square Garden 19,763",
+    "formula": "FILTER(H2:H7,B2:B7=\"April 5\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-12501219-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-12501219-1.xlsx",
+    "question": "What is the earliest year retired delivered in 1965 with an in service in November 1971 for the PoAF Serial less than 7103?",
+    "answer_resolved": "1975.0",
+    "formula": "MIN(FILTER(E2:E8,(D2:D8=\"1965\")*(F2:F8=\"november 1971\")*(C2:C8<7103)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-17798093-11",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-17798093-11.xlsx",
+    "question": "What is British, when 17th c. is \"\u025bi\"?",
+    "answer_resolved": "a\u026a",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,A2:A8=\"\u025bi\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1585656-13",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1585656-13.xlsx",
+    "question": "What match has Clem Hill (sa) as the player?",
+    "answer_resolved": "South Australia v New South Wales",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F7,C2:C7=\"clem hill (sa)\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-22570439-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-22570439-1.xlsx",
+    "question": "How many u.s. viewers (millions) have 5 as the season #?",
+    "answer_resolved": "4.76",
+    "formula": "SUM(FILTER(F2:F20, B2:B20=5))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16103661-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16103661-6.xlsx",
+    "question": "What was the launch site for a satellite of GPS IIIA-2?",
+    "answer_resolved": "CCAFS (TBD)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,E2:E6=\"gps iiia-2\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-12280777-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-12280777-2.xlsx",
+    "question": "What is on at 8:30 when etalk is on at 7:00 on that channel?",
+    "answer_resolved": "Dancing with the Stars",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G10,A2:A10=\"etalk\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17470560-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17470560-3.xlsx",
+    "question": "to the Latin of f, y, u/v/w?",
+    "answer_resolved": "\u03dc, \u03a5",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F7,F2:F7=\"f, y, u/v/w\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-29619494-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-29619494-2.xlsx",
+    "question": "How many seasons did Apocalypstix place 2nd?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(A2:A7, B2:B7=\"2nd\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_network_1_highschooler",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/network_1_highschooler.xlsx",
+    "question": "What is Kyle's id?",
+    "answer_resolved": "1934",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:D17,B2:B17=\"kyle\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17442730-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17442730-2.xlsx",
+    "question": "What is Opponent, when Event is \"ISCF - Southeast Championships\"?",
+    "answer_resolved": "Ivan Carabello",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G14,E2:E14=\"iscf - southeast championships\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-18811891-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-18811891-5.xlsx",
+    "question": "What is the score of Nick Taylor (a)?",
+    "answer_resolved": "73-65=138",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E12,B2:B12=\"nick taylor (a)\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-11222695-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-11222695-1.xlsx",
+    "question": "I want the result for winner of bc 3",
+    "answer_resolved": "Win",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E10,C2:C10=\"bc 3\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17751827-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17751827-4.xlsx",
+    "question": "What was the Tie no when Manchester United was the home team?",
+    "answer_resolved": "11",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E20,B2:B20=\"manchester united\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-25030512-24",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-25030512-24.xlsx",
+    "question": "Name the party for 1998 first elected",
+    "answer_resolved": "Democratic",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F8,D2:D8=1998),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-13026799-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-13026799-1.xlsx",
+    "question": "What was the winning score in the PGA Championship?",
+    "answer_resolved": "\u22125 (69-73-69-68=279)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E19,B2:B19=\"pga championship\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-29273115-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-29273115-1.xlsx",
+    "question": "How many different titles does the episode with production code IP02003 have?",
+    "answer_resolved": "\" The Gang Gives Back \"",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,G2:G7=\"IP02003\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-12771081-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-12771081-1.xlsx",
+    "question": "What is the highest Bronze with the Event 1972 Heidelberg and Total less than 5?",
+    "answer_resolved": "1.0",
+    "formula": "MAX(FILTER(D2:D13, (A2:A13=\"1972 heidelberg\")*(E2:E13<5)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18615220-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18615220-1.xlsx",
+    "question": "What is the rank of Si Sa Ket province with less than 14 bronze medals?",
+    "answer_resolved": "8.0",
+    "formula": "SUM(FILTER(A2:A11, (B2:B11=\"si sa ket\")*(E2:E11<14)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1523673-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1523673-2.xlsx",
+    "question": "What is the label for December 2004?",
+    "answer_resolved": "Conspiracy Records",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,B2:B6=\"december 2004\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-17514226-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-17514226-1.xlsx",
+    "question": "Where is the longest arch with a length in meters of 63?",
+    "answer_resolved": "Dinosaur National Monument , Colorado , USA",
+    "formula": "FILTER(C2:C16,D2:D16=\"63\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-13638416-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-13638416-3.xlsx",
+    "question": "what week had a player named zach",
+    "answer_resolved": "100, 100",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:I7,A2:A7=\"zach\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18715280-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18715280-4.xlsx",
+    "question": "How many bronze medals for the United Kingdom when the silver was less than 0?",
+    "answer_resolved": "0.0",
+    "formula": "SUM(FILTER(E2:E14, (B2:B14=\"united kingdom\")*(D2:D14<0)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_1-27713583-11",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_1-27713583-11.xlsx",
+    "question": "Name the date for cleveland",
+    "answer_resolved": "April 3",
+    "formula": "FILTER(B2:B7,C2:C7=\"Cleveland\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_1-1590967-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_1-1590967-6.xlsx",
+    "question": "Name the musical guest where guest host is elle macpherson",
+    "answer_resolved": "Estelle ( American Boy )",
+    "formula": "FILTER(D2:D6,C2:C6=\"Elle Macpherson\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10775038-18",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10775038-18.xlsx",
+    "question": "Which home team played against Hawthorn?",
+    "answer_resolved": "10.13 (73)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,C2:C7=\"hawthorn\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-25030512-24",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-25030512-24.xlsx",
+    "question": "Name the result for 1998",
+    "answer_resolved": "Re-elected",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F8,D2:D8=1998),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16360419-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16360419-1.xlsx",
+    "question": "How many silver when the team is northwest territories and gold is less than 34?",
+    "answer_resolved": "41.0",
+    "formula": "SUM(FILTER(C2:C10, (A2:A10=\"northwest territories\")*(B2:B10<34)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-13581632-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-13581632-2.xlsx",
+    "question": "what visitor came on november 27",
+    "answer_resolved": "Mtl. Canadiens",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,A2:A6=\"november 27\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-14407512-27",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-14407512-27.xlsx",
+    "question": "What is shown for  2nd (m) if the is 1st (m) is 203.5?",
+    "answer_resolved": "220.5",
+    "formula": "SUM(FILTER(E2:E6, D2:D6=203.5))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16682600-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16682600-1.xlsx",
+    "question": "What is Event, when Year is 2008?",
+    "answer_resolved": "Senior race, Team competition",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,A2:A7=2008),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-1672976-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-1672976-2.xlsx",
+    "question": "How many numbers were recorded under home losses when away losses were 6?",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(E2:E13, G2:G13=6))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17162214-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17162214-3.xlsx",
+    "question": "What was Bill Glasson's score to par after 2 rounds?",
+    "answer_resolved": "\u20131",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,B2:B11=\"bill glasson\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1235885-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1235885-4.xlsx",
+    "question": "What was the position of the Racing Organisation Course team?",
+    "answer_resolved": "DNF",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G14,B2:B14=\"racing organisation course\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1451730-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1451730-4.xlsx",
+    "question": "How long was the match with Jaime Fletcher?",
+    "answer_resolved": "4:25",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:H6,C2:C6=\"jaime fletcher\"),7))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-26358264-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-26358264-2.xlsx",
+    "question": "When cancelled is the fastest qualifying where is the location?",
+    "answer_resolved": "River Danube , Budapest",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G8,E2:E8=\"Cancelled\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18955077-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18955077-1.xlsx",
+    "question": "What is the value of the size (steps) that has just ratio 10:9 and a size (cents) more than 160",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(B2:B19, (D2:D19=\"10:9\")*(C2:C19>160)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-1342198-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-1342198-6.xlsx",
+    "question": "How many districts have an incumbent first elected in 1944?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(A2:A9, D2:D9=1944)))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16892045-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16892045-6.xlsx",
+    "question": "What is the 2012 club of the cf pos. player?",
+    "answer_resolved": "ZF-Eger, BVSC \u2010 Zugl\u00f3, Duna\u00fajv\u00e1rosi F\u0151iskola VE",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E14,B2:B14=\"cf\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10823950-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10823950-6.xlsx",
+    "question": "What is the score of the Home team of geelong?",
+    "answer_resolved": "22.21 (153)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,A2:A7=\"geelong\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10807990-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10807990-5.xlsx",
+    "question": "What was the home team score when North Melbourne was the away team?",
+    "answer_resolved": "15.19 (109)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G6,C2:C6=\"north melbourne\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-22607062-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-22607062-1.xlsx",
+    "question": "Name the ticket/office for orville preston",
+    "answer_resolved": "Union Labor",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F8,B2:B8=\"Orville Preston\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-15621965-18",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-15621965-18.xlsx",
+    "question": "What is Stephen Thompson's School/Club Team?",
+    "answer_resolved": "Syracuse",
+    "formula": "FILTER(E2:E12,A2:A12=\"stephen thompson\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10929638-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10929638-3.xlsx",
+    "question": "what is the total when the rank is 4?",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(F2:F19, A2:A19=4))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-15354254-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-15354254-1.xlsx",
+    "question": "What is the largest points number where the difference is 12?",
+    "answer_resolved": "19.0",
+    "formula": "MAX(FILTER(C2:C8, H2:H8=12))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-18541206-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-18541206-1.xlsx",
+    "question": "What is the highest number of podiums before 2008 with a 5th position and more than 0 f/laps?",
+    "answer_resolved": "2.0",
+    "formula": "MAX(FILTER(H2:H6, (A2:A6<2008)*(J2:J6=\"5th\")*(G2:G6>0)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10826385-8",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10826385-8.xlsx",
+    "question": "Where was the game played when the away team scored 14.15 (99)?",
+    "answer_resolved": "Moorabbin Oval",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,D2:D7=\"14.15 (99)\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-12771081-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-12771081-1.xlsx",
+    "question": "What is the Total with the Event 2004 Athens and Gold less than 20?",
+    "answer_resolved": "71.0",
+    "formula": "SUM(FILTER(E2:E13, (A2:A13=\"2004 athens\")*(B2:B13<20)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17715861-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17715861-2.xlsx",
+    "question": "What is the highest number of wins for club Cd Orense, with points greater than 36 and more than 4 draws?",
+    "answer_resolved": "14.0",
+    "formula": "MAX(FILTER(E2:E17, (F2:F17>4)*(B2:B17=\"cd orense\")*(D2:D17>36)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17859751-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17859751-6.xlsx",
+    "question": "What is 2011, when 2009 is \"A\"?",
+    "answer_resolved": "A",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,B2:B7=\"a\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1140110-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1140110-1.xlsx",
+    "question": "What race occurred on the date of 15 June?",
+    "answer_resolved": "Belgian Grand Prix",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:I12,C2:C12=\"15 june\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17995113-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17995113-3.xlsx",
+    "question": "What is Surface, when Tournament is \"Sunderland , United Kingdom\"?",
+    "answer_resolved": "Hard",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E13,B2:B13=\"sunderland , united kingdom\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-17608125-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-17608125-6.xlsx",
+    "question": "Which Tie is from everton?",
+    "answer_resolved": "2",
+    "formula": "FILTER(A2:A12,B2:B12=\"everton\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14887635-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14887635-1.xlsx",
+    "question": "What Locomotive was Delivered as T414?",
+    "answer_resolved": "H2",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,B2:B6=\"t414\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-12109851-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-12109851-6.xlsx",
+    "question": "Which lowest position has goals against smaller than 78, Points of 42-2, and Wins larger than 15?",
+    "answer_resolved": "1.0",
+    "formula": "MIN(FILTER(A2:A7, (I2:I7<78)*(D2:D7=\"42-2\")*(E2:E7>15)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1204658-12",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1204658-12.xlsx",
+    "question": "What team plays their home games in Victoria Park?",
+    "answer_resolved": "Collingwood",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,E2:E6=\"victoria park\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-11311764-9",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-11311764-9.xlsx",
+    "question": "What is the sum of the year for 5 february?",
+    "answer_resolved": "2011.0",
+    "formula": "SUM(FILTER(A2:A7,C2:C7=\"5 february\"))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-10701914-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-10701914-1.xlsx",
+    "question": "Where did the away team play when they scored 15.10 (100)?",
+    "answer_resolved": "Punt Road Oval",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,D2:D7=\"15.10 (100)\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-12280777-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-12280777-2.xlsx",
+    "question": "What is on at 9:30 on the channel of dancing with the stars?",
+    "answer_resolved": "Corner Gas",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G10,D2:D10=\"dancing with the stars\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1607312-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1607312-1.xlsx",
+    "question": "What is the away team of the UEFA champions league?",
+    "answer_resolved": "2\u20132",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F14,B2:B14=\"uefa champions league\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1882602-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1882602-1.xlsx",
+    "question": "Which Programming has a Video of audio only?",
+    "answer_resolved": "Cleveland Sight Center Network",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,B2:B6=\"audio only\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-11972799-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-11972799-2.xlsx",
+    "question": "Who is the rider who had the time of 1:27.37.22?",
+    "answer_resolved": "James McCann",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,E2:E11=\"1:27.37.22\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-181498-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-181498-2.xlsx",
+    "question": "Which English has German of leben?",
+    "answer_resolved": "life",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E13,A2:A13=\"leben\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1523673-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1523673-2.xlsx",
+    "question": "What format is dated October 29, 2004?",
+    "answer_resolved": "2CD",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,B2:B6=\"october 29, 2004\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18116595-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18116595-2.xlsx",
+    "question": "What county won in 1991?",
+    "answer_resolved": "Australia",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,C2:C6=1991),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-22839669-12",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-22839669-12.xlsx",
+    "question": "How many atp wins did he have when his money list rank was 4? ",
+    "answer_resolved": "6.0",
+    "formula": "SUM(FILTER(C2:C11, F2:F11=4))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18116595-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18116595-2.xlsx",
+    "question": "What was the finish for England?",
+    "answer_resolved": "2",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,B2:B6=\"england\"),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-15354254-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-15354254-1.xlsx",
+    "question": "Which amount of lost had an against of more than 22 and 9 points?",
+    "answer_resolved": "5.0",
+    "formula": "SUM(FILTER(F2:F8, (G2:G8>22)*(C2:C8=9)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-30060356-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-30060356-3.xlsx",
+    "question": "Who are the gt3 pro / am cup winners when the gt3 pro cup winner was no. 1 vita4one?",
+    "answer_resolved": "No. 20 SOFREV Auto Sport Promotion",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F9,C2:C9=\"No. 1 Vita4One\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-15147453-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-15147453-6.xlsx",
+    "question": "Name the sum of rating % for cctv and position more than 7",
+    "answer_resolved": "2.43",
+    "formula": "SUM(FILTER(E2:E11, (C2:C11=\"cctv\")*(A2:A11>7)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-10701914-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-10701914-1.xlsx",
+    "question": "Where did the away team score 7.15 (57)?",
+    "answer_resolved": "Princes Park",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,D2:D7=\"7.15 (57)\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-11558575-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-11558575-2.xlsx",
+    "question": "What's the highest level of team Astana since 2007?",
+    "answer_resolved": "1.0",
+    "formula": "MAX(FILTER(E2:E8, (B2:B8=\"astana\")*(A2:A8>2007)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-28672269-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-28672269-1.xlsx",
+    "question": "What are Unit 2's dates of commissioning?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(D2:D9, B2:B9=2)))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-13095097-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-13095097-1.xlsx",
+    "question": "What is the lowest number of matches played that has more than 0 draws, a percentage of 12.50%, and fewer than 3 losses?",
+    "answer_resolved": "4.0",
+    "formula": "MIN(FILTER(B2:B14, (C2:C14>0)*(E2:E14=\"12.50%\")*(D2:D14<3)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16669584-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16669584-1.xlsx",
+    "question": "What is Player, when Years With Spurs is 1988-95?",
+    "answer_resolved": "Anderson, Willie Willie Anderson",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F9,E2:E9=\"1988-95\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-15416002-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-15416002-1.xlsx",
+    "question": "What was the lowest V(mph) for a Saffir-Simpson of 4 in 2005?",
+    "answer_resolved": "145.0",
+    "formula": "MIN(FILTER(E2:E19,(G2:G19=4)*(B2:B19=2005)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-14904221-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-14904221-1.xlsx",
+    "question": "WHo won men's singles in 1994?",
+    "answer_resolved": "Ivan \u0110uri\u0107",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F9,A2:A9=1994),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1365841-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1365841-5.xlsx",
+    "question": "When someone was first elected in 1898 what was the result?",
+    "answer_resolved": "Re-elected",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,D2:D8=1898),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16441561-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16441561-2.xlsx",
+    "question": "Can you tell me the Position that has the CFL Team of toronto?",
+    "answer_resolved": "DL",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,B2:B6=\"toronto\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1834138-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1834138-2.xlsx",
+    "question": "What is the population of area of 11?",
+    "answer_resolved": "140,070",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G10,E2:E10=11),6))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-1341453-40",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-1341453-40.xlsx",
+    "question": "How many candidates ran in the election where Mike Doyle was the incumbent? ",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(F2:F20, B2:B20=\"Mike Doyle\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10826385-8",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10826385-8.xlsx",
+    "question": "When was the game played where the away team scored 11.14 (80)?",
+    "answer_resolved": "20 May 1972",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G7,D2:D7=\"11.14 (80)\"),7))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14069895-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14069895-2.xlsx",
+    "question": "What is the character name that has phyllis welch as the leading lady?",
+    "answer_resolved": "Prof. Dean Lambert",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F9,F2:F9=\"phyllis welch\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14069895-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14069895-2.xlsx",
+    "question": "What is the length of the film with Burleigh Sullivan as the character?",
+    "answer_resolved": "8010ft. 89 min.",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F9,D2:D9=\"burleigh sullivan\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18599073-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18599073-1.xlsx",
+    "question": "What is the Result of the event with a Record of 1-3?",
+    "answer_resolved": "Loss",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F19,B2:B19=\"1-3\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1507423-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1507423-3.xlsx",
+    "question": "What position did he finish in 2012?",
+    "answer_resolved": "DSQ",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E10,A2:A10=2012),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16360419-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16360419-1.xlsx",
+    "question": "How many silver when bronze is 25 and overall is less than 67?",
+    "answer_resolved": "27.0",
+    "formula": "SUM(FILTER(C2:C10, (D2:D10=25)*(E2:E10<67)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-18017216-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-18017216-2.xlsx",
+    "question": "What is Tiger Woods' to par?",
+    "answer_resolved": "\u20131",
+    "formula": "FILTER(E2:E7,A2:A7=\"tiger woods\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1226513-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1226513-3.xlsx",
+    "question": "What is the entrant in 1999?",
+    "answer_resolved": "Repsol Arrows",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,A2:A11=1999),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17301013-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17301013-6.xlsx",
+    "question": "What is the score of the game where the NY Islanders are the home team?",
+    "answer_resolved": "3\u20132",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F13,D2:D13=\"ny islanders\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-11908801-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-11908801-1.xlsx",
+    "question": "What nickname has the meaning of God knows my journey?",
+    "answer_resolved": "Chima",
+    "formula": "FILTER(B2:B9,E2:E9=\"god knows my journey\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-16636344-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-16636344-1.xlsx",
+    "question": "What is the league name for the regular season status of 2nd, mid atlantic?",
+    "answer_resolved": "NPSL",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F7,D2:D7=\"2nd, Mid Atlantic\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_cre_doc_control_systems_draft_copies",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/cre_doc_control_systems_draft_copies.xlsx",
+    "question": "How many draft copies does the document with id 2 have?",
+    "answer_resolved": "2",
+    "formula": "ROWS(UNIQUE(FILTER(D2:D9, A2:A9=2)))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1204658-12",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1204658-12.xlsx",
+    "question": "Where was the game held where the away team had a score of 2.2 (14)?",
+    "answer_resolved": "Victoria Park",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,D2:D6=\"2.2 (14)\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17442730-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17442730-2.xlsx",
+    "question": "What is Event, when Record is \"3-0\"?",
+    "answer_resolved": "ISCF - Battle at the Brewery",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G14,B2:B14=\"3-0\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1451730-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1451730-4.xlsx",
+    "question": "Who did he fight in Rumble of the Kings 6?",
+    "answer_resolved": "Yusuke Kawaguchi",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:H6,E2:E6=\"rumble of the kings 6\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1365841-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1365841-5.xlsx",
+    "question": "When the incumbent was William Elliott, what was the result?",
+    "answer_resolved": "Re-elected",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,B2:B8=\"william elliott\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-144367-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-144367-5.xlsx",
+    "question": "What's the Lowest Volume Number that was published November 2004?",
+    "answer_resolved": "6.0",
+    "formula": "MIN(FILTER(A2:A13,D2:D13=\"november 2004\"))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-11965402-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-11965402-5.xlsx",
+    "question": "What was the score when the spurs were the visitors?",
+    "answer_resolved": "82\u201388",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G14,B2:B14=\"spurs\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-21076286-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-21076286-2.xlsx",
+    "question": "Name the broadcast network for saitama prefecture",
+    "answer_resolved": "TV Saitama",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,A2:A7=\"Saitama Prefecture\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-30030477-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-30030477-1.xlsx",
+    "question": "How many titles are there with the original air date of august3,2010?",
+    "answer_resolved": "1",
+    "formula": "ROWS(UNIQUE(FILTER(C2:C9, F2:F9=\"August3,2010\")))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1365841-5",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1365841-5.xlsx",
+    "question": "What party has an incumbent of Stanyarne Wilson?",
+    "answer_resolved": "Democratic",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E8,B2:B8=\"stanyarne wilson\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14887635-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14887635-1.xlsx",
+    "question": "What Owner Delivered the T415?",
+    "answer_resolved": "Pacific National - Rural and Bulk",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,B2:B6=\"t415\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-12410929-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-12410929-6.xlsx",
+    "question": "What dates contained matches at the venue Bourda?",
+    "answer_resolved": "23,24,25,27,28 March 1991",
+    "formula": "FILTER(A2:A6,D2:D6=\"bourda\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-14887635-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-14887635-1.xlsx",
+    "question": "What is the Entered service date of the H1 Locomotive?",
+    "answer_resolved": "20 December 1968",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E6,A2:A6=\"h1\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-29619494-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-29619494-2.xlsx",
+    "question": "List all the places that the Apocalypstix occupied when the Denim Demons were 2nd.",
+    "answer_resolved": "3rd",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,C2:C7=\"2nd\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-18607260-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-18607260-6.xlsx",
+    "question": "What are the lowest conceded with 1 draw, and a score larger than 14?",
+    "answer_resolved": "15.0",
+    "formula": "MIN(FILTER(H2:H13, (E2:E13=1)*(G2:G13>14)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-1355180-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-1355180-1.xlsx",
+    "question": "How many people attended the 3rd round Emperor's cup with a TMS larger than 12?",
+    "answer_resolved": "17622.0",
+    "formula": "SUM(FILTER(E2:E15, (F2:F15=\"3rd round\")*(C2:C15>12)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1056492-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1056492-3.xlsx",
+    "question": "What is the division in the season more recent than 2012 when the round of 16 was reached in the FA Cup?",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(B2:B11, (E2:E11=\"round of 16\")*(A2:A11>2012)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-11972799-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-11972799-2.xlsx",
+    "question": "What is the time of the rider with a speed of 102.962mph?",
+    "answer_resolved": "1:27.56.85",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E11,D2:D11=\"102.962mph\"),5))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-10535584-4",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-10535584-4.xlsx",
+    "question": "How many dances placed below 1 with a point total of 40?",
+    "answer_resolved": "2.0",
+    "formula": "SUM(FILTER(E2:E12, (B2:B12>1)*(D2:D12=40)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-17129548-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-17129548-6.xlsx",
+    "question": "What is the Place of the Player with a Score of 67-76-74-67=284?",
+    "answer_resolved": "T8",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F14,D2:D14=\"67-76-74-67=284\"),1))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1699550-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1699550-1.xlsx",
+    "question": "WHAT IS THE SCORE WHEN THE COMPETITION WAS 1978 world cup qualification?",
+    "answer_resolved": "2\u20130",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,F2:F6=\"1978 world cup qualification\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-181498-2",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-181498-2.xlsx",
+    "question": "Which Plautdietsch has Dutch of maken?",
+    "answer_resolved": "moake(n)",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E13,D2:D13=\"maken\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_2-16360419-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_2-16360419-1.xlsx",
+    "question": "what is the least silver when overall is less than 67, team is saami and gold is less than 5?",
+    "answer_resolved": "5.0",
+    "formula": "MIN(FILTER(C2:C10, (E2:E10<67)*(A2:A10=\"saami\")*(B2:B10<5)))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-30030477-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-30030477-1.xlsx",
+    "question": "What is the name of the episode written by glen mazzara?",
+    "answer_resolved": "\"No Excuses\"",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:G9,E2:E9=\"Glen Mazzara\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_1-1341453-40",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_1-1341453-40.xlsx",
+    "question": "Incumbent Tim Holden belonged to what party? ",
+    "answer_resolved": "Democratic",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F20,B2:B20=\"Tim Holden\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-16851-6",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-16851-6.xlsx",
+    "question": "What are the Chinese characters for the word that has a R\u014dmaji of ch\u0101sh\u016b?",
+    "answer_resolved": "\u53c9\u713c",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,B2:B6=\"ch\u0101sh\u016b\"),4))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_test_1-1646960-3",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/test_1-1646960-3.xlsx",
+    "question": "What is the winning song for the artist with a debut album \"mike\"?",
+    "answer_resolved": "Semua Untuk Cinta",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:E7,E2:E7=\"Mike\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-17382360-8",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-17382360-8.xlsx",
+    "question": "Which game was played on march 2?",
+    "answer_resolved": "56.0",
+    "formula": "AVERAGE(FILTER(A2:A18,B2:B18=\"march 2\"))",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_train_2-1204658-12",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/train_2-1204658-12.xlsx",
+    "question": "Who was the away team in the game where the home team had a score of 4.9 (33)?",
+    "answer_resolved": "Richmond",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:F6,B2:B6=\"4.9 (33)\"),3))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-16066729-1",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-16066729-1.xlsx",
+    "question": "In what year of school is the player from Fayetteville, NC?",
+    "answer_resolved": "Senior",
+    "formula": "FILTER(D2:D15,E2:E15=\"fayetteville, nc\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_match_season_match_season",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/match_season_match_season.xlsx",
+    "question": "Players from ucla.",
+    "answer_resolved": "Carlos Bocanegra Category:Articles with hCards, Jonathan Bornstein Category:Articles with hCards",
+    "formula": "UNIQUE(CHOOSECOLS(FILTER(A2:I17,H2:H17=\"ucla\"),2))",
+    "question_type": "nl2formula_medium",
+    "difficulty": "Medium",
+    "sheet": "Sheet1"
+  },
+  {
+    "workbook": "nl2f_dev_2-10869537-10",
+    "workbook_path": "/Users/blader/.superset/worktrees/runway/runway/blader/scf-benchmarking/evals/scf-bench/corpus/nl2formula/xlsx_cache/dev_2-10869537-10.xlsx",
+    "question": "Where did Fitzroy play as the away team?",
+    "answer_resolved": "Windy Hill",
+    "formula": "FILTER(E2:E7,C2:C7=\"fitzroy\")",
+    "question_type": "nl2formula_easy",
+    "difficulty": "Easy",
+    "sheet": "Sheet1"
+  }
+]
