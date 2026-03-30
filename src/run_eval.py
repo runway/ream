@@ -37,7 +37,7 @@ MODELS = [
 ]
 
 # Formats to compare
-FORMAT_NAMES = ["scf", "csv", "markdown", "json", "sheetcompressor"]
+FORMAT_NAMES = ["ream", "csv", "markdown", "json", "sheetcompressor"]
 
 # Cache directory for converted spreadsheets and LLM responses
 CACHE_DIR = "data/cache"
@@ -113,9 +113,9 @@ def format_display_name(fmt: str) -> str:
         "ream_v12": "Ream-v12",
         "ream": "Ream",
         "ream_addressed": "Ream-Addressed",
-        "scf": "SCF",
-        "scf_addressed": "SCF-Addressed",
-        "scf_formulas": "SCF-Formulas",
+        "scf": "SCF-legacy-v5",
+        "scf_addressed": "SCF-legacy-Addressed",
+        "scf_formulas": "SCF-legacy-Formulas",
         "csv": "CSV",
         "markdown": "Markdown",
         "markdown_kv": "Markdown-KV",

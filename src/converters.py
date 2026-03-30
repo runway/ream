@@ -1,6 +1,6 @@
 """
 Convert XLSX workbooks to various text representations for LLM consumption.
-Supports: Ream, SCF (legacy), CSV, Markdown, JSON and others
+Supports: Ream, CSV, Markdown, JSON and others
 """
 
 import json
@@ -30,8 +30,8 @@ def _cell_value_str(val: Any) -> str:
     return str(val)
 
 
-def _needs_scf_quoting(s: str) -> bool:
-    """Check if a string needs quoting in SCF format."""
+def _needs_ream_quoting(s: str) -> bool:
+    """Check if a string needs quoting in Ream format."""
     if not s:
         return True  # empty string
     if s.startswith("=") or s.startswith("[") or s.startswith('"'):
@@ -57,14 +57,14 @@ def _needs_scf_quoting(s: str) -> bool:
     return False
 
 
-def _scf_quote(s: str) -> str:
-    """Quote a string for SCF format."""
+def _ream_quote(s: str) -> str:
+    """Quote a string for Ream format."""
     escaped = s.replace("\\", "\\\\").replace('"', '""').replace("\n", "\\n").replace("\r", "\\r").replace("\t", "\\t")
     return f'"{escaped}"'
 
 
-def _scf_scalar(val: Any) -> str:
-    """Convert a cell value to an SCF scalar."""
+def _ream_scalar(val: Any) -> str:
+    """Convert a cell value to a Ream scalar."""
     if val is None:
         return ""
     if isinstance(val, bool):
@@ -82,13 +82,13 @@ def _scf_scalar(val: Any) -> str:
         s = val.strftime("%Y-%m-%d")
         return s
     s = str(val)
-    if _needs_scf_quoting(s):
-        return _scf_quote(s)
+    if _needs_ream_quoting(s):
+        return _ream_quote(s)
     return s
 
 
-def xlsx_to_scf(filepath: str, max_rows_per_sheet: int = 500, addressed: bool = False) -> str:
-    """Convert an XLSX workbook to SCF format.
+def xlsx_to_scf_legacy(filepath: str, max_rows_per_sheet: int = 500, addressed: bool = False) -> str:
+    """Convert an XLSX workbook to legacy SCF v5 format.
 
     Args:
         filepath: Path to the XLSX workbook.
@@ -97,14 +97,14 @@ def xlsx_to_scf(filepath: str, max_rows_per_sheet: int = 500, addressed: bool = 
                    positional counting). If False, only sparse gaps get prefixes.
     """
     wb = openpyxl.load_workbook(filepath, data_only=True)
-    lines = ["#!SCF 5"]
+    lines = ["#!SCF 5"  # legacy]
 
     for sheet_name in wb.sheetnames:
         ws = wb[sheet_name]
         # Quote sheet name if it contains special chars
         safe_name = sheet_name
         if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _scf_quote(sheet_name)
+            safe_name = _ream_quote(sheet_name)
         lines.append(f"#!SHEET {safe_name}")
 
         # Detect header row (first row with data)
@@ -144,13 +144,13 @@ def xlsx_to_scf(filepath: str, max_rows_per_sheet: int = 500, addressed: bool = 
             if addressed:
                 # Every cell gets an explicit C<N>= prefix
                 for col_idx in sorted(cells.keys()):
-                    scalar = _scf_scalar(cells[col_idx])
+                    scalar = _ream_scalar(cells[col_idx])
                     entries.append(f"C{col_idx}={scalar}")
             else:
-                # SCF canonical: only sparse gaps get prefixes
+                # Legacy SCF canonical: only sparse gaps get prefixes
                 cursor = 1
                 for col_idx in sorted(cells.keys()):
-                    scalar = _scf_scalar(cells[col_idx])
+                    scalar = _ream_scalar(cells[col_idx])
                     if col_idx == cursor:
                         entries.append(scalar)
                     else:
@@ -163,9 +163,9 @@ def xlsx_to_scf(filepath: str, max_rows_per_sheet: int = 500, addressed: bool = 
     return "\n".join(lines)
 
 
-def xlsx_to_scf_addressed(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """SCF with always-on column addressing (every cell prefixed with C<N>=)."""
-    return xlsx_to_scf(filepath, max_rows_per_sheet=max_rows_per_sheet, addressed=True)
+def xlsx_to_scf_legacy_addressed(filepath: str, max_rows_per_sheet: int = 500) -> str:
+    """Legacy SCF with always-on column addressing (every cell prefixed with C<N>=)."""
+    return xlsx_to_scf_legacy(filepath, max_rows_per_sheet=max_rows_per_sheet, addressed=True)
 
 
 def xlsx_to_csv(filepath: str, max_rows_per_sheet: int = 500) -> str:
@@ -694,20 +694,20 @@ def xlsx_to_raw_ooxml(filepath: str, max_rows_per_sheet: int = 500) -> str:
     return "\n\n".join(sections)
 
 
-def xlsx_to_scf_formulas(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """SCF with formula preservation (not data_only mode).
+def xlsx_to_scf_legacy_formulas(filepath: str, max_rows_per_sheet: int = 500) -> str:
+    """Legacy SCF with formula preservation (not data_only mode).
 
-    Reads the workbook with formulas intact and encodes them in SCF format.
+    Reads the workbook with formulas intact and encodes them in legacy SCF format.
     Formulas appear as =FORMULA_TEXT in cell values.
     """
     wb = openpyxl.load_workbook(filepath, data_only=False)
-    lines = ["#!SCF 5"]
+    lines = ["#!SCF 5"  # legacy]
 
     for sheet_name in wb.sheetnames:
         ws = wb[sheet_name]
         safe_name = sheet_name
         if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _scf_quote(sheet_name)
+            safe_name = _ream_quote(sheet_name)
         lines.append(f"#!SHEET {safe_name}")
 
         header_row = None
@@ -749,7 +749,7 @@ def xlsx_to_scf_formulas(filepath: str, max_rows_per_sheet: int = 500) -> str:
                 if isinstance(val, str) and val.startswith("="):
                     scalar = val  # formula preserved as-is
                 else:
-                    scalar = _scf_scalar(val)
+                    scalar = _ream_scalar(val)
                 if col_idx == cursor:
                     entries.append(scalar)
                 else:
@@ -837,7 +837,7 @@ def xlsx_to_ream(filepath: str, max_rows_per_sheet: int = 500,
         ws = wb[sheet_name]
         safe_name = sheet_name
         if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _scf_quote(sheet_name)
+            safe_name = _ream_quote(sheet_name)
         lines.append(f"#!SHEET {safe_name}")
 
         header_row = None
@@ -864,7 +864,7 @@ def xlsx_to_ream(filepath: str, max_rows_per_sheet: int = 500,
             for col_idx in range(1, (ws.max_column or 0) + 1):
                 val = ws.cell(row=row_idx, column=col_idx).value
                 if val is not None:
-                    cells[col_idx] = _scf_scalar(val)
+                    cells[col_idx] = _ream_scalar(val)
 
             if not cells:
                 continue
@@ -966,9 +966,9 @@ FORMATS = {
     "ream_v12": xlsx_to_ream_v12,
     "ream": xlsx_to_ream,
     "ream_addressed": xlsx_to_ream_addressed,
-    "scf": xlsx_to_scf,
-    "scf_addressed": xlsx_to_scf_addressed,
-    "scf_formulas": xlsx_to_scf_formulas,
+    "scf": xlsx_to_scf_legacy,
+    "scf_addressed": xlsx_to_scf_legacy_addressed,
+    "scf_formulas": xlsx_to_scf_legacy_formulas,
     "csv": xlsx_to_csv,
     "markdown": xlsx_to_markdown,
     "markdown_kv": xlsx_to_markdown_kv,
