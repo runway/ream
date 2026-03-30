@@ -813,16 +813,25 @@ def xlsx_to_reverse_index_values(filepath: str, max_rows_per_sheet: int = 500) -
     return json.dumps(result, indent=2, ensure_ascii=False)
 
 
-def xlsx_to_ream_v12(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """Convert an XLSX workbook to Ream format (draft 12 / wire version 11).
+def xlsx_to_ream(filepath: str, max_rows_per_sheet: int = 500,
+                 force_col_selectors: bool = False,
+                 collapse_rows: bool = False) -> str:
+    """Convert an XLSX workbook to Ream format.
 
-    New in v12 vs v9:
-    - Version: #!REAM 11
-    - Row spans: '12:20 | B:M=8500 |' for 2D compaction
-    - Canonical vertical merge of identical horizontal segments
+    Args:
+        filepath: Path to the XLSX workbook.
+        max_rows_per_sheet: Maximum data rows per sheet before truncation.
+        force_col_selectors: If True, every cell gets an A1-style column prefix
+            (e.g., 'A=Revenue | B=1000 |'). If False (default), only sparse
+            gaps get column prefixes per canonical Ream rules.
+        collapse_rows: If True, vertically merge consecutive rows with
+            identical content into row-span records (e.g., '7:12 | B:M=8500 |').
+            Requires wire version #!REAM 11. If False (default), each row is
+            its own record using wire version #!REAM 9.
     """
     wb = openpyxl.load_workbook(filepath, data_only=True)
-    lines = ["#!REAM 11"]
+    version = "11" if collapse_rows else "9"
+    lines = [f"#!REAM {version}"]
 
     for sheet_name in wb.sheetnames:
         ws = wb[sheet_name]
@@ -843,9 +852,8 @@ def xlsx_to_ream_v12(filepath: str, max_rows_per_sheet: int = 500) -> str:
         if header_row:
             lines.append(f"#!HEADERS {header_row}:{header_row}")
 
-        # Phase 1: Build horizontal segments for each row
-        # segment = (row, start_col, end_col, entries_str)
-        row_segments = {}  # row -> list of (start_col, end_col, canonical_cell_text)
+        # Collect all row data
+        row_segments = {}
         row_count = 0
         for row_idx in range(1, (ws.max_row or 0) + 1):
             if row_count >= max_rows_per_sheet:
@@ -862,197 +870,96 @@ def xlsx_to_ream_v12(filepath: str, max_rows_per_sheet: int = 500) -> str:
                 continue
 
             row_count += 1
-            # Build maximal horizontal segments of identical values
-            segments = []
-            sorted_cols = sorted(cells.keys())
-            i = 0
-            while i < len(sorted_cols):
-                start_col = sorted_cols[i]
-                val = cells[start_col]
-                end_col = start_col
-                # Extend while consecutive and identical
-                while i + 1 < len(sorted_cols) and sorted_cols[i + 1] == end_col + 1 and cells[sorted_cols[i + 1]] == val:
+
+            if collapse_rows:
+                # Build maximal horizontal segments of identical values
+                segments = []
+                sorted_cols = sorted(cells.keys())
+                i = 0
+                while i < len(sorted_cols):
+                    start_col = sorted_cols[i]
+                    val = cells[start_col]
+                    end_col = start_col
+                    while i + 1 < len(sorted_cols) and sorted_cols[i + 1] == end_col + 1 and cells[sorted_cols[i + 1]] == val:
+                        i += 1
+                        end_col = sorted_cols[i]
+                    segments.append((start_col, end_col, val))
                     i += 1
-                    end_col = sorted_cols[i]
-                segments.append((start_col, end_col, val))
+                row_segments[row_idx] = segments
+            else:
+                # Store raw cells for simple per-row emission
+                row_segments[row_idx] = cells
+
+        if collapse_rows:
+            # Vertical merge: group consecutive rows with identical segment lists
+            sorted_rows = sorted(row_segments.keys())
+            merged_records = []
+            i = 0
+            while i < len(sorted_rows):
+                start_row = sorted_rows[i]
+                segs = row_segments[start_row]
+                end_row = start_row
+                while i + 1 < len(sorted_rows) and sorted_rows[i + 1] == end_row + 1:
+                    if row_segments[sorted_rows[i + 1]] == segs:
+                        end_row = sorted_rows[i + 1]
+                        i += 1
+                    else:
+                        break
+                merged_records.append((start_row, end_row, segs))
                 i += 1
 
-            row_segments[row_idx] = segments
+            for start_row, end_row, segs in merged_records:
+                entries = []
+                cursor = 1
+                for start_col, end_col, val in segs:
+                    col_start = get_column_letter(start_col)
+                    col_end = get_column_letter(end_col)
+                    if force_col_selectors:
+                        if start_col == end_col:
+                            entries.append(f"{col_start}={val}")
+                        else:
+                            entries.append(f"{col_start}:{col_end}={val}")
+                    else:
+                        if start_col == cursor and start_col == end_col:
+                            entries.append(val)
+                        elif start_col == end_col:
+                            entries.append(f"{col_start}={val}")
+                        else:
+                            entries.append(f"{col_start}:{col_end}={val}")
+                    cursor = end_col + 1
 
-        # Phase 2: Vertical merge — group consecutive rows with identical segment lists
-        sorted_rows = sorted(row_segments.keys())
-        merged_records = []  # (start_row, end_row, segments)
-
-        i = 0
-        while i < len(sorted_rows):
-            start_row = sorted_rows[i]
-            segs = row_segments[start_row]
-            end_row = start_row
-
-            # Try to extend to consecutive rows with identical segments
-            while i + 1 < len(sorted_rows) and sorted_rows[i + 1] == end_row + 1:
-                next_row = sorted_rows[i + 1]
-                if row_segments[next_row] == segs:
-                    end_row = next_row
-                    i += 1
-                else:
-                    break
-            merged_records.append((start_row, end_row, segs))
-            i += 1
-
-        # Phase 3: Emit records
-        for start_row, end_row, segs in merged_records:
-            entries = []
-            cursor = 1
-            for start_col, end_col, val in segs:
-                col_start_letter = get_column_letter(start_col)
-                col_end_letter = get_column_letter(end_col)
-
-                if start_col == cursor and start_col == end_col:
-                    # Bare scalar at cursor
-                    entries.append(val)
-                elif start_col == end_col:
-                    # Addressed single column
-                    entries.append(f"{col_start_letter}={val}")
-                elif start_col == cursor:
-                    # Range starting at cursor — still need address for range
-                    entries.append(f"{col_start_letter}:{col_end_letter}={val}")
-                else:
-                    # Addressed range
-                    entries.append(f"{col_start_letter}:{col_end_letter}={val}")
-                cursor = end_col + 1
-
-            if start_row == end_row:
-                prefix = str(start_row)
-            else:
-                prefix = f"{start_row}:{end_row}"
-
-            line = f"{prefix} | " + " | ".join(entries) + " |"
-            lines.append(line)
+                prefix = str(start_row) if start_row == end_row else f"{start_row}:{end_row}"
+                lines.append(f"{prefix} | " + " | ".join(entries) + " |")
+        else:
+            # Simple per-row emission
+            for row_idx in sorted(row_segments.keys()):
+                cells = row_segments[row_idx]
+                entries = []
+                cursor = 1
+                for col_idx in sorted(cells.keys()):
+                    val = cells[col_idx]
+                    col_letter = get_column_letter(col_idx)
+                    if force_col_selectors:
+                        entries.append(f"{col_letter}={val}")
+                    else:
+                        if col_idx == cursor:
+                            entries.append(val)
+                        else:
+                            entries.append(f"{col_letter}={val}")
+                    cursor = col_idx + 1
+                lines.append(f"{row_idx} | " + " | ".join(entries) + " |")
 
     return "\n".join(lines)
 
 
-def xlsx_to_ream(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """Convert an XLSX workbook to Ream format (draft 9 / wire version 9).
-
-    Key design choices:
-    - Version: #!REAM 9
-    - Row labels are plain numbers: '12 | ...'
-    - Column addresses use A1-style letters: 'B=' not 'C2='
-    - Selectors use A1 notation: #!HEADERS 1:1
-    - Sparse gaps use column letters: 'D=-50000'
-    """
-    wb = openpyxl.load_workbook(filepath, data_only=True)
-    lines = ["#!REAM 9"]
-
-    for sheet_name in wb.sheetnames:
-        ws = wb[sheet_name]
-        safe_name = sheet_name
-        if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _scf_quote(sheet_name)
-        lines.append(f"#!SHEET {safe_name}")
-
-        header_row = None
-        for row_idx in range(1, min(ws.max_row or 1, max_rows_per_sheet) + 1):
-            for col_idx in range(1, (ws.max_column or 1) + 1):
-                if ws.cell(row=row_idx, column=col_idx).value is not None:
-                    header_row = row_idx
-                    break
-            if header_row:
-                break
-
-        if header_row:
-            lines.append(f"#!HEADERS {header_row}:{header_row}")
-
-        row_count = 0
-        for row_idx in range(1, (ws.max_row or 0) + 1):
-            if row_count >= max_rows_per_sheet:
-                lines.append(f"# ... showing first {max_rows_per_sheet} data rows")
-                break
-
-            cells = {}
-            for col_idx in range(1, (ws.max_column or 0) + 1):
-                val = ws.cell(row=row_idx, column=col_idx).value
-                if val is not None:
-                    cells[col_idx] = val
-
-            if not cells:
-                continue
-
-            row_count += 1
-            entries = []
-            cursor = 1
-            for col_idx in sorted(cells.keys()):
-                scalar = _scf_scalar(cells[col_idx])
-                col_letter = get_column_letter(col_idx)
-                if col_idx == cursor:
-                    entries.append(scalar)
-                else:
-                    entries.append(f"{col_letter}={scalar}")
-                cursor = col_idx + 1
-
-            # Plain row number, no R prefix
-            line = f"{row_idx} | " + " | ".join(entries) + " |"
-            lines.append(line)
-
-    return "\n".join(lines)
+def xlsx_to_ream_v12(filepath: str, max_rows_per_sheet: int = 500) -> str:
+    """Ream with row-span collapse enabled (wire version 11)."""
+    return xlsx_to_ream(filepath, max_rows_per_sheet, collapse_rows=True)
 
 
 def xlsx_to_ream_addressed(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """Ream format with always-on A1-style column addressing.
-
-    Every cell gets a column-letter prefix: 'A=Revenue | B=1000 | C=1050 |'
-    Uses Excel column letters that models know from training data.
-    """
-    wb = openpyxl.load_workbook(filepath, data_only=True)
-    lines = ["#!SCF 7"]
-
-    for sheet_name in wb.sheetnames:
-        ws = wb[sheet_name]
-        safe_name = sheet_name
-        if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _scf_quote(sheet_name)
-        lines.append(f"#!SHEET {safe_name}")
-
-        header_row = None
-        for row_idx in range(1, min(ws.max_row or 1, max_rows_per_sheet) + 1):
-            for col_idx in range(1, (ws.max_column or 1) + 1):
-                if ws.cell(row=row_idx, column=col_idx).value is not None:
-                    header_row = row_idx
-                    break
-            if header_row:
-                break
-
-        if header_row:
-            lines.append(f"#!HEADERS {header_row}:{header_row}")
-
-        row_count = 0
-        for row_idx in range(1, (ws.max_row or 0) + 1):
-            if row_count >= max_rows_per_sheet:
-                lines.append(f"# ... showing first {max_rows_per_sheet} data rows")
-                break
-
-            cells = {}
-            for col_idx in range(1, (ws.max_column or 0) + 1):
-                val = ws.cell(row=row_idx, column=col_idx).value
-                if val is not None:
-                    cells[col_idx] = val
-
-            if not cells:
-                continue
-
-            row_count += 1
-            entries = []
-            for col_idx in sorted(cells.keys()):
-                scalar = _scf_scalar(cells[col_idx])
-                col_letter = get_column_letter(col_idx)
-                entries.append(f"{col_letter}={scalar}")
-
-            line = f"{row_idx} | " + " | ".join(entries) + " |"
-            lines.append(line)
-
-    return "\n".join(lines)
+    """Ream with forced column selectors on every cell (no row collapse)."""
+    return xlsx_to_ream(filepath, max_rows_per_sheet, force_col_selectors=True)
 
 
 FORMATS = {
