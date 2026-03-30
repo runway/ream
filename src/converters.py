@@ -87,86 +87,6 @@ def _ream_scalar(val: Any) -> str:
     return s
 
 
-def xlsx_to_scf_legacy(filepath: str, max_rows_per_sheet: int = 500, addressed: bool = False) -> str:
-    """Convert an XLSX workbook to legacy SCF v5 format.
-
-    Args:
-        filepath: Path to the XLSX workbook.
-        max_rows_per_sheet: Truncate sheets to this many data rows.
-        addressed: If True, every cell gets a C<N>= prefix (eliminates
-                   positional counting). If False, only sparse gaps get prefixes.
-    """
-    wb = openpyxl.load_workbook(filepath, data_only=True)
-    lines = ["#!SCF 5"  # legacy]
-
-    for sheet_name in wb.sheetnames:
-        ws = wb[sheet_name]
-        # Quote sheet name if it contains special chars
-        safe_name = sheet_name
-        if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _ream_quote(sheet_name)
-        lines.append(f"#!SHEET {safe_name}")
-
-        # Detect header row (first row with data)
-        header_row = None
-        for row_idx in range(1, min(ws.max_row or 1, max_rows_per_sheet) + 1):
-            has_data = False
-            for col_idx in range(1, (ws.max_column or 1) + 1):
-                if ws.cell(row=row_idx, column=col_idx).value is not None:
-                    has_data = True
-                    break
-            if has_data:
-                header_row = row_idx
-                break
-
-        if header_row:
-            lines.append(f"#!HEADERS R{header_row}")
-
-        row_count = 0
-        for row_idx in range(1, (ws.max_row or 0) + 1):
-            if row_count >= max_rows_per_sheet:
-                lines.append(f"# ... showing first {max_rows_per_sheet} data rows")
-                break
-
-            # Collect non-empty cells in this row
-            cells = {}
-            for col_idx in range(1, (ws.max_column or 0) + 1):
-                val = ws.cell(row=row_idx, column=col_idx).value
-                if val is not None:
-                    cells[col_idx] = val
-
-            if not cells:
-                continue
-
-            row_count += 1
-            # Build row record
-            entries = []
-            if addressed:
-                # Every cell gets an explicit C<N>= prefix
-                for col_idx in sorted(cells.keys()):
-                    scalar = _ream_scalar(cells[col_idx])
-                    entries.append(f"C{col_idx}={scalar}")
-            else:
-                # Legacy SCF canonical: only sparse gaps get prefixes
-                cursor = 1
-                for col_idx in sorted(cells.keys()):
-                    scalar = _ream_scalar(cells[col_idx])
-                    if col_idx == cursor:
-                        entries.append(scalar)
-                    else:
-                        entries.append(f"C{col_idx}={scalar}")
-                    cursor = col_idx + 1
-
-            line = f"R{row_idx} | " + " | ".join(entries) + " |"
-            lines.append(line)
-
-    return "\n".join(lines)
-
-
-def xlsx_to_scf_legacy_addressed(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """Legacy SCF with always-on column addressing (every cell prefixed with C<N>=)."""
-    return xlsx_to_scf_legacy(filepath, max_rows_per_sheet=max_rows_per_sheet, addressed=True)
-
 
 def xlsx_to_csv(filepath: str, max_rows_per_sheet: int = 500) -> str:
     """Convert an XLSX workbook to CSV-style text (one section per sheet)."""
@@ -694,73 +614,6 @@ def xlsx_to_raw_ooxml(filepath: str, max_rows_per_sheet: int = 500) -> str:
     return "\n\n".join(sections)
 
 
-def xlsx_to_scf_legacy_formulas(filepath: str, max_rows_per_sheet: int = 500) -> str:
-    """Legacy SCF with formula preservation (not data_only mode).
-
-    Reads the workbook with formulas intact and encodes them in legacy SCF format.
-    Formulas appear as =FORMULA_TEXT in cell values.
-    """
-    wb = openpyxl.load_workbook(filepath, data_only=False)
-    lines = ["#!SCF 5"  # legacy]
-
-    for sheet_name in wb.sheetnames:
-        ws = wb[sheet_name]
-        safe_name = sheet_name
-        if " " in sheet_name or "|" in sheet_name or '"' in sheet_name or "&" in sheet_name:
-            safe_name = _ream_quote(sheet_name)
-        lines.append(f"#!SHEET {safe_name}")
-
-        header_row = None
-        for row_idx in range(1, min(ws.max_row or 1, max_rows_per_sheet) + 1):
-            for col_idx in range(1, (ws.max_column or 1) + 1):
-                if ws.cell(row=row_idx, column=col_idx).value is not None:
-                    header_row = row_idx
-                    break
-            if header_row:
-                break
-        if header_row:
-            lines.append(f"#!HEADERS R{header_row}")
-
-        row_count = 0
-        for row_idx in range(1, (ws.max_row or 0) + 1):
-            if row_count >= max_rows_per_sheet:
-                lines.append(f"# ... showing first {max_rows_per_sheet} data rows")
-                break
-
-            cells = {}
-            for col_idx in range(1, (ws.max_column or 0) + 1):
-                cell = ws.cell(row=row_idx, column=col_idx)
-                val = cell.value
-                if val is not None:
-                    # If it's a formula string (starts with =), keep it
-                    if isinstance(val, str) and val.startswith("="):
-                        cells[col_idx] = val  # raw formula
-                    else:
-                        cells[col_idx] = val
-
-            if not cells:
-                continue
-
-            row_count += 1
-            entries = []
-            cursor = 1
-            for col_idx in sorted(cells.keys()):
-                val = cells[col_idx]
-                if isinstance(val, str) and val.startswith("="):
-                    scalar = val  # formula preserved as-is
-                else:
-                    scalar = _ream_scalar(val)
-                if col_idx == cursor:
-                    entries.append(scalar)
-                else:
-                    entries.append(f"C{col_idx}={scalar}")
-                cursor = col_idx + 1
-
-            line = f"R{row_idx} | " + " | ".join(entries) + " |"
-            lines.append(line)
-
-    return "\n".join(lines)
-
 
 def xlsx_to_reverse_index_values(filepath: str, max_rows_per_sheet: int = 500) -> str:
     """Inverted-index format that preserves actual values (not type labels).
@@ -966,9 +819,6 @@ FORMATS = {
     "ream_v12": xlsx_to_ream_v12,
     "ream": xlsx_to_ream,
     "ream_addressed": xlsx_to_ream_addressed,
-    "scf": xlsx_to_scf_legacy,
-    "scf_addressed": xlsx_to_scf_legacy_addressed,
-    "scf_formulas": xlsx_to_scf_legacy_formulas,
     "csv": xlsx_to_csv,
     "markdown": xlsx_to_markdown,
     "markdown_kv": xlsx_to_markdown_kv,
