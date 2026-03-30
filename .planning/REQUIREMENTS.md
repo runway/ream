@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Packaging
 
-- [ ] **PKG-01**: Package installable with `pip install -e .` via `pyproject.toml` with hatchling backend
-- [ ] **PKG-02**: Package importable as `import ream_xlsx` with `__all__` explicit exports
-- [ ] **PKG-03**: `py.typed` marker present and included in built wheels
-- [ ] **PKG-04**: Only runtime dependency is openpyxl
-- [ ] **PKG-05**: Python >= 3.10 required
+- [x] **PKG-01**: Package installable with `pip install -e .` via `pyproject.toml` with hatchling backend
+- [x] **PKG-02**: Package importable as `import ream_xlsx` with `__all__` explicit exports
+- [x] **PKG-03**: `py.typed` marker present and included in built wheels
+- [x] **PKG-04**: Only runtime dependency is openpyxl
+- [x] **PKG-05**: Python >= 3.10 required
 
 ### Public API
 
@@ -41,7 +41,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Testing
 
-- [ ] **TST-01**: Tests for package importability and `__all__` exports
+- [x] **TST-01**: Tests for package importability and `__all__` exports
 - [ ] **TST-02**: Tests for path-based conversion producing valid REAM output
 - [ ] **TST-03**: Tests for bytes-based conversion matching path-based output
 - [ ] **TST-04**: Tests for file-like conversion matching path-based output
@@ -91,11 +91,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PKG-01 | Phase 1 | Pending |
-| PKG-02 | Phase 1 | Pending |
-| PKG-03 | Phase 1 | Pending |
-| PKG-04 | Phase 1 | Pending |
-| PKG-05 | Phase 1 | Pending |
+| PKG-01 | Phase 1 | Complete |
+| PKG-02 | Phase 1 | Complete |
+| PKG-03 | Phase 1 | Complete |
+| PKG-04 | Phase 1 | Complete |
+| PKG-05 | Phase 1 | Complete |
 | API-01 | Phase 2 | Pending |
 | API-02 | Phase 2 | Pending |
 | API-03 | Phase 2 | Pending |
@@ -111,7 +111,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CLI-04 | Phase 3 | Pending |
 | CLI-05 | Phase 3 | Pending |
 | CLI-06 | Phase 3 | Pending |
-| TST-01 | Phase 1 | Pending |
+| TST-01 | Phase 1 | Complete |
 | TST-02 | Phase 2 | Pending |
 | TST-03 | Phase 2 | Pending |
 | TST-04 | Phase 2 | Pending |

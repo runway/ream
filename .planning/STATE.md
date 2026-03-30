@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-30T23:16:47.690Z"
+stopped_at: Completed 01-scaffold-01-PLAN.md
+last_updated: "2026-03-30T23:35:29.964Z"
 last_activity: 2026-03-30 — Roadmap created; requirements mapped to 4 phases
 progress:
   total_phases: 4
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  completed_phases: 1
+  total_plans: 1
+  completed_plans: 1
   percent: 0
 ---
 
@@ -50,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01-scaffold P01 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -61,6 +62,8 @@ Recent decisions affecting current work:
 - [Pre-Phase 1]: Package name is `ream-xlsx` (import as `ream_xlsx`) — PyPI name `ream` is already taken by chmlee/ream-python; `ream-xlsx` avoids collision and signals the input format
 - [Pre-Phase 1]: Build backend is hatchling; CLI framework is Click (not argparse, not Typer); ruff + mypy strict + pytest as dev toolchain
 - [Pre-Phase 1]: `src/converters.py` must remain untouched — new package is purely additive; shim if logic is moved
+- [Phase 01-scaffold]: ruff excludes src/ to avoid linting pre-existing benchmark/research code with different conventions
+- [Phase 01-scaffold]: Single pyproject.toml holds all tool config (no separate .mypy.ini, .ruffrc, setup.cfg)
 
 ### Pending Todos
 
@@ -73,6 +76,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-30T23:16:47.688Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-scaffold/01-CONTEXT.md
+Last session: 2026-03-30T23:35:29.962Z
+Stopped at: Completed 01-scaffold-01-PLAN.md
+Resume file: None

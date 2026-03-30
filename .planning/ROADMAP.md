@@ -12,7 +12,7 @@ Transform the existing `src/converters.py` research script into an installable, 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Scaffold** - Package skeleton installable with `pip install -e .`; dev toolchain configured; no implementation code yet
+- [x] **Phase 1: Scaffold** - Package skeleton installable with `pip install -e .`; dev toolchain configured; no implementation code yet (completed 2026-03-30)
 - [ ] **Phase 2: Core API** - Public `xlsx_to_ream`, `bytes_to_ream`, `file_to_ream`, `ReamOptions`, and exception hierarchy fully implemented and tested
 - [ ] **Phase 3: CLI** - `ream-xlsx` command and `python -m ream_xlsx` working with all flags, tested end-to-end
 - [ ] **Phase 4: Documentation** - Complete README, API reference, CLI usage, and developer docs; wheel validated; PR ready
@@ -29,7 +29,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. `py.typed` marker is present and the package passes `mypy --strict` with no source to check
   4. `pytest` discovers the test suite and `TST-01` importability test passes
   5. `ruff check` and `ruff format --check` pass on the empty package
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 01-01-PLAN.md — Package skeleton, dev toolchain, and importability tests
@@ -77,7 +77,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scaffold | 0/1 | Planning complete | - |
+| 1. Scaffold | 1/1 | Complete   | 2026-03-30 |
 | 2. Core API | 0/TBD | Not started | - |
 | 3. CLI | 0/TBD | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
