@@ -32,6 +32,7 @@ include = ["ream_xlsx/", "tests/", "README.md", "LICENSE", "pyproject.toml"]
 [tool.ruff]
 line-length = 120
 target-version = "py310"
+exclude = ["src/"]
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "B", "I"]
