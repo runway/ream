@@ -29,7 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. `py.typed` marker is present and the package passes `mypy --strict` with no source to check
   4. `pytest` discovers the test suite and `TST-01` importability test passes
   5. `ruff check` and `ruff format --check` pass on the empty package
-**Plans**: TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Package skeleton, dev toolchain, and importability tests
 
 ### Phase 2: Core API
 **Goal**: Any Python caller can convert an XLSX file, bytes payload, or file stream to REAM text with typed options and clean exceptions
@@ -74,7 +77,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scaffold | 0/TBD | Not started | - |
+| 1. Scaffold | 0/1 | Planning complete | - |
 | 2. Core API | 0/TBD | Not started | - |
 | 3. CLI | 0/TBD | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
