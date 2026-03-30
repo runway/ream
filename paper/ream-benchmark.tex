@@ -37,7 +37,7 @@ Its sparse design omits blank cells, yielding compact representations that scale
 
 To validate the design, we benchmark Ream against \textbf{10~alternative serialization formats}---CSV, Markdown, HTML, XML, JSON, Pandas, Markdown-KV, Cell-Address Markdown, Reverse-Index Values, and Raw OOXML---on \textbf{four evaluation corpora} (FRTR-Bench, SpreadsheetBench, MiMoTable, NL2Formula) across three OpenAI models (GPT-4o-mini, GPT-5.4-nano, GPT-5.4), executing more than \textbf{19,000~individual LLM calls}.
 
-On enterprise multi-sheet workbooks, Ream~v12 (with 2D row-span compaction) achieves \textbf{93.0\%} accuracy on GPT-5.4---the highest of any format---while using \textbf{26\% fewer tokens} than Cell-Address~MD.
+On enterprise multi-sheet workbooks, Ream achieves \textbf{92.0\%} accuracy on GPT-5.4, tying the best format (Cell-Address~MD) while using \textbf{26\% fewer tokens}.
 On GPT-5.4-nano, Ream leads all formats at \textbf{78.5\%}.
 Across all three corpora, Ream achieves the \textbf{highest cross-corpus average} (79.0\%) and is the \textbf{only top-tier format with zero context-length failures} on every model.
 \end{abstract}
@@ -208,7 +208,7 @@ NL2Formula          & 200 & 1     & $\sim$10   & Formula-derived & JSON$\to$XLSX
 
 We evaluate on \textbf{GPT-4o-mini} (128K context), \textbf{GPT-5.4-nano} (128K), and \textbf{GPT-5.4} (1M), all at temperature~0.
 Scoring: 5\% numeric tolerance, case-insensitive string match with containment, boolean equivalence.
-Total: 12~formats $\times$ 3~models $\times$ 3~corpora $\times$ 200~questions = \textbf{21,600 planned evaluations}; 20,800+ completed.
+Total: 11~formats $\times$ 3~models $\times$ 3~corpora $\times$ 200~questions = \textbf{19,800 planned evaluations}; 19,000+ completed.
 
 %===================================================================
 \section{Results}
@@ -228,9 +228,8 @@ Total: 12~formats $\times$ 3~models $\times$ 3~corpora $\times$ 200~questions = 
 \cmidrule(lr){3-3} \cmidrule(lr){4-4} \cmidrule(lr){5-6}
 & \textbf{Format} & \textbf{Acc} & \textbf{Acc} & \textbf{Acc} & \textbf{Err} \\
 \midrule
-1  & \textbf{Ream-v12}   & \textbf{93.0} & 78.0 & \textbf{69.0} & \textbf{0} \\
-2  & Ream               & 92.0 & \textbf{78.5} & \textbf{69.0} & \textbf{0} \\
-2  & Cell-Address MD    & 92.0 & 75.5 & 67.0 & 0 \\
+1  & \textbf{Ream}       & \textbf{92.0} & \textbf{78.5} & \textbf{69.0} & \textbf{0} \\
+1  & Cell-Address MD    & \textbf{92.0} & 75.5 & 67.0 & 0 \\
 3  & Markdown-KV        & 91.5 & 77.0 & 69.1 & 6 \\
 4  & JSON               & 89.5 & 78.0 & 73.9$^\dagger$ & 58 \\
 5  & XML                & 89.4 & 73.0 & 63.7$^\dagger$ & 109 \\
@@ -268,8 +267,7 @@ On MiMoTable (200 Lookup/Compare questions, avg.\ 1.7K tokens), format differenc
 & \multicolumn{4}{c|}{\textbf{GPT-5.4}} & \multicolumn{4}{c}{\textbf{GPT-5.4-nano}} \\
 \textbf{Format} & \textbf{FRTR} & \textbf{MiMo} & \textbf{NL2F} & \textbf{Avg} & \textbf{FRTR} & \textbf{MiMo} & \textbf{NL2F} & \textbf{Avg} \\
 \midrule
-\textbf{Ream-v12} & \textbf{93.0} & 67.0 & 76.0 & 78.7 & 78.0 & 58.0 & 71.5 & 69.2 \\
-Ream             & 92.0 & 66.5 & 78.5 & \textbf{79.0} & \textbf{78.5} & 61.5 & 72.5 & \textbf{70.8} \\
+\textbf{Ream}    & \textbf{92.0} & 66.5 & 78.5 & \textbf{79.0} & \textbf{78.5} & 61.5 & 72.5 & \textbf{70.8} \\
 JSON             & 89.5 & 67.5 & 79.0 & 78.7 & 78.0 & 60.5 & 77.5 & 72.0 \\
 XML              & 89.4 & 66.5 & 78.5 & 78.1 & 73.0 & 61.0 & 77.0 & 70.3 \\
 Cell-Address MD  & 92.0 & 67.5 & 75.5 & 78.3 & 75.5 & 61.5 & 73.0 & 70.0 \\
