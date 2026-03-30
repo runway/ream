@@ -110,11 +110,12 @@ def call_llm(prompt: str, model: str, client: OpenAI) -> tuple[str, dict]:
 
 def format_display_name(fmt: str) -> str:
     names = {
+        "ream_v12": "Ream-v12",
         "ream": "Ream",
         "ream_addressed": "Ream-Addressed",
-        "scf": "SCF (legacy v5)",
-        "scf_addressed": "SCF-Addressed (legacy)",
-        "scf_formulas": "SCF-Formulas (legacy)",
+        "scf": "SCF",
+        "scf_addressed": "SCF-Addressed",
+        "scf_formulas": "SCF-Formulas",
         "csv": "CSV",
         "markdown": "Markdown",
         "markdown_kv": "Markdown-KV",
