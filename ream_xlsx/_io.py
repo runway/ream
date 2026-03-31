@@ -11,7 +11,7 @@ import openpyxl
 from openpyxl import Workbook
 from openpyxl.utils.exceptions import InvalidFileException
 
-from ream_xlsx import InvalidWorkbookError
+from ream_xlsx._exceptions import InvalidWorkbookError
 
 
 def _load_from_path(path: str | Path) -> Workbook:

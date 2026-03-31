@@ -17,7 +17,6 @@ from ream_xlsx import (
     xlsx_to_ream,
 )
 
-
 # ---------------------------------------------------------------------------
 # Fixture helpers
 # ---------------------------------------------------------------------------
@@ -183,7 +182,7 @@ def test_max_rows_per_sheet(tmp_path: Path) -> None:
     result = xlsx_to_ream(path, opts)
     lines = result.splitlines()
     # Count data row lines (non-directive lines)
-    data_lines = [l for l in lines if l and not l.startswith("#")]
+    data_lines = [ln for ln in lines if ln and not ln.startswith("#")]
     assert len(data_lines) <= 1
 
 
@@ -204,7 +203,7 @@ def test_force_col_selectors(tmp_path: Path) -> None:
     result = xlsx_to_ream(path, opts)
     # Every data row should have at least one 'X=value' entry with column prefix
     lines = result.splitlines()
-    data_lines = [l for l in lines if l and not l.startswith("#")]
+    data_lines = [ln for ln in lines if ln and not ln.startswith("#")]
     assert len(data_lines) > 0
     for line in data_lines:
         # At least the first column should have a prefix like 'A=...'
@@ -233,13 +232,11 @@ def test_empty_sheet_handling(tmp_path: Path) -> None:
 
 def test_conversion_error_on_failure() -> None:
     """ConversionError is raised if conversion logic fails internally."""
-    # We'll trigger this by patching _xlsx_to_ream_impl to raise an unexpected exception
+    # Patch where the function is looked up in __init__.py (where bytes_to_ream calls it)
     import unittest.mock as mock
 
-    from ream_xlsx import _io  # noqa: F401
-
     with mock.patch(
-        "ream_xlsx._converter._xlsx_to_ream_impl",
+        "ream_xlsx._xlsx_to_ream_impl",
         side_effect=RuntimeError("internal boom"),
     ):
         with pytest.raises(ConversionError):
