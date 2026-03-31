@@ -5,6 +5,8 @@ from __future__ import annotations
 from pathlib import Path
 from typing import IO
 
+from ream_xlsx._options import ReamOptions
+
 __all__ = [
     "xlsx_to_ream",
     "bytes_to_ream",
@@ -26,10 +28,6 @@ class InvalidWorkbookError(ReamError):
 
 class ConversionError(ReamError):
     """Raised when the conversion from XLSX to REAM fails."""
-
-
-class ReamOptions:
-    """Options controlling XLSX-to-REAM conversion behaviour."""
 
 
 def xlsx_to_ream(path: str | Path, options: ReamOptions | None = None) -> str:
