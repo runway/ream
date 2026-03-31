@@ -12,3 +12,4 @@ corpus/
 *.log
 *.out
 *.synctex.gz
+.planning/
