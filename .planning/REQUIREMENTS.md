@@ -17,12 +17,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Public API
 
-- [ ] **API-01**: `xlsx_to_ream(path, options)` converts XLSX file path to REAM string
-- [ ] **API-02**: `bytes_to_ream(data, options)` converts XLSX bytes to REAM string
-- [ ] **API-03**: `file_to_ream(stream, options)` converts file-like object to REAM string
-- [ ] **API-04**: All path-based functions accept `str | Path`
+- [x] **API-01**: `xlsx_to_ream(path, options)` converts XLSX file path to REAM string
+- [x] **API-02**: `bytes_to_ream(data, options)` converts XLSX bytes to REAM string
+- [x] **API-03**: `file_to_ream(stream, options)` converts file-like object to REAM string
+- [x] **API-04**: All path-based functions accept `str | Path`
 - [x] **API-05**: `ReamOptions` frozen dataclass with `max_rows_per_sheet`, `force_col_selectors`, `collapse_rows`
-- [ ] **API-06**: Default options produce deterministic output for the same workbook
+- [x] **API-06**: Default options produce deterministic output for the same workbook
 
 ### Exceptions
 
@@ -42,11 +42,11 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Testing
 
 - [x] **TST-01**: Tests for package importability and `__all__` exports
-- [ ] **TST-02**: Tests for path-based conversion producing valid REAM output
-- [ ] **TST-03**: Tests for bytes-based conversion matching path-based output
-- [ ] **TST-04**: Tests for file-like conversion matching path-based output
+- [x] **TST-02**: Tests for path-based conversion producing valid REAM output
+- [x] **TST-03**: Tests for bytes-based conversion matching path-based output
+- [x] **TST-04**: Tests for file-like conversion matching path-based output
 - [x] **TST-05**: Tests for `ReamOptions` defaults and custom values
-- [ ] **TST-06**: Tests for deterministic output (same input twice → same output)
+- [x] **TST-06**: Tests for deterministic output (same input twice → same output)
 - [ ] **TST-07**: Tests for CLI success cases and output correctness
 - [ ] **TST-08**: Tests for error handling (missing file, invalid XLSX, empty workbook)
 - [x] **TST-09**: Regression tests for any bugs discovered during packaging
@@ -96,12 +96,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PKG-03 | Phase 1 | Complete |
 | PKG-04 | Phase 1 | Complete |
 | PKG-05 | Phase 1 | Complete |
-| API-01 | Phase 2 | Pending |
-| API-02 | Phase 2 | Pending |
-| API-03 | Phase 2 | Pending |
-| API-04 | Phase 2 | Pending |
+| API-01 | Phase 2 | Complete |
+| API-02 | Phase 2 | Complete |
+| API-03 | Phase 2 | Complete |
+| API-04 | Phase 2 | Complete |
 | API-05 | Phase 2 | Complete |
-| API-06 | Phase 2 | Pending |
+| API-06 | Phase 2 | Complete |
 | ERR-01 | Phase 2 | Complete |
 | ERR-02 | Phase 2 | Complete |
 | ERR-03 | Phase 2 | Complete |
@@ -112,11 +112,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CLI-05 | Phase 3 | Pending |
 | CLI-06 | Phase 3 | Pending |
 | TST-01 | Phase 1 | Complete |
-| TST-02 | Phase 2 | Pending |
-| TST-03 | Phase 2 | Pending |
-| TST-04 | Phase 2 | Pending |
+| TST-02 | Phase 2 | Complete |
+| TST-03 | Phase 2 | Complete |
+| TST-04 | Phase 2 | Complete |
 | TST-05 | Phase 2 | Complete |
-| TST-06 | Phase 2 | Pending |
+| TST-06 | Phase 2 | Complete |
 | TST-07 | Phase 3 | Pending |
 | TST-08 | Phase 3 | Pending |
 | TST-09 | Phase 2 | Complete |

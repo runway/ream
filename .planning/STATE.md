@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 02-core-api-01-PLAN.md
-last_updated: "2026-03-31T00:04:57.241Z"
+status: verifying
+stopped_at: Completed 02-core-api-02-PLAN.md
+last_updated: "2026-03-31T00:10:35.393Z"
 last_activity: 2026-03-31
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 3
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-03-30)
 
 Phase: 02 (core-api) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-03-31
 
 Progress: [░░░░░░░░░░] 0%
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01-scaffold P01 | 2 | 2 tasks | 5 files |
 | Phase 02-core-api P01 | 2 | 2 tasks | 6 files |
+| Phase 02-core-api P02 | 3min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,8 @@ Recent decisions affecting current work:
 - [Phase 01-scaffold]: Single pyproject.toml holds all tool config (no separate .mypy.ini, .ruffrc, setup.cfg)
 - [Phase 02-core-api]: Exception classes stay in __init__.py (not _exceptions.py) to avoid circular imports when _io.py imports from ream_xlsx
 - [Phase 02-core-api]: types-openpyxl added to dev deps for mypy strict compliance with openpyxl imports
+- [Phase 02-core-api]: Exception classes extracted to _exceptions.py to break circular import between __init__.py and _io.py; __init__.py re-exports all three classes
+- [Phase 02-core-api]: _xlsx_to_ream_impl receives pre-loaded Workbook + ReamOptions instead of filepath+kwargs for clean I/O/conversion separation
 
 ### Pending Todos
 
@@ -81,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-31T00:04:57.238Z
-Stopped at: Completed 02-core-api-01-PLAN.md
+Last session: 2026-03-31T00:10:35.391Z
+Stopped at: Completed 02-core-api-02-PLAN.md
 Resume file: None

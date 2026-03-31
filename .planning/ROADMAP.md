@@ -13,7 +13,7 @@ Transform the existing `src/converters.py` research script into an installable, 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Scaffold** - Package skeleton installable with `pip install -e .`; dev toolchain configured; no implementation code yet (completed 2026-03-30)
-- [ ] **Phase 2: Core API** - Public `xlsx_to_ream`, `bytes_to_ream`, `file_to_ream`, `ReamOptions`, and exception hierarchy fully implemented and tested
+- [x] **Phase 2: Core API** - Public `xlsx_to_ream`, `bytes_to_ream`, `file_to_ream`, `ReamOptions`, and exception hierarchy fully implemented and tested (completed 2026-03-31)
 - [ ] **Phase 3: CLI** - `ream-xlsx` command and `python -m ream_xlsx` working with all flags, tested end-to-end
 - [ ] **Phase 4: Documentation** - Complete README, API reference, CLI usage, and developer docs; wheel validated; PR ready
 
@@ -44,11 +44,11 @@ Plans:
   3. `ReamOptions(max_rows_per_sheet=10)` is accepted by all three functions and limits output rows accordingly
   4. Calling `xlsx_to_ream` twice on the same file returns byte-for-byte identical output
   5. Passing a missing file path raises `InvalidWorkbookError`; a corrupted payload raises `ConversionError`; both are subclasses of `ReamError`
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 02-01-PLAN.md — ReamOptions dataclass, I/O adapters, exception hierarchy (TDD)
-- [ ] 02-02-PLAN.md — Converter logic port, public entry point wiring, API tests (TDD)
+- [x] 02-02-PLAN.md — Converter logic port, public entry point wiring, API tests (TDD)
 
 ### Phase 3: CLI
 **Goal**: Users can invoke the converter from the shell via `ream-xlsx` or `python -m ream_xlsx` with all option flags
@@ -82,6 +82,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Scaffold | 1/1 | Complete    | 2026-03-30 |
-| 2. Core API | 1/2 | In Progress|  |
+| 2. Core API | 2/2 | Complete   | 2026-03-31 |
 | 3. CLI | 0/TBD | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
