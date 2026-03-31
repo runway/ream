@@ -60,7 +60,10 @@ Plans:
   3. `ream-xlsx input.xlsx --max-rows 5 --collapse-rows --force-col-selectors` all apply their respective `ReamOptions` fields
   4. `python -m ream_xlsx input.xlsx` produces identical output to `ream-xlsx input.xlsx`
   5. `ream-xlsx missing.xlsx` exits with code 1 and writes a human-readable error message to stderr
-**Plans**: TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 03-01-PLAN.md — CLI command, module entrypoint, and CLI tests (TDD)
 
 ### Phase 4: Documentation
 **Goal**: Any developer can install, use, and extend the package without asking questions; built wheel passes full test suite in a clean environment
@@ -83,5 +86,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Scaffold | 1/1 | Complete    | 2026-03-30 |
 | 2. Core API | 2/2 | Complete   | 2026-03-31 |
-| 3. CLI | 0/TBD | Not started | - |
+| 3. CLI | 0/1 | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |
