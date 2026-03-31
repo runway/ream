@@ -44,10 +44,10 @@ Plans:
   3. `ReamOptions(max_rows_per_sheet=10)` is accepted by all three functions and limits output rows accordingly
   4. Calling `xlsx_to_ream` twice on the same file returns byte-for-byte identical output
   5. Passing a missing file path raises `InvalidWorkbookError`; a corrupted payload raises `ConversionError`; both are subclasses of `ReamError`
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 02-01-PLAN.md — ReamOptions dataclass, I/O adapters, exception hierarchy (TDD)
+- [x] 02-01-PLAN.md — ReamOptions dataclass, I/O adapters, exception hierarchy (TDD)
 - [ ] 02-02-PLAN.md — Converter logic port, public entry point wiring, API tests (TDD)
 
 ### Phase 3: CLI
@@ -82,6 +82,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Scaffold | 1/1 | Complete    | 2026-03-30 |
-| 2. Core API | 0/2 | Not started | - |
+| 2. Core API | 1/2 | In Progress|  |
 | 3. CLI | 0/TBD | Not started | - |
 | 4. Documentation | 0/TBD | Not started | - |

@@ -21,14 +21,14 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **API-02**: `bytes_to_ream(data, options)` converts XLSX bytes to REAM string
 - [ ] **API-03**: `file_to_ream(stream, options)` converts file-like object to REAM string
 - [ ] **API-04**: All path-based functions accept `str | Path`
-- [ ] **API-05**: `ReamOptions` frozen dataclass with `max_rows_per_sheet`, `force_col_selectors`, `collapse_rows`
+- [x] **API-05**: `ReamOptions` frozen dataclass with `max_rows_per_sheet`, `force_col_selectors`, `collapse_rows`
 - [ ] **API-06**: Default options produce deterministic output for the same workbook
 
 ### Exceptions
 
-- [ ] **ERR-01**: `ReamError` base exception for all package errors
-- [ ] **ERR-02**: `InvalidWorkbookError` raised for non-XLSX or corrupted files
-- [ ] **ERR-03**: `ConversionError` raised for failures during conversion
+- [x] **ERR-01**: `ReamError` base exception for all package errors
+- [x] **ERR-02**: `InvalidWorkbookError` raised for non-XLSX or corrupted files
+- [x] **ERR-03**: `ConversionError` raised for failures during conversion
 
 ### CLI
 
@@ -45,11 +45,11 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **TST-02**: Tests for path-based conversion producing valid REAM output
 - [ ] **TST-03**: Tests for bytes-based conversion matching path-based output
 - [ ] **TST-04**: Tests for file-like conversion matching path-based output
-- [ ] **TST-05**: Tests for `ReamOptions` defaults and custom values
+- [x] **TST-05**: Tests for `ReamOptions` defaults and custom values
 - [ ] **TST-06**: Tests for deterministic output (same input twice → same output)
 - [ ] **TST-07**: Tests for CLI success cases and output correctness
 - [ ] **TST-08**: Tests for error handling (missing file, invalid XLSX, empty workbook)
-- [ ] **TST-09**: Regression tests for any bugs discovered during packaging
+- [x] **TST-09**: Regression tests for any bugs discovered during packaging
 
 ### Documentation
 
@@ -100,11 +100,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | API-02 | Phase 2 | Pending |
 | API-03 | Phase 2 | Pending |
 | API-04 | Phase 2 | Pending |
-| API-05 | Phase 2 | Pending |
+| API-05 | Phase 2 | Complete |
 | API-06 | Phase 2 | Pending |
-| ERR-01 | Phase 2 | Pending |
-| ERR-02 | Phase 2 | Pending |
-| ERR-03 | Phase 2 | Pending |
+| ERR-01 | Phase 2 | Complete |
+| ERR-02 | Phase 2 | Complete |
+| ERR-03 | Phase 2 | Complete |
 | CLI-01 | Phase 3 | Pending |
 | CLI-02 | Phase 3 | Pending |
 | CLI-03 | Phase 3 | Pending |
@@ -115,11 +115,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TST-02 | Phase 2 | Pending |
 | TST-03 | Phase 2 | Pending |
 | TST-04 | Phase 2 | Pending |
-| TST-05 | Phase 2 | Pending |
+| TST-05 | Phase 2 | Complete |
 | TST-06 | Phase 2 | Pending |
 | TST-07 | Phase 3 | Pending |
 | TST-08 | Phase 3 | Pending |
-| TST-09 | Phase 2 | Pending |
+| TST-09 | Phase 2 | Complete |
 | DOC-01 | Phase 4 | Pending |
 | DOC-02 | Phase 4 | Pending |
 | DOC-03 | Phase 4 | Pending |

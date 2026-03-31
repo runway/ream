@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-30T23:40:06.335Z"
-last_activity: 2026-03-30 — Roadmap created; requirements mapped to 4 phases
+status: executing
+stopped_at: Completed 02-core-api-01-PLAN.md
+last_updated: "2026-03-31T00:04:57.241Z"
+last_activity: 2026-03-31
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 1
-  completed_plans: 1
+  total_plans: 3
+  completed_plans: 2
   percent: 0
 ---
 
@@ -21,20 +21,21 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-30)
 
 **Core value:** Any Python application can `pip install ream-xlsx` and convert XLSX workbooks to REAM text with a single function call
-**Current focus:** Phase 1 — Scaffold
+**Current focus:** Phase 02 — core-api
 
 ## Current Position
 
-Phase: 1 of 4 (Scaffold)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-30 — Roadmap created; requirements mapped to 4 phases
+Phase: 02 (core-api) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
+Last activity: 2026-03-31
 
 Progress: [░░░░░░░░░░] 0%
 
 ## Performance Metrics
 
 **Velocity:**
+
 - Total plans completed: 0
 - Average duration: —
 - Total execution time: 0 hours
@@ -46,11 +47,13 @@ Progress: [░░░░░░░░░░] 0%
 | - | - | - | - |
 
 **Recent Trend:**
+
 - Last 5 plans: —
 - Trend: —
 
 *Updated after each plan completion*
 | Phase 01-scaffold P01 | 2 | 2 tasks | 5 files |
+| Phase 02-core-api P01 | 2 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -64,6 +67,8 @@ Recent decisions affecting current work:
 - [Pre-Phase 1]: `src/converters.py` must remain untouched — new package is purely additive; shim if logic is moved
 - [Phase 01-scaffold]: ruff excludes src/ to avoid linting pre-existing benchmark/research code with different conventions
 - [Phase 01-scaffold]: Single pyproject.toml holds all tool config (no separate .mypy.ini, .ruffrc, setup.cfg)
+- [Phase 02-core-api]: Exception classes stay in __init__.py (not _exceptions.py) to avoid circular imports when _io.py imports from ream_xlsx
+- [Phase 02-core-api]: types-openpyxl added to dev deps for mypy strict compliance with openpyxl imports
 
 ### Pending Todos
 
@@ -76,6 +81,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-30T23:40:06.333Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-core-api/02-CONTEXT.md
+Last session: 2026-03-31T00:04:57.238Z
+Stopped at: Completed 02-core-api-01-PLAN.md
+Resume file: None
