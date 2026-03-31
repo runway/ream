@@ -41,6 +41,16 @@ Key features: sparse row numbering (rows 5, 8, 11 omitted), range compaction (`B
 - **Display annotations** — `0.25@"25%"` carries both the value and its human-readable rendering
 - **Formula support** — R1C1 notation with defined names and structured table references
 
+## ream-xlsx Python Package
+
+The `ream-xlsx` package is a pip-installable converter for XLSX-to-REAM conversion with a Python API and CLI.
+
+```bash
+pip install ream-xlsx
+```
+
+See [docs/getting-started.md](docs/getting-started.md) for installation, API reference, CLI usage, and developer guide.
+
 ## Benchmark Results
 
 We benchmarked Ream against 10 alternative serialization formats across four evaluation corpora and three OpenAI models, executing 19,000+ LLM calls.
@@ -88,6 +98,7 @@ src/                Evaluation harness and format converters
   extract_nl2formula.py   NL2Formula question extraction
 data/               Generated question corpora (JSON)
 results/            Full evaluation results (JSON)
+docs/               Package documentation
 paper/              LaTeX source and PDF
 ```
 
