@@ -34,9 +34,9 @@ def _needs_ream_quoting(s: str) -> bool:
     """Check if a string needs quoting in Ream format."""
     if not s:
         return True  # empty string
-    if s.startswith("=") or s.startswith("[") or s.startswith('"'):
+    if s.startswith("=") or s.startswith("[") or s.startswith('"') or s.startswith("@"):
         return True
-    if "|" in s or "\n" in s or "\r" in s:
+    if "|" in s or '"' in s or "\n" in s or "\r" in s:
         return True
     if s != s.strip():
         return True  # leading/trailing whitespace
@@ -51,8 +51,8 @@ def _needs_ream_quoting(s: str) -> bool:
     # Check if it looks like an error
     if s in ("#N/A", "#REF!", "#VALUE!", "#DIV/0!", "#NULL!", "#NAME?", "#NUM!"):
         return True
-    # Check if it matches addressed-entry pattern
-    if re.match(r"^C[1-9][0-9]*(?::C[1-9][0-9]*)?=", s):
+    # Check if it matches A1-style addressed-entry pattern (e.g. B=, AB=, B:M=)
+    if re.match(r"^[A-Z]{1,3}(?::[A-Z]{1,3})?=", s):
         return True
     return False
 
