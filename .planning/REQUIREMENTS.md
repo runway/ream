@@ -53,11 +53,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Documentation
 
-- [ ] **DOC-01**: README with installation, quickstart, and copy-pasteable examples
-- [ ] **DOC-02**: Public API reference with all functions, options, and exceptions
-- [ ] **DOC-03**: CLI usage documentation with all flags
-- [ ] **DOC-04**: Developer docs: package layout, public vs internal, running tests, extending
-- [ ] **DOC-05**: Error behavior documentation
+- [x] **DOC-01**: README with installation, quickstart, and copy-pasteable examples
+- [x] **DOC-02**: Public API reference with all functions, options, and exceptions
+- [x] **DOC-03**: CLI usage documentation with all flags
+- [x] **DOC-04**: Developer docs: package layout, public vs internal, running tests, extending
+- [x] **DOC-05**: Error behavior documentation
 
 ## v2 Requirements
 
@@ -120,11 +120,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TST-07 | Phase 3 | Complete |
 | TST-08 | Phase 3 | Complete |
 | TST-09 | Phase 2 | Complete |
-| DOC-01 | Phase 4 | Pending |
-| DOC-02 | Phase 4 | Pending |
-| DOC-03 | Phase 4 | Pending |
-| DOC-04 | Phase 4 | Pending |
-| DOC-05 | Phase 4 | Pending |
+| DOC-01 | Phase 4 | Complete |
+| DOC-02 | Phase 4 | Complete |
+| DOC-03 | Phase 4 | Complete |
+| DOC-04 | Phase 4 | Complete |
+| DOC-05 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 34 total

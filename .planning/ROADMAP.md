@@ -75,10 +75,10 @@ Plans:
   3. CLI usage section documents every flag with its effect and an example invocation
   4. Developer docs explain package layout, how to run tests, and how to distinguish public from internal modules
   5. Built wheel installed in a clean venv passes the full `pytest` suite without the editable install
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 04-01-PLAN.md — Move benchmark README to BENCHMARK.md, write complete package README
+- [x] 04-01-PLAN.md — Move benchmark README to BENCHMARK.md, write complete package README
 - [ ] 04-02-PLAN.md — Wheel build validation in clean venv, human review
 
 ## Progress
@@ -91,4 +91,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Scaffold | 1/1 | Complete    | 2026-03-30 |
 | 2. Core API | 2/2 | Complete   | 2026-03-31 |
 | 3. CLI | 1/1 | Complete   | 2026-03-31 |
-| 4. Documentation | 0/2 | Not started | - |
+| 4. Documentation | 1/2 | In Progress|  |
