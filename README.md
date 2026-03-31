@@ -1,234 +1,141 @@
-# ream-xlsx
+# Ream
 
-Convert XLSX workbooks to REAM text format.
+**A sparse text format for LLM spreadsheet comprehension.**
 
-REAM is a sparse, UTF-8, line-oriented text format designed for LLM spreadsheet comprehension. It encodes workbook structure — row numbers, column addresses, formulas, named ranges, and multi-sheet boundaries — into a token-efficient representation. See the [format specification](spec/ream-rfc-draft-v12.md) for details.
+Ream is a UTF-8, line-oriented format that serializes spreadsheet workbooks into text optimized for large language model consumption. It combines absolute row numbering, A1-style column addressing, R1C1 formula notation, defined names, structured table references, display annotations, and row-span compaction for repeated data.
 
-This package is a pip-installable converter that exposes a small, stable Python API and a CLI command for converting XLSX workbooks to REAM text.
+## Quick Example
 
-See [BENCHMARK.md](BENCHMARK.md) for research evaluation details.
+```
+#!REAM 11
+#!NAME tax_rate 'Assumptions'!B2
+#!SHEET Assumptions
+2 | Tax Rate | 0.25 |
 
----
+#!SHEET "P&L"
+#!HEADERS 1:1
+#!NAME revenue_inputs B2:M2
 
-## Installation
+1 | B=Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+2 | Revenue | 1000 | 1050 | 1100 | 1150 | 1200 | G:M==RC[-1]*1.08 |
+3 | COGS | B:M==R[-1]C*0.6 |
+4 | Gross Profit | B:M==R[-2]C-R[-1]C |
+6 | Headcount | B:C=50 | D:M=52 |
+7:9 | B:M=8500 |
+10 | Total OpEx | B:M==R[-2]C+R[-1]C |
+12 | Tax | B:M==R4C*tax_rate |
+13 | Net Income | B:M==R4C-R10C-R[-1]C |
+
+#!FMT 2:4 usd0
+#!TAG B13:M13 output
+```
+
+Key features: sparse row numbering (rows 5, 8, 11 omitted), range compaction (`B:M=8500`), row-span records (`7:9 | ...`), cross-sheet named references (`tax_rate`), addressed formulas (`==`), and metadata directives.
+
+## Design Principles
+
+- **A1-style column letters** (`B=`, `M=`) — leverages model pre-training on Excel documentation
+- **Sparse encoding** — omits blank cells, uses 26–53% fewer tokens than JSON on enterprise workbooks
+- **Row-span compaction** — identical consecutive rows merge into `7:9 | B:M=8500 |`
+- **Structural directives** — `#!SHEET`, `#!HEADERS`, `#!TABLE`, `#!NAME` preserve multi-sheet boundaries
+- **Display annotations** — `0.25@"25%"` carries both the value and its human-readable rendering
+- **Formula support** — R1C1 notation with defined names and structured table references
+
+## ream-xlsx Python Package
+
+The `ream-xlsx` package is a pip-installable converter for XLSX-to-REAM conversion with a Python API and CLI.
 
 ```bash
 pip install ream-xlsx
 ```
 
-Requires Python >= 3.10. The only runtime dependency is `openpyxl`.
+See [docs/getting-started.md](docs/getting-started.md) for installation, API reference, CLI usage, and developer guide.
 
----
+## Benchmark Results
 
-## Quickstart
+We benchmarked Ream against 10 alternative serialization formats across four evaluation corpora and three OpenAI models, executing 19,000+ LLM calls.
+
+### GPT-5.4 Cross-Corpus Accuracy
+
+| Format | FRTR (enterprise) | MiMoTable | NL2Formula | Average |
+|--------|-------------------|-----------|------------|---------|
+| **Ream** | **92.0%** | 66.5% | 78.5% | **79.0%** |
+| JSON | 89.5% | 67.5% | 79.0% | 78.7% |
+| Cell-Address MD | 92.0% | 67.5% | 75.5% | 78.3% |
+| XML | 89.4% | 66.5% | 78.5% | 78.1% |
+| CSV | 84.0% | 66.0% | 76.5% | 75.5% |
+
+Ream achieves the **highest cross-corpus average** while using **26–53% fewer tokens** than JSON and XML. It is the **only top-tier format with zero context-length failures** across all models.
+
+## Converter Usage
 
 ```python
-from ream_xlsx import xlsx_to_ream, ReamOptions
+from src.converters import xlsx_to_ream
 
-# Basic conversion
+# Default: sparse column prefixes, no row collapse (#!REAM 9)
 text = xlsx_to_ream("workbook.xlsx")
 
-# With options
-text = xlsx_to_ream("workbook.xlsx", ReamOptions(
-    max_rows_per_sheet=100,
-    collapse_rows=True,
-    force_col_selectors=True,
-))
+# Force column selectors on every cell (A=Revenue | B=1000 |)
+text = xlsx_to_ream("workbook.xlsx", force_col_selectors=True)
 
-print(text)
+# Enable row-span compaction (#!REAM 11)
+text = xlsx_to_ream("workbook.xlsx", collapse_rows=True)
+
+# Both: full addressing + row collapse
+text = xlsx_to_ream("workbook.xlsx", force_col_selectors=True, collapse_rows=True)
 ```
 
----
-
-## API Reference
-
-### Functions
-
-#### `xlsx_to_ream(path, options=None) -> str`
-
-Convert an XLSX file at the given path to REAM text.
-
-```python
-from ream_xlsx import xlsx_to_ream
-
-text = xlsx_to_ream("workbook.xlsx")
-```
-
-**Arguments:**
-- `path` (`str | Path`) — path to the XLSX workbook file
-- `options` (`ReamOptions | None`) — optional conversion options; defaults to `ReamOptions()` if omitted
-
-**Returns:** REAM-formatted string.
-
-**Raises:** `InvalidWorkbookError` if the file cannot be read or is not a valid XLSX file; `ConversionError` if conversion fails internally.
-
----
-
-#### `bytes_to_ream(data, options=None) -> str`
-
-Convert raw XLSX bytes to REAM text. Useful when the workbook is already in memory (e.g., downloaded from an API or read from a database).
-
-```python
-from ream_xlsx import bytes_to_ream
-
-with open("workbook.xlsx", "rb") as f:
-    data = f.read()
-text = bytes_to_ream(data)
-```
-
-**Arguments:**
-- `data` (`bytes`) — raw bytes of an XLSX workbook
-- `options` (`ReamOptions | None`) — optional conversion options
-
-**Returns:** REAM-formatted string.
-
-**Raises:** `InvalidWorkbookError` if the bytes are not a valid XLSX workbook; `ConversionError` if conversion fails internally.
-
----
-
-#### `file_to_ream(stream, options=None) -> str`
-
-Convert an XLSX file-like object to REAM text. Useful for streaming contexts or when reading from `BytesIO`.
-
-```python
-from io import BytesIO
-from ream_xlsx import file_to_ream
-
-with open("workbook.xlsx", "rb") as f:
-    text = file_to_ream(f)
-```
-
-**Arguments:**
-- `stream` (`IO[bytes]`) — binary file-like object containing an XLSX workbook
-- `options` (`ReamOptions | None`) — optional conversion options
-
-**Returns:** REAM-formatted string.
-
-**Raises:** `InvalidWorkbookError` if the stream is not a valid XLSX workbook; `ConversionError` if conversion fails internally.
-
----
-
-### ReamOptions
-
-A frozen dataclass controlling conversion behaviour. Pass it as the `options` argument to any conversion function.
-
-```python
-from ream_xlsx import ReamOptions
-
-opts = ReamOptions(
-    max_rows_per_sheet=200,
-    collapse_rows=True,
-    force_col_selectors=False,
-)
-```
-
-| Field | Type | Default | Description |
-|-------|------|---------|-------------|
-| `max_rows_per_sheet` | `int` | `500` | Maximum rows to convert per sheet. Rows beyond this limit are omitted. |
-| `force_col_selectors` | `bool` | `False` | Force A1-style column selectors on every cell (e.g., `A=Revenue`). By default, selectors are omitted when the column position is unambiguous. |
-| `collapse_rows` | `bool` | `False` | Merge identical adjacent rows into row-span records (e.g., `7:9 | B:M=8500 |`). Produces `#!REAM 11` output. |
-
-`ReamOptions` is frozen (immutable). Create a new instance to change settings.
-
----
-
-### Exceptions
-
-All exceptions inherit from `ReamError`.
+## Repository Structure
 
 ```
-ReamError
-├── InvalidWorkbookError
-└── ConversionError
+spec/               Ream format specifications (drafts 9 and 12)
+src/                Evaluation harness and format converters
+  converters.py     12 XLSX-to-text converters (Ream, CSV, JSON, etc.)
+  run_eval.py       Parallel evaluation runner with caching
+  scoring.py        Answer scoring (numeric, string, boolean)
+  generate_questions.py   QA generation from FRTR-Bench
+  extract_mimotable.py    MiMoTable question extraction
+  extract_nl2formula.py   NL2Formula question extraction
+data/               Generated question corpora (JSON)
+results/            Full evaluation results (JSON)
+docs/               Package documentation
+paper/              LaTeX source and PDF
 ```
 
-| Exception | When raised |
-|-----------|-------------|
-| `ReamError` | Base class; catch this to handle any package error |
-| `InvalidWorkbookError` | Input is not a valid XLSX file: missing file, corrupted data, wrong format |
-| `ConversionError` | Conversion logic failed internally |
-
----
-
-## CLI Usage
-
-The `ream-xlsx` command is available after installation. You can also invoke it as a Python module.
+## Running the Benchmark
 
 ```bash
-# Convert to stdout
-ream-xlsx input.xlsx
+# Install dependencies
+pip install -r requirements.txt
 
-# Write output to a file
-ream-xlsx input.xlsx -o output.txt
+# Set your OpenAI API key
+echo "OPENAI_API_KEY=sk-..." > .env
 
-# Convert with all options
-ream-xlsx workbook.xlsx --max-rows 100 --collapse-rows --force-col-selectors -o output.txt
+# Download corpora (not included due to size)
+git clone --depth 1 https://github.com/AnmolGulati6/FRTR-bench.git corpus/frtr
+git clone --depth 1 https://github.com/xxsdds/MiMoTable.git corpus/mimotable
+git clone --depth 1 https://github.com/timetub/NL2Formula.git corpus/nl2formula
 
-# Via python module
-python -m ream_xlsx workbook.xlsx
+# Generate questions
+python src/generate_questions.py corpus/frtr corpus/spreadsheetbench/data/sample_data_200 1000
+
+# Run evaluation
+cd src && python run_eval.py \
+  --questions ../data/questions_sample_200.json \
+  --models gpt-4o-mini gpt-5.4 \
+  --formats ream ream_v12 csv json html xml markdown \
+  --max-rows 1000
 ```
 
-**Flags:**
+## Specification
 
-| Flag | Default | Description |
-|------|---------|-------------|
-| `-o FILE`, `--output FILE` | stdout | Write output to FILE instead of stdout |
-| `--max-rows N` | `500` | Maximum rows per sheet |
-| `--collapse-rows` | off | Collapse identical adjacent rows |
-| `--force-col-selectors` | off | Force column selectors in output |
-| `--version` | — | Show version and exit |
+The latest Ream specification is [`spec/ream-rfc-draft-v12.md`](spec/ream-rfc-draft-v12.md) (wire version `#!REAM 11`).
 
----
+The previous draft is at [`spec/ream-rfc-draft-v9.md`](spec/ream-rfc-draft-v9.md) (wire version `#!REAM 9`).
 
-## Error Handling
+## Paper
 
-All package errors inherit from `ReamError`. Catch the specific subclass for targeted handling or catch `ReamError` as a catch-all.
-
-```python
-from ream_xlsx import xlsx_to_ream, ReamError, InvalidWorkbookError
-
-try:
-    text = xlsx_to_ream("workbook.xlsx")
-except InvalidWorkbookError as e:
-    print(f"Bad input: {e}")
-except ReamError as e:
-    print(f"Conversion error: {e}")
-```
-
-The CLI exits with code `1` and prints the error message to stderr on any `ReamError`.
-
----
-
-## Developer Guide
-
-### Package Layout
-
-```
-ream_xlsx/
-  __init__.py       Public API (xlsx_to_ream, bytes_to_ream, file_to_ream)
-  _options.py       ReamOptions dataclass
-  _exceptions.py    Exception hierarchy
-  _io.py            I/O adapters (load workbooks from path/bytes/stream)
-  _converter.py     Core conversion logic
-  _cli.py           CLI entry point (Click command)
-  __main__.py       python -m ream_xlsx support
-  py.typed          PEP 561 type marker
-```
-
-Modules prefixed with `_` are internal and not part of the public API. Import only from `ream_xlsx` (i.e., what `__all__` in `__init__.py` exports): `xlsx_to_ream`, `bytes_to_ream`, `file_to_ream`, `ReamOptions`, `ReamError`, `InvalidWorkbookError`, `ConversionError`.
-
-### Running Tests
-
-```bash
-pip install -e ".[dev]"
-pytest
-ruff check .
-mypy ream_xlsx
-```
-
-The test suite lives in `tests/`. All tests use pytest. The dev extras include `ruff` (linting/formatting) and `mypy` (strict type checking).
-
----
+The benchmark paper is available at [`paper/ream-benchmark.pdf`](paper/ream-benchmark.pdf).
 
 ## License
 
