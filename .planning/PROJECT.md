@@ -19,12 +19,12 @@ Any Python application can `pip install ream` and convert XLSX workbooks to REAM
 - [x] Deterministic output for the same workbook input — Validated in Phase 2: Core API
 - [x] Clean package boundary: `ream_xlsx/` package directory, research/eval code stays separate — Validated in Phase 1: Scaffold
 - [x] Minimal dependency footprint (openpyxl only for package core) — Validated in Phase 1: Scaffold
+- [x] CLI entrypoint: `python -m ream_xlsx` and `ream-xlsx` command — Validated in Phase 3: CLI (49 tests)
+- [x] CLI supports stdout output, optional output file, key REAM options as flags — Validated in Phase 3: CLI
+- [x] TDD: CLI and end-to-end tests — Validated in Phase 3: CLI (13 CLI tests)
 
 ### Active
 
-- [ ] CLI entrypoint: `python -m ream_xlsx` and `ream-xlsx` command
-- [ ] CLI supports stdout output, optional output file, key REAM options as flags
-- [ ] TDD: CLI and end-to-end tests
 - [ ] Complete developer documentation (install, quickstart, API reference, CLI usage, examples)
 
 ### Out of Scope
@@ -62,4 +62,4 @@ Any Python application can `pip install ream` and convert XLSX workbooks to REAM
 | `ReamOptions` dataclass over ad-hoc booleans | Clean API, documented defaults, extensible | — Pending |
 
 ---
-*Last updated: 2026-03-31 after Phase 2 (Core API) completion*
+*Last updated: 2026-03-31 after Phase 3 (CLI) completion*
