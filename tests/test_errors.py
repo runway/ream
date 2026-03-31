@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import io
 from io import BytesIO
 from pathlib import Path
 
@@ -11,7 +10,6 @@ import pytest
 
 from ream_xlsx import ConversionError, InvalidWorkbookError, ReamError
 from ream_xlsx._io import _load_from_bytes, _load_from_path, _load_from_stream
-
 
 # ---------------------------------------------------------------------------
 # Fixtures
