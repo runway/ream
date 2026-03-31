@@ -13,3 +13,5 @@ corpus/
 *.out
 *.synctex.gz
 .planning/
+demo/private/
+demo/results/
