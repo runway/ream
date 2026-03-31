@@ -32,12 +32,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### CLI
 
-- [ ] **CLI-01**: `ream-xlsx input.xlsx` command works via `[project.scripts]` entrypoint
-- [ ] **CLI-02**: `python -m ream_xlsx input.xlsx` works via `__main__.py`
-- [ ] **CLI-03**: Output to stdout by default
-- [ ] **CLI-04**: `-o FILE` flag writes output to file instead of stdout
-- [ ] **CLI-05**: `--max-rows`, `--force-col-selectors`, `--collapse-rows` flags map to `ReamOptions`
-- [ ] **CLI-06**: Exit code 1 + stderr message on invalid input
+- [x] **CLI-01**: `ream-xlsx input.xlsx` command works via `[project.scripts]` entrypoint
+- [x] **CLI-02**: `python -m ream_xlsx input.xlsx` works via `__main__.py`
+- [x] **CLI-03**: Output to stdout by default
+- [x] **CLI-04**: `-o FILE` flag writes output to file instead of stdout
+- [x] **CLI-05**: `--max-rows`, `--force-col-selectors`, `--collapse-rows` flags map to `ReamOptions`
+- [x] **CLI-06**: Exit code 1 + stderr message on invalid input
 
 ### Testing
 
@@ -47,8 +47,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **TST-04**: Tests for file-like conversion matching path-based output
 - [x] **TST-05**: Tests for `ReamOptions` defaults and custom values
 - [x] **TST-06**: Tests for deterministic output (same input twice → same output)
-- [ ] **TST-07**: Tests for CLI success cases and output correctness
-- [ ] **TST-08**: Tests for error handling (missing file, invalid XLSX, empty workbook)
+- [x] **TST-07**: Tests for CLI success cases and output correctness
+- [x] **TST-08**: Tests for error handling (missing file, invalid XLSX, empty workbook)
 - [x] **TST-09**: Regression tests for any bugs discovered during packaging
 
 ### Documentation
@@ -105,20 +105,20 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ERR-01 | Phase 2 | Complete |
 | ERR-02 | Phase 2 | Complete |
 | ERR-03 | Phase 2 | Complete |
-| CLI-01 | Phase 3 | Pending |
-| CLI-02 | Phase 3 | Pending |
-| CLI-03 | Phase 3 | Pending |
-| CLI-04 | Phase 3 | Pending |
-| CLI-05 | Phase 3 | Pending |
-| CLI-06 | Phase 3 | Pending |
+| CLI-01 | Phase 3 | Complete |
+| CLI-02 | Phase 3 | Complete |
+| CLI-03 | Phase 3 | Complete |
+| CLI-04 | Phase 3 | Complete |
+| CLI-05 | Phase 3 | Complete |
+| CLI-06 | Phase 3 | Complete |
 | TST-01 | Phase 1 | Complete |
 | TST-02 | Phase 2 | Complete |
 | TST-03 | Phase 2 | Complete |
 | TST-04 | Phase 2 | Complete |
 | TST-05 | Phase 2 | Complete |
 | TST-06 | Phase 2 | Complete |
-| TST-07 | Phase 3 | Pending |
-| TST-08 | Phase 3 | Pending |
+| TST-07 | Phase 3 | Complete |
+| TST-08 | Phase 3 | Complete |
 | TST-09 | Phase 2 | Complete |
 | DOC-01 | Phase 4 | Pending |
 | DOC-02 | Phase 4 | Pending |
