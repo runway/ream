@@ -11,7 +11,6 @@ from openpyxl import Workbook
 from ream_xlsx import ReamOptions, bytes_to_ream, file_to_ream, xlsx_to_ream
 from ream_xlsx._formula import _a1_formula_to_r1c1, _col_to_num
 
-
 # ---------------------------------------------------------------------------
 # _col_to_num
 # ---------------------------------------------------------------------------
