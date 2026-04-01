@@ -9,6 +9,7 @@ from typing import Any
 from openpyxl.utils import get_column_letter
 from openpyxl.workbook.workbook import Workbook
 
+from ream_xlsx._formula import _a1_formula_to_r1c1
 from ream_xlsx._options import ReamOptions
 
 
@@ -87,11 +88,26 @@ def _ream_scalar(val: Any) -> str:
     return s
 
 
+def _cell_to_ream(val: Any, row: int, col: int, emit_formulas: bool) -> tuple[str, bool]:
+    """Convert a cell value to its REAM representation.
+
+    Returns:
+        (ream_text, is_formula) — *ream_text* is the R1C1 formula body
+        (without leading ``=``) when *is_formula* is True, or the normal
+        scalar text otherwise.
+    """
+    if emit_formulas and isinstance(val, str) and val.startswith("="):
+        formula_body = val[1:]  # strip the leading '='
+        r1c1_body = _a1_formula_to_r1c1(formula_body, row, col)
+        return r1c1_body, True
+    return _ream_scalar(val), False
+
+
 def _xlsx_to_ream_impl(wb: Workbook, options: ReamOptions) -> str:
     """Convert an already-loaded Workbook to REAM text.
 
     Args:
-        wb: An openpyxl Workbook (opened with data_only=True).
+        wb: An openpyxl Workbook.
         options: Conversion options.
 
     Returns:
@@ -128,10 +144,13 @@ def _xlsx_to_ream_impl(wb: Workbook, options: ReamOptions) -> str:
                 break
 
             cells: dict[int, str] = {}
+            cell_is_formula: dict[int, bool] = {}
             for col_idx in range(1, (ws.max_column or 0) + 1):
                 val = ws.cell(row=row_idx, column=col_idx).value
                 if val is not None:
-                    cells[col_idx] = _ream_scalar(val)
+                    text, is_formula = _cell_to_ream(val, row_idx, col_idx, options.emit_formulas)
+                    cells[col_idx] = text
+                    cell_is_formula[col_idx] = is_formula
 
             if not cells:
                 continue
@@ -140,31 +159,33 @@ def _xlsx_to_ream_impl(wb: Workbook, options: ReamOptions) -> str:
 
             if options.collapse_rows:
                 # Build maximal horizontal segments of identical values
-                segments: list[tuple[int, int, str]] = []
+                segments: list[tuple[int, int, str, bool]] = []
                 sorted_cols = sorted(cells.keys())
                 i = 0
                 while i < len(sorted_cols):
                     start_col = sorted_cols[i]
                     cell_val = cells[start_col]
+                    is_f = cell_is_formula.get(start_col, False)
                     end_col = start_col
                     while (
                         i + 1 < len(sorted_cols)
                         and sorted_cols[i + 1] == end_col + 1
                         and cells[sorted_cols[i + 1]] == cell_val
+                        and cell_is_formula.get(sorted_cols[i + 1], False) == is_f
                     ):
                         i += 1
                         end_col = sorted_cols[i]
-                    segments.append((start_col, end_col, cell_val))
+                    segments.append((start_col, end_col, cell_val, is_f))
                     i += 1
                 row_segments[row_idx] = segments
             else:
                 # Store raw cells for simple per-row emission
-                row_segments[row_idx] = cells
+                row_segments[row_idx] = (cells, cell_is_formula)
 
         if options.collapse_rows:
             # Vertical merge: group consecutive rows with identical segment lists
             sorted_rows = sorted(row_segments.keys())
-            merged_records: list[tuple[int, int, list[tuple[int, int, str]]]] = []
+            merged_records: list[tuple[int, int, list[tuple[int, int, str, bool]]]] = []
             i = 0
             while i < len(sorted_rows):
                 start_row = sorted_rows[i]
@@ -182,17 +203,22 @@ def _xlsx_to_ream_impl(wb: Workbook, options: ReamOptions) -> str:
             for start_row, end_row, segs in merged_records:
                 entries: list[str] = []
                 cursor = 1
-                for start_col, end_col, val_str in segs:
+                for start_col, end_col, val_str, is_f in segs:
                     col_start = get_column_letter(start_col)
                     col_end = get_column_letter(end_col)
                     if options.force_col_selectors:
                         if start_col == end_col:
+                            # Addressed entry: COL=body (formula body has no leading =)
                             entries.append(f"{col_start}={val_str}")
                         else:
                             entries.append(f"{col_start}:{col_end}={val_str}")
                     else:
                         if start_col == cursor and start_col == end_col:
-                            entries.append(val_str)
+                            # Bare entry: formulas need '=' prefix
+                            if is_f:
+                                entries.append(f"={val_str}")
+                            else:
+                                entries.append(val_str)
                         elif start_col == end_col:
                             entries.append(f"{col_start}={val_str}")
                         else:
@@ -204,18 +230,25 @@ def _xlsx_to_ream_impl(wb: Workbook, options: ReamOptions) -> str:
         else:
             # Simple per-row emission
             for row_idx in sorted(row_segments.keys()):
-                row_cells = row_segments[row_idx]
+                row_cells, row_formulas = row_segments[row_idx]
                 entries = []
                 cursor = 1
                 for col_idx in sorted(row_cells.keys()):
                     val_str = row_cells[col_idx]
+                    is_f = row_formulas.get(col_idx, False)
                     col_letter = get_column_letter(col_idx)
                     if options.force_col_selectors:
+                        # Addressed entry: formula body goes after COL=
                         entries.append(f"{col_letter}={val_str}")
                     else:
                         if col_idx == cursor:
-                            entries.append(val_str)
+                            # Bare entry: formulas need '=' prefix
+                            if is_f:
+                                entries.append(f"={val_str}")
+                            else:
+                                entries.append(val_str)
                         else:
+                            # Addressed entry
                             entries.append(f"{col_letter}={val_str}")
                     cursor = col_idx + 1
                 lines.append(f"{row_idx} | " + " | ".join(entries) + " |")

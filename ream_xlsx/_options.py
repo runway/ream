@@ -12,3 +12,4 @@ class ReamOptions:
     max_rows_per_sheet: int = 500
     force_col_selectors: bool = False
     collapse_rows: bool = False
+    emit_formulas: bool = True

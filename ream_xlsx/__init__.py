@@ -35,8 +35,8 @@ def xlsx_to_ream(path: str | Path, options: ReamOptions | None = None) -> str:
         InvalidWorkbookError: If the file cannot be read or is not a valid XLSX file.
         ConversionError: If the conversion logic fails internally.
     """
-    wb = _load_from_path(path)
     opts = options if options is not None else ReamOptions()
+    wb = _load_from_path(path, data_only=not opts.emit_formulas)
     try:
         return _xlsx_to_ream_impl(wb, opts)
     except ReamError:
@@ -59,8 +59,8 @@ def bytes_to_ream(data: bytes, options: ReamOptions | None = None) -> str:
         InvalidWorkbookError: If the bytes do not represent a valid XLSX file.
         ConversionError: If the conversion logic fails internally.
     """
-    wb = _load_from_bytes(data)
     opts = options if options is not None else ReamOptions()
+    wb = _load_from_bytes(data, data_only=not opts.emit_formulas)
     try:
         return _xlsx_to_ream_impl(wb, opts)
     except ReamError:
@@ -83,8 +83,8 @@ def file_to_ream(stream: IO[bytes], options: ReamOptions | None = None) -> str:
         InvalidWorkbookError: If the stream does not represent a valid XLSX file.
         ConversionError: If the conversion logic fails internally.
     """
-    wb = _load_from_stream(stream)
     opts = options if options is not None else ReamOptions()
+    wb = _load_from_stream(stream, data_only=not opts.emit_formulas)
     try:
         return _xlsx_to_ream_impl(wb, opts)
     except ReamError:

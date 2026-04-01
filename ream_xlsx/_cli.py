@@ -24,18 +24,27 @@ from ream_xlsx._exceptions import ReamError
     default=False,
     help="Force column selectors in output.",
 )
+@click.option(
+    "--values-only",
+    "values_only",
+    is_flag=True,
+    default=False,
+    help="Emit cached values instead of formulas.",
+)
 def main(
     input_file: str,
     output_file: str | None,
     max_rows: int,
     collapse_rows: bool,
     force_col_selectors: bool,
+    values_only: bool,
 ) -> None:
     """Convert an XLSX workbook to REAM text format."""
     options = ReamOptions(
         max_rows_per_sheet=max_rows,
         collapse_rows=collapse_rows,
         force_col_selectors=force_col_selectors,
+        emit_formulas=not values_only,
     )
     try:
         result = xlsx_to_ream(input_file, options)

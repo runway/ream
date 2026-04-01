@@ -14,14 +14,15 @@ from openpyxl.utils.exceptions import InvalidFileException
 from ream_xlsx._exceptions import InvalidWorkbookError
 
 
-def _load_from_path(path: str | Path) -> Workbook:
+def _load_from_path(path: str | Path, *, data_only: bool = False) -> Workbook:
     """Load an XLSX workbook from a file path.
 
     Args:
         path: Path to the XLSX file (str or Path).
+        data_only: When True, read cached values instead of formulas.
 
     Returns:
-        An openpyxl Workbook opened with data_only=True.
+        An openpyxl Workbook.
 
     Raises:
         InvalidWorkbookError: If the file is missing, is a directory,
@@ -29,7 +30,7 @@ def _load_from_path(path: str | Path) -> Workbook:
     """
     path = Path(path)
     try:
-        return openpyxl.load_workbook(path, data_only=True)
+        return openpyxl.load_workbook(path, data_only=data_only)
     except FileNotFoundError:
         raise InvalidWorkbookError(f"File not found: {path}") from None
     except IsADirectoryError:
@@ -42,35 +43,37 @@ def _load_from_path(path: str | Path) -> Workbook:
         raise InvalidWorkbookError(f"Failed to load workbook from path: {path} ({exc})") from exc
 
 
-def _load_from_bytes(data: bytes) -> Workbook:
+def _load_from_bytes(data: bytes, *, data_only: bool = False) -> Workbook:
     """Load an XLSX workbook from raw bytes.
 
     Args:
         data: Raw bytes of an XLSX workbook.
+        data_only: When True, read cached values instead of formulas.
 
     Returns:
-        An openpyxl Workbook opened with data_only=True.
+        An openpyxl Workbook.
 
     Raises:
         InvalidWorkbookError: If the bytes do not represent a valid XLSX file.
     """
-    return _load_from_stream(BytesIO(data))
+    return _load_from_stream(BytesIO(data), data_only=data_only)
 
 
-def _load_from_stream(stream: IO[bytes]) -> Workbook:
+def _load_from_stream(stream: IO[bytes], *, data_only: bool = False) -> Workbook:
     """Load an XLSX workbook from a binary file-like object.
 
     Args:
         stream: Binary file-like object containing an XLSX workbook.
+        data_only: When True, read cached values instead of formulas.
 
     Returns:
-        An openpyxl Workbook opened with data_only=True.
+        An openpyxl Workbook.
 
     Raises:
         InvalidWorkbookError: If the stream does not represent a valid XLSX file.
     """
     try:
-        return openpyxl.load_workbook(stream, data_only=True)
+        return openpyxl.load_workbook(stream, data_only=data_only)
     except InvalidFileException as exc:
         raise InvalidWorkbookError(f"Not a valid XLSX stream: ({exc})") from exc
     except BadZipFile as exc:
