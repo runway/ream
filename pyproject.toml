@@ -6,12 +6,33 @@ build-backend = "hatchling.build"
 name = "ream-xlsx"
 version = "0.1.0"
 description = "Convert XLSX workbooks to REAM text format"
+readme = { file = "PYPI.md", content-type = "text/markdown" }
 requires-python = ">=3.10"
 license = { text = "MIT" }
+keywords = ["xlsx", "excel", "llm", "serialization", "ream"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Typing :: Typed",
+]
 dependencies = [
     "openpyxl>=3.1.0",
     "click>=8.1.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/runway/ream"
+Repository = "https://github.com/runway/ream"
+Issues = "https://github.com/runway/ream/issues"
+Documentation = "https://github.com/runway/ream/tree/main/docs"
 
 [project.optional-dependencies]
 dev = [
@@ -28,7 +49,7 @@ ream-xlsx = "ream_xlsx._cli:main"
 packages = ["ream_xlsx"]
 
 [tool.hatch.build.targets.sdist]
-include = ["ream_xlsx/", "tests/", "README.md", "LICENSE", "pyproject.toml"]
+include = ["ream_xlsx/", "tests/", "README.md", "PYPI.md", "LICENSE", "pyproject.toml"]
 
 [tool.ruff]
 line-length = 120
